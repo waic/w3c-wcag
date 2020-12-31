@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 2.2.2: Pause, Stop, Hide</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -22,14 +23,13 @@
             <li><a href="#intent">Intent</a></li>
             <li><a href="#benefits">Benefits</a></li>
             <li><a href="#examples">Examples</a></li>
-            <li><a href="#resources">Related Resources</a></li>
             <li><a href="#techniques">Techniques</a></li>
             <li><a href="#key-terms">Key Terms</a></li>
          </ul>
       </nav>
       <h1>Understanding Success Criterion 2.2.2: Pause, Stop, Hide</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#pause-stop-hide" style="font-weight: bold;">2.2.2 Pause, Stop, Hide</a> (Level A): For moving, <a href="https://w3c.github.io/wcag/guidelines/#dfn-blinking" target="terms">blinking</a>, scrolling, or auto-updating information, all of the following are true:
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#pause-stop-hide" style="font-weight: bold;">2.2.2 Pause, Stop, Hide</a> (Level A): For moving, <a href="#dfn-blinking">blinking</a>, scrolling, or auto-updating information, all of the following are true:
             
          </p>
          <dl>
@@ -43,8 +43,8 @@
                
                <p>For any moving, blinking or scrolling information that (1) starts automatically, (2)
                   lasts more than five seconds, and (3) is presented in parallel with other content,
-                  there is a mechanism for the user to <a href="https://w3c.github.io/wcag/guidelines/#dfn-paused" target="terms">pause</a>, stop, or hide it unless the movement, blinking, or scrolling is part of an activity
-                  where it is <a href="https://w3c.github.io/wcag/guidelines/#dfn-essential" target="terms">essential</a>; and
+                  there is a mechanism for the user to <a href="#dfn-paused">pause</a>, stop, or hide it unless the movement, blinking, or scrolling is part of an activity
+                  where it is <a href="#dfn-essential">essential</a>; and
                   
                </p>
                
@@ -70,12 +70,12 @@
             
             
          </dl>
-         <p class="note">For requirements related to flickering or flashing content, refer to <a href="https://w3c.github.io/wcag/guidelines/#seizures-and-physical-reactions">Guideline 2.3</a>.
+         <p class="note">For requirements related to flickering or flashing content, refer to <a href="https://www.w3.org/TR/WCAG21/#seizures-and-physical-reactions">Guideline 2.3</a>.
             
          </p>
          <p class="note">Since any content that does not meet this success criterion can interfere with a user's
             ability to use the whole page, all content on the Web page (whether it is used to
-            meet other success criteria or not) must meet this success criterion. See <a href="https://w3c.github.io/wcag/guidelines/#cc5">Conformance Requirement 5: Non-Interference</a>.
+            meet other success criteria or not) must meet this success criterion. See <a href="https://www.w3.org/TR/WCAG21/#cc5">Conformance Requirement 5: Non-Interference</a>.
             
          </p>
          <p class="note">Content that is updated periodically by software or that is streamed to the user agent
@@ -116,7 +116,7 @@
                
                
                <li>there is no five second exception for auto-updating since it makes little sense to
-                  auto-update for just three seconds and then stop
+                  auto-update for a few seconds and then stop
                   
                </li>
                
@@ -436,10 +436,6 @@
                
             </ul>
          </section>
-         <section id="resources">
-            <h2>Related Resources</h2>
-            <p>Resources are for information purposes only, no endorsement implied.</p>
-         </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
@@ -454,7 +450,7 @@
                   
                   <li>
                      									         
-                     <a class="general" href="https://w3c.github.io/wcag/techniques/general/G4">G4: Allowing the content to be paused and restarted from where it was paused</a>
+                     <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G4">G4: Allowing the content to be paused and restarted from where it was paused</a>
                      								       
                      
                   </li>
@@ -462,7 +458,7 @@
                   
                   <li>
                      
-                     <a class="silverlight" href="https://w3c.github.io/wcag/techniques/silverlight/SL11">SL11: Pausing or Stopping A Decorative Silverlight Animation</a>
+                     <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL11">SL11: Pausing or Stopping A Decorative Silverlight Animation</a>
                      
                      
                   </li>
@@ -470,7 +466,7 @@
                   
                   <li>
                      
-                     <a class="silverlight" href="https://w3c.github.io/wcag/techniques/silverlight/SL12">SL12: Pausing, Stopping, or Playing Media in Silverlight MediaElements</a>
+                     <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL12">SL12: Pausing, Stopping, or Playing Media in Silverlight MediaElements</a>
                      
                      
                   </li>
@@ -478,7 +474,7 @@
                   
                   <li>
                      									         
-                     <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR33">SCR33: Using script to scroll content, and providing a mechanism to pause it</a>
+                     <a class="script" href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR33">SCR33: Using script to scroll content, and providing a mechanism to pause it</a>
                      								       
                      
                   </li>
@@ -486,7 +482,7 @@
                   
                   <li>
                      									         
-                     <a class="flash" href="https://w3c.github.io/wcag/techniques/flash/FLASH35">FLASH35: Using script to scroll Flash content, and providing a mechanism to pause it</a>
+                     <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G11">G11: Creating content that blinks for less than 5 seconds</a>
                      								       
                      
                   </li>
@@ -494,15 +490,7 @@
                   
                   <li>
                      									         
-                     <a class="general" href="https://w3c.github.io/wcag/techniques/general/G11">G11: Creating content that blinks for less than 5 seconds</a>
-                     								       
-                     
-                  </li>
-                  
-                  
-                  <li>
-                     									         
-                     <a class="general" href="https://w3c.github.io/wcag/techniques/general/G187">G187: Using a technology to include blinking content that can be turned off via the user
+                     <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G187">G187: Using a technology to include blinking content that can be turned off via the user
                         agent</a>
                      								       
                      
@@ -511,7 +499,7 @@
                   
                   <li>
                      									         
-                     <a class="general" href="https://w3c.github.io/wcag/techniques/general/G152">G152: Setting animated gif images to stop blinking after n cycles (within 5 seconds)</a>
+                     <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G152">G152: Setting animated gif images to stop blinking after n cycles (within 5 seconds)</a>
                      								       
                      
                   </li>
@@ -519,7 +507,7 @@
                   
                   <li>
                      									         
-                     <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR22">SCR22: Using scripts to control blinking and stop it in five seconds or less</a>
+                     <a class="script" href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR22">SCR22: Using scripts to control blinking and stop it in five seconds or less</a>
                      								       
                      
                   </li>
@@ -527,7 +515,7 @@
                   
                   <li>
                      									         
-                     <a class="flash" href="https://w3c.github.io/wcag/techniques/flash/FLASH36">FLASH36: Using scripts to control blinking and stop it in five seconds or less</a>
+                     <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G186">G186: Using a control in the Web page that stops moving, blinking, or auto-updating content</a>
                      								       
                      
                   </li>
@@ -535,15 +523,7 @@
                   
                   <li>
                      									         
-                     <a class="general" href="https://w3c.github.io/wcag/techniques/general/G186">G186: Using a control in the Web page that stops moving, blinking, or auto-updating content</a>
-                     								       
-                     
-                  </li>
-                  
-                  
-                  <li>
-                     									         
-                     <a class="general" href="https://w3c.github.io/wcag/techniques/general/G191">G191: Providing a link, button, or other mechanism that reloads the page without any blinking
+                     <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G191">G191: Providing a link, button, or other mechanism that reloads the page without any blinking
                         content</a>
                      								       
                      
@@ -552,20 +532,13 @@
                   
                   <li>
                      
-                     <a class="silverlight" href="https://w3c.github.io/wcag/techniques/silverlight/SL24">SL24: Using AutoPlay to Keep Silverlight Media from Playing Automatically</a>
+                     <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL24">SL24: Using AutoPlay to Keep Silverlight Media from Playing Automatically</a>
                      
                      
                   </li>
                   
                   
                </ol>
-            </section>
-            <section id="advisory">
-               <h3>Advisory Techniques</h3>
-               <p>Although not required for conformance, the following additional techniques should
-                  be considered in order to make content more accessible. Not all techniques can be
-                  used or would be effective in all situations.
-               </p>
             </section>
             <section id="failure">
                <h3>Failures</h3>
@@ -577,7 +550,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F16">F16: Failure of Success Criterion 2.2.2 due to including scrolling content where movement
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F16">F16: Failure of Success Criterion 2.2.2 due to including scrolling content where movement
                         is not essential to the activity without also including a mechanism to pause and restart
                         the content</a>
                      								       
@@ -587,7 +560,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F47">F47: Failure of Success Criterion 2.2.2 due to using the blink element</a>
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F47">F47: Failure of Success Criterion 2.2.2 due to using the blink element</a>
                      								       
                      
                   </li>
@@ -595,7 +568,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F4">F4: Failure of Success Criterion 2.2.2 due to using text-decoration:blink without a mechanism
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F4">F4: Failure of Success Criterion 2.2.2 due to using text-decoration:blink without a mechanism
                         to stop it in less than five seconds</a>
                      								       
                      
@@ -604,7 +577,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F50">F50: Failure of Success Criterion 2.2.2 due to a script that causes a blink effect without
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F50">F50: Failure of Success Criterion 2.2.2 due to a script that causes a blink effect without
                         a mechanism to stop the blinking at 5 seconds or less</a>
                      								       
                      
@@ -613,8 +586,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F7">F7: Failure of Success Criterion 2.2.2 due to an object or applet, such as Java or Flash,
-                        for more than five seconds</a>
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F7">F7: Failure of Success Criterion 2.2.2 due to an object or applet for more than five seconds</a>
                      								       
                      
                   </li>
@@ -635,7 +607,7 @@
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
-                     <p>See also <a href="https://w3c.github.io/wcag/guidelines/#dfn-flash" target="terms">flash</a>. It is possible for something to be large enough and blink brightly enough at the
+                     <p>See also <a href="#dfn-flash">flash</a>. It is possible for something to be large enough and blink brightly enough at the
                         right frequency to be also classified as a flash.
                         
                      </p>

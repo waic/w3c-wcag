@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 2.5.5: Target Size</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -29,7 +30,7 @@
       </nav>
       <h1>Understanding Success Criterion 2.5.5: Target Size</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#target-size" style="font-weight: bold;">2.5.5 Target Size</a> (Level AAA): The size of the <a href="https://w3c.github.io/wcag/guidelines/#dfn-target" target="terms">target</a> for <a href="https://w3c.github.io/wcag/guidelines/#dfn-pointer-input" target="terms">pointer inputs</a> is at least 44 by 44 <a href="https://w3c.github.io/wcag/guidelines/#dfn-css-pixel" target="terms">CSS pixels</a> except when:
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#target-size" style="font-weight: bold;">2.5.5 Target Size</a> (Level AAA): The size of the <a href="#dfn-target">target</a> for <a href="#dfn-pointer-input">pointer inputs</a> is at least 44 by 44 <a href="#dfn-css-pixel">CSS pixels</a> except when:
          </p>
          <dl>
             	                 
@@ -51,7 +52,7 @@
             	                 
             <dt>Essential</dt> 
             
-            <dd>A particular presentation of the target is <a href="https://w3c.github.io/wcag/guidelines/#dfn-essential" target="terms">essential</a> to the information being conveyed.
+            <dd>A particular presentation of the target is <a href="#dfn-essential">essential</a> to the information being conveyed.
             </dd>
             
          </dl>
@@ -166,8 +167,8 @@
                   target of 44 by 44 CSS pixels.
                </li>
                
-               <li><strong>Example 3: Anchor Link</strong><br /> The target is an in-page link and the target is less than 44px by 44px. Users can
-                  scroll the screen using browser functions so target size does not need to be met.
+               <li><strong>Example 3: Anchor Link</strong><br /> The target is an in-page link and the target is less than 44 by 44 CSS pixels. Users
+                  can scroll the screen using browser functions so target size does not need to be met.
                </li>
                
                <li><strong>Example 4: Text Link in a paragraph</strong><br /> Links within a paragraph of text have varying touch target dimensions. Links within
@@ -177,7 +178,7 @@
                <li><strong>Example 5: Text Link in a sentence</strong><br /> A text link that is in a sentence is excluded and does not need to meet the 44 by
                   44 CSS pixel requirement. If the text link is the full sentence, then the text link
                   target touch area does
-                  need to meet the 44 x 44 CSS pixels.
+                  need to meet the 44 by 44 CSS pixels.
                </li>
                
                <li><strong>Example 6: Footnote</strong><br /> A footnote link at the end of a sentence does not need to meet the 44 by 44 CSS pixels
@@ -191,32 +192,25 @@
                </li>
                
             </ul>
-            <section class="example" id=""></section>
          </section>
          <section id="resources">
             <h2>Related Resources</h2>
             <p>Resources are for information purposes only, no endorsement implied.</p>
             <ul>
                
-               <li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/">Apple touch target size recommendations</a> 
-               </li>
+               <li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/">Apple touch target size recommendations</a></li>
                
-               <li><a href="https://developers.google.com/speed/docs/insights/SizeTapTargetsAppropriately">Android touch target size recommendations</a> 
-               </li>
+               <li><a href="https://docs.microsoft.com/en-us/windows/uwp/design/input/guidelines-for-targeting">Windows UWP Guidelines for touch targets</a></li>
                
-               <li><a href="http://download.microsoft.com/download/2/4/A/24A81A29-77CF-4AA5-967E-64E42554F21B/UWP%20app%20design%20guidelines%20v1509.pdf">Microsoft's Windows Phone UI Design and Interaction Guide (PDF)</a> 
-               </li>
+               <li><a href="https://material.io/design/layout/spacing-methods.html#touch-targets">Google Material Design Touch targets</a></li>
+               
+               <li><a href="https://web.dev/accessible-tap-targets/">web.dev Accessible tap targets</a></li>
                
                <li><a href="http://touchlab.mit.edu/publications/2003_009.pdf">Human Fingertips to Investigate the Mechanics of Tactile Sense (PDF)</a></li>
                
-               <li><a href="http://hcil.cs.umd.edu/trs/2006-11/2006-11.htm">One-Handed Thumb Use on Small Touchscreen Devices</a> 
-               </li>
+               <li><a href="http://www.cs.umd.edu/hcil/trs/2006-11/2006-11.htm">One-Handed Thumb Use on Small Touchscreen Devices</a></li>
                
-               <li><a href="http://blogs.msdn.com/b/ie/archive/2012/04/20/guidelines-for-building-touch-friendly-sites.aspx">Microsoft Guidelines for Building Touch Friendly Sites</a> 
-               </li>
-               
-               <li><a href="https://developer.microsoft.com/en-us/windows/design/microsoft-design-language">Microsoft Design Language (PDF)</a> 
-               </li>
+               <li><a href="https://docs.microsoft.com/en-us/archive/blogs/ie/guidelines-for-building-touch-friendly-sites">Microsoft Guidelines for Building Touch Friendly Sites</a></li>
                
             </ul>
          </section>
@@ -261,7 +255,7 @@
                   </li>
                   
                   <li>Failure of success criterion 2.5.3 due to target size of a paragraph that is also
-                     a link being less than 44 x 44 CSS pixels.
+                     a link being less than 44 by 44 CSS pixels.
                   </li>
                   
                </ul>
@@ -272,9 +266,6 @@
             <dt id="dfn-css-pixel">css pixel</dt>
             <dd>
                <definition xmlns="">
-                  					
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
                   					
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">visual angle of about 0.0213 degrees</p>
@@ -309,9 +300,6 @@
                <definition xmlns="">
                   					
                   
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
-                  					
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">input device that can target a specific coordinate (or set of coordinates) on a screen,
                      such as a mouse, pen, or touch contact
                      
@@ -328,9 +316,6 @@
             <dt id="dfn-target">target</dt>
             <dd>
                <definition xmlns="">
-                  					
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
                   					
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">region of the display that will accept a pointer action, such as the interactive area

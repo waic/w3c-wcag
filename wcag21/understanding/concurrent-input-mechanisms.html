@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 2.5.6: Concurrent Input Mechanisms</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -29,8 +30,8 @@
       </nav>
       <h1>Understanding Success Criterion 2.5.6: Concurrent Input Mechanisms</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#concurrent-input-mechanisms" style="font-weight: bold;">2.5.6 Concurrent Input Mechanisms</a> (Level AAA): Web content does not restrict use of input modalities available on a platform except
-            where the restriction is <a href="https://w3c.github.io/wcag/guidelines/#dfn-essential" target="terms">essential</a>, required to ensure the security of the content, or required to respect user settings.
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#concurrent-input-mechanisms" style="font-weight: bold;">2.5.6 Concurrent Input Mechanisms</a> (Level AAA): Web content does not restrict use of input modalities available on a platform except
+            where the restriction is <a href="#dfn-essential">essential</a>, required to ensure the security of the content, or required to respect user settings.
          </p>
       </blockquote>
       <main>
@@ -136,10 +137,10 @@
                <h3>Sufficient Techniques</h3>
                <ul>
                   
-                  <li>Only using high-level, input-agnostic event handlers (<code>focus</code>, <code>blur</code>, <code>click</code>) in Javascript (operating systems/UAs fire these events for all input mechanisms).
+                  <li>@@ Only using high-level, input-agnostic event handlers (<code>focus</code>, <code>blur</code>, <code>click</code>) in Javascript (operating systems/UAs fire these events for all input mechanisms).
                   </li>
                   
-                  <li>Registering event handlers for keyboard/keyboard-like and pointer inputs simultaneously
+                  <li>@@ Registering event handlers for keyboard/keyboard-like and pointer inputs simultaneously
                      in Javascript (see <a href="https://w3c.github.io/pointerevents/#examples">Example 1 in Pointer Events Level 2</a>)
                   </li>
                   
@@ -152,12 +153,7 @@
                </p>
                <ul>
                   
-                  <li>Restricting event handlers based on the presence of a detected input mechanism.</li>
-                  
-                  <li>Using CSS Media Queries Level 4 Interaction Media Features to determine what the UA
-                     deems to be the "primary" input mechanism and assuming no other input mechanisms are
-                     present/may be added/may be used.
-                  </li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F98">F98: Failure due to interactions being limited to touch-only on touchscreen devices</a></li>
                   
                </ul>
             </section>

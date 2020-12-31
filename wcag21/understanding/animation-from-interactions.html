@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 2.3.3: Animation from Interactions</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -29,8 +30,8 @@
       </nav>
       <h1>Understanding Success Criterion 2.3.3: Animation from Interactions</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#animation-from-interactions" style="font-weight: bold;">2.3.3 Animation from Interactions</a> (Level AAA): 
-            <a href="https://w3c.github.io/wcag/guidelines/#dfn-motion-animation" target="terms">Motion animation</a> triggered by interaction can be disabled, unless the animation is <a href="https://w3c.github.io/wcag/guidelines/#dfn-essential" target="terms">essential</a> to the functionality or the information being conveyed.
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#animation-from-interactions" style="font-weight: bold;">2.3.3 Animation from Interactions</a> (Level AAA): 
+            <a href="#dfn-motion-animation">Motion animation</a> triggered by interaction can be disabled, unless the animation is <a href="#dfn-essential">essential</a> to the functionality or the information being conveyed.
          </p>
       </blockquote>
       <main>
@@ -47,7 +48,7 @@
                Criterion.
             </p>
             <p>"Animation from interactions" applies when a user’s interaction initiates non-essential
-               animation. In contrast, <a href="">2.2.2 Pause, Stop, Hide</a> applies when the web page initiates animation.
+               animation. In contrast, <a href="pause-stop-hide.html">2.2.2 Pause, Stop, Hide</a> applies when the web page initiates animation.
             </p>
             <div class="note">
                <div role="heading" class="note-title marker" aria-level="3">Note</div>
@@ -139,10 +140,21 @@
             <h2>Related Resources</h2>
             <p>Resources are for information purposes only, no endorsement implied.</p>
             <ul>
+               			
+               <li><a href="//developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">Mozilla documentation for 'prefers-reduced-motion'</a></li>
+               			
+               <li><a href="//webkit.org/blog-files/prefers-reduced-motion/prm.htm">Demonstration of 'prefers-reduced-motion' in Webkit</a></li>
                
                <li><a href="https://css-tricks.com/introduction-reduced-motion-media-query/">An Introduction to the Reduced Motion Media Query</a></li>
                
                <li><a href="http://alistapart.com/article/designing-safer-web-animation-for-motion-sensitivity">Designing Safer Web Animations for Motion Sensitivity</a></li>
+               
+               <li><a href="https://support.apple.com/en-gb/HT202655"><strong>iOS:</strong> Reduce Motion on iPhone, iPad or iPod touch</a></li>
+               			
+               <li><a href="https://apple.stackexchange.com/questions/253756/speed-up-mission-control-animations-in-macos-sierra"><strong>Mac:</strong> Reduce Motion</a></li>
+               			
+               <li><a href="//www.laptopmag.com/articles/disable-minimize-maximize-animations-windows-10"><strong>Windows 10:</strong> Reduce motion</a></li>
+               
                			
             </ul>
          </section>
@@ -157,7 +169,7 @@
                <h3>Sufficient Techniques</h3>
                <ul>
                   						
-                  <li><a href="https://w3c.github.io/wcag/techniques/css/C39">C39: Using the CSS reduce-motion query to prevent motion</a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/css/C39">C39: Using the CSS reduce-motion query to prevent motion</a></li>
                   						
                   <li>Gx: Allowing users to set a preference that prevents animation.</li>
                   					
@@ -182,9 +194,6 @@
             <dt id="dfn-motion-animation">motion animation</dt>
             <dd>
                <definition xmlns="">
-                  					
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
                   					
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">addition of steps between conditions to create the illusion of movement or to give

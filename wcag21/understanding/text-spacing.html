@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 1.4.12: Text Spacing</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -29,8 +30,8 @@
       </nav>
       <h1>Understanding Success Criterion 1.4.12: Text Spacing</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#text-spacing" style="font-weight: bold;">1.4.12 Text Spacing</a> (Level AA): In content implemented using markup languages that support the following <a href="https://w3c.github.io/wcag/guidelines/#dfn-text" target="terms">text</a> 
-            <a href="https://w3c.github.io/wcag/guidelines/#dfn-style-property" target="terms">style properties</a>, no loss of content or functionality occurs by setting all of the following and by
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#text-spacing" style="font-weight: bold;">1.4.12 Text Spacing</a> (Level AA): In content implemented using markup languages that support the following <a href="#dfn-text">text</a> 
+            <a href="#dfn-style-property">style properties</a>, no loss of content or functionality occurs by setting all of the following and by
             changing no other style property:
          </p>
          <ul>
@@ -52,14 +53,17 @@
       <main>
          <section id="intent">
             <h2>Intent</h2>
-            <p>The intent of this Success Criterion (SC) is to ensure that people can override text
-               spacing to improve their reading experience. Each of the requirements stipulated in
-               the SC's four bullets helps ensure text styling can be adapted by the user to suit
-               their needs.
+            <p>The intent of this Success Criterion (SC) is to ensure that people can override author
+               specified text spacing to improve their reading experience. Each of the requirements
+               stipulated in the SC's four bullets helps ensure text styling can be adapted by the
+               user to suit their needs.
+            </p>
+            <p>The specified metrics set a minimum baseline. The values in between the author's metrics
+               and the metrics specified in this SC should not have loss of content or functionality.
             </p>
             <p>This SC focuses on the ability to increase spacing between lines, words, letters,
                and paragraphs. Any combination of these may assist a user with effectively reading
-               text. As well, ensuring users can override author settings for spacing also signficantly
+               text. As well, ensuring users can override author settings for spacing also significantly
                increases the likelihood other style preferences can be set by the user. For example,
                a user may need to change to a wider font family than the author has set in order
                to effectively read text. 
@@ -73,7 +77,10 @@
                   those metrics without loss of content or functionality. The author requirement is
                   both to not interfere with a user's ability to override the author settings, and to
                   ensure that content thus modified does not break content in the manners shown in figures
-                  1 through 4 in Effects of Not Allowing for Spacing Override.
+                  1 through 3 in Effects of Not Allowing for Spacing Override. The values in the SC
+                  are a baseline. Authors are encouraged to surpass the values specified, not see them
+                  as a ceiling to build to. If the user chooses to go beyond the metrics specified any
+                  resulting loss of content or functionality is the user's responsibility.
                </p>
                
                <section id="applicability">
@@ -88,7 +95,7 @@
                      using markup.
                   </p>
                   
-                  <p>Examples of text that are typically not affected by <a href="https://www.w3.org/TR/WCAG21/#dfn-style-properties">style properties</a> and not expected to adapt are:
+                  <p>Examples of text that are typically not affected by <a href="#dfn-style-property">style properties</a> and not expected to adapt are:
                   </p>
                   
                   <ul>
@@ -97,11 +104,11 @@
                         caption file
                      </li>
                      
-                     <li><a href="http://rawgit.com/w3c/wcag/master/guidelines/index.html#dfn-images-of-text">Images of text</a></li>
+                     <li><a href="#dfn-image-of-text">Images of text</a></li>
                      
                   </ul>
                   
-                  <p>For this SC, <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element">canvas</a> implementations of text are considered to be <a href="https://w3c.github.io/wcag/guidelines/#dfn-image-of-text" target="terms">images of text</a>.
+                  <p>For this SC, <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element">canvas</a> implementations of text are considered to be <a href="#dfn-image-of-text">images of text</a>.
                   </p>
                   	
                </section>
@@ -112,9 +119,11 @@
                <h3>User Responsibility</h3>
                
                <p>The ability to read and derive meaning from the overridden spacing rests with the
-                  user. If the increased spacing impacts those abilities, the user will adjust or they
-                  will return to the default view. Regardless, the user needs the flexibility to adjust
-                  spacing within the bounds set in the SC. Such changes may be acheived via user stylesheet,
+                  user. The user may choose to exceed the spacing adjustments in the SC. If the increased
+                  spacing causes loss of content or functionality, the user will adjust or return to
+                  the author’s original spacing or spacing within the bounds of the SC. Regardless,
+                  the user needs the flexibility to adjust spacing within the bounds set in the SC without
+                  loss of content or functionality. Such changes may be achieved via user stylesheet,
                   bookmarklet, extension, or application.
                </p>
                	
@@ -136,9 +145,9 @@
                      Meet Your Needs."
                   </p>
                   
-                  <figure>
+                  <figure id="figure-text-cut">
                      
-                     <figcaption>Figure 1: Vertical text cut off  is a failure.</figcaption>
+                     <figcaption>Figure 1Vertical text cut off  is a failure.</figcaption>
                      <img src="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/images/b/ba/Spacing_cutoff_fail_vertical.png" alt="Heading text truncated vertically." width="420" height="190" />         
                      
                   </figure>
@@ -150,9 +159,9 @@
                      should read "Back to the drawing board." But it reads "Back to the drawi". 
                   </p>
                   
-                  <figure>
+                  <figure id="figure-horiz-text-cut">
                      
-                     <figcaption>Figure 2: Horizontal text cut off is a  failure.</figcaption>
+                     <figcaption>Figure 2Horizontal text cut off is a  failure.</figcaption>
                      <img src="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/images/c/c2/Spacing_cutoff_fail_horizontal.png" alt="3 side-by-side headings with truncated text." width="509" height="184" />         
                      
                   </figure>
@@ -170,9 +179,9 @@
                      to share  ideas" are obscured and unreadable.
                   </p>
                   
-                  <figure>
+                  <figure id="figure-overlapping-text">
                      
-                     <figcaption>Figure 3: Overlapping text is a failure.</figcaption>
+                     <figcaption>Figure 3Overlapping text is a failure.</figcaption>
                      <img src="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/images/1/11/Spacing_overlap_fail.png" alt="Heading text overlaps part of paragraph text." width="510" height="170" />            
                      
                   </figure>
@@ -331,11 +340,11 @@
                <h3>Sufficient Techniques</h3>
                <ul>
                   
-                  <li><a href="https://w3c.github.io/wcag/techniques/css/C36">C36: Allowing for text spacing override</a>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/css/C36">C36: Allowing for text spacing override</a>
                      
                   </li>
                   	
-                  <li><a href="https://w3c.github.io/wcag/techniques/css/C35">C35: Allowing for text spacing without wrapping</a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/css/C35">C35: Allowing for text spacing without wrapping</a></li>
                   
                </ul>
             </section>
@@ -347,11 +356,11 @@
                </p>
                <ul>
                   	
-                  <li><a class="css" href="https://w3c.github.io/wcag/techniques/css/C8">C8: Using CSS letter-spacing to control spacing within a word</a></li>
+                  <li><a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C8">C8: Using CSS letter-spacing to control spacing within a word</a></li>
                   	
-                  <li><a class="css" href="https://w3c.github.io/wcag/techniques/css/C21">C21: Specifying line spacing in CSS</a></li>
+                  <li><a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C21">C21: Specifying line spacing in CSS</a></li>
                   	
-                  <li><a class="css" href="https://w3c.github.io/wcag/techniques/css/C28">C28: Specifying the size of text containers using em units</a></li>
+                  <li><a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C28">C28: Specifying the size of text containers using em units</a></li>
                   
                </ul>
             </section>
@@ -362,9 +371,8 @@
                </p>
                <ul>
                   		
-                  <li>Failure of Success Criterion 1.4.12 due to not allowing for spacing override. (Future
-                     technique)
-                  </li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F104">F104: Failure of Success Criterion 1.4.12 due to clipped or overlapped content when text
+                        spacing is adjusted</a></li>
                   	
                </ul>
             </section>
@@ -384,7 +392,7 @@
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
-                     <p>This does not include <a href="https://w3c.github.io/wcag/guidelines/#dfn-text" target="terms">text</a> that is part of a picture that contains significant other visual content.
+                     <p>This does not include <a href="#dfn-text">text</a> that is part of a picture that contains significant other visual content.
                         
                      </p>
                   </div>
@@ -398,8 +406,6 @@
             <dt id="dfn-style-property">style property</dt>
             <dd>
                <definition xmlns="">
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">property whose value determines the presentation (e.g. font, color, size, location,
                      padding, volume, synthesized speech prosody) of
@@ -434,7 +440,7 @@
                <definition xmlns="">
                   
                   
-                  <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="https://w3c.github.io/wcag/guidelines/#dfn-programmatically-determined" target="terms">programmatically determined</a>, where the sequence is expressing something in <a href="https://w3c.github.io/wcag/guidelines/#dfn-human-language" target="terms">human language</a>
+                  <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language">human language</a>
                      
                   </p>
                   

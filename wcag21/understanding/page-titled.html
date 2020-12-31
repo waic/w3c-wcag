@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 2.4.2: Page Titled</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -24,13 +25,14 @@
             <li><a href="#examples">Examples</a></li>
             <li><a href="#resources">Related Resources</a></li>
             <li><a href="#techniques">Techniques</a></li>
+            <li><a href="#testing-rules">Testing Rules</a></li>
             <li><a href="#key-terms">Key Terms</a></li>
          </ul>
       </nav>
       <h1>Understanding Success Criterion 2.4.2: Page Titled</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#page-titled" style="font-weight: bold;">2.4.2 Page Titled</a> (Level A): 
-            <a href="https://w3c.github.io/wcag/guidelines/#dfn-web-page" target="terms">Web pages</a> have titles that describe topic or purpose.
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#page-titled" style="font-weight: bold;">2.4.2 Page Titled</a> (Level A): 
+            <a href="#dfn-web-page">Web pages</a> have titles that describe topic or purpose.
             
          </p>
       </blockquote>
@@ -242,7 +244,7 @@
                      
                      <p> 
                         
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G88">G88: Providing descriptive titles for Web pages</a> 
+                        <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G88">G88: Providing descriptive titles for Web pages</a> 
                         
                         <strong>AND</strong> associating a title with a Web page using one of the following techniques:
                         
@@ -255,7 +257,7 @@
                         
                         <li>
                            											             
-                           <a class="html" href="https://w3c.github.io/wcag/techniques/html/H25">H25: Providing a title using the title element</a>
+                           <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H25">H25: Providing a title using the title element</a>
                            										           
                            
                         </li>
@@ -263,7 +265,7 @@
                         
                         <li>
                            
-                           <a class="pdf" href="https://w3c.github.io/wcag/techniques/pdf/PDF18">PDF18: Specifying the document title using the Title entry in the document information dictionary
+                           <a class="pdf" href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/PDF18">PDF18: Specifying the document title using the Title entry in the document information dictionary
                               of a PDF document</a>
                            
                            
@@ -289,7 +291,7 @@
                   
                   <li>
                      									         
-                     <a class="general" href="https://w3c.github.io/wcag/techniques/general/G127">G127: Identifying a Web page's relationship to a larger collection of Web pages</a>
+                     <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G127">G127: Identifying a Web page's relationship to a larger collection of Web pages</a>
                      								       
                      
                   </li>
@@ -307,7 +309,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F25">F25: Failure of Success Criterion 2.4.2 due to the title of a Web page not identifying
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F25">F25: Failure of Success Criterion 2.4.2 due to the title of a Web page not identifying
                         the contents</a>
                      								       
                      
@@ -317,6 +319,17 @@
                </ul>
             </section>
          </section>
+         <section id="testing-rules">
+            <h2>Testing Rules</h2>
+            <p>The following are testing rules for certain aspects of this Success Criterion. It
+               is not necessary to use these particular rules to check for conformance with WCAG,
+               but they are defined and approved test methods. For information on using Accessibility
+               Conformance Testing (ACT) Rules, see <a href="understanding-act-rules.html">Understanding ACT Rules for WCAG Success Criteria</a>.
+            </p>
+            <ul>
+               <li><a href="/standards-guidelines/act/rules/html-page-has-title-2779a5/">HTML page has title</a></li>
+            </ul>
+         </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
             <dt id="dfn-web-page">web page</dt>
@@ -325,7 +338,7 @@
                   
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                     that are used in the rendering or intended to be rendered together with it by a <a href="https://w3c.github.io/wcag/guidelines/#dfn-user-agent" target="terms">user agent</a>
+                     that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
                      
                   </p>
                   

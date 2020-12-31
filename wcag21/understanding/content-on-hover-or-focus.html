@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 1.4.13: Content on Hover or Focus</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -29,7 +30,7 @@
       </nav>
       <h1>Understanding Success Criterion 1.4.13: Content on Hover or Focus</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#content-on-hover-or-focus" style="font-weight: bold;">1.4.13 Content on Hover or Focus</a> (Level AA): Where receiving and then removing pointer hover or keyboard focus triggers additional
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus" style="font-weight: bold;">1.4.13 Content on Hover or Focus</a> (Level AA): Where receiving and then removing pointer hover or keyboard focus triggers additional
             content to become visible and then hidden, the following are true:
          </p>
          <dl>
@@ -37,8 +38,8 @@
             
             <dt>Dismissible</dt>
             
-            <dd>A <a href="https://w3c.github.io/wcag/guidelines/#dfn-mechanism" target="terms">mechanism</a> is available to dismiss the additional content without moving pointer hover or keyboard
-               focus, unless the additional content communicates an <a href="https://w3c.github.io/wcag/guidelines/#dfn-input-error" target="terms">input error</a> or does not obscure or replace other content;
+            <dd>A <a href="#dfn-mechanism">mechanism</a> is available to dismiss the additional content without moving pointer hover or keyboard
+               focus, unless the additional content communicates an <a href="#dfn-input-error">input error</a> or does not obscure or replace other content;
             </dd>
             
             
@@ -124,7 +125,7 @@
                			
                <p>The intent of this condition is to ensure that the additional content does not interfere
                   with viewing or operating the page's original content. When magnified, the portion
-                  of the page visible in the viewport can be signficantly reduced. Mouse users frequently
+                  of the page visible in the viewport can be significantly reduced. Mouse users frequently
                   move the pointer to pan the magnified viewport and display another portion of the
                   screen. However, almost the entire portion of the page visible in this restricted
                   viewport may trigger the additional content, making it difficult for a user to pan
@@ -133,9 +134,8 @@
                </p>
                			
                <p>Alternatively, low vision users who can only navigate via the keyboard do not want
-                  the small area of their magnified viewport cluttered with trivial hover text. They
-                  need a keyboard method of dismissing something that is obscuring the current focal
-                  area.
+                  the small area of their magnified viewport cluttered with hover text. They need a
+                  keyboard method of dismissing something that is obscuring the current focal area.
                </p>
                		
                <p>Two methods may be used to satisfy this condition and prevent such interference:</p>
@@ -148,7 +148,7 @@
                   </li>
                   			
                   <li>Provide a mechanism to easily dismiss the additional content, such as by pressing
-                     Escape or selecting a close button.
+                     Escape.
                   </li>
                   			
                </ol>
@@ -157,6 +157,10 @@
                   implemented.  If the trigger is large, noticing the additional content may be of concern
                   if it appears away from the trigger.  In those cases, only the second method may be
                   appropriate.
+               </p>
+               			
+               <p>The success criteria allows for input error messages to persist as there are cases
+                  that require attention, explicit confirmation or remedial action.
                </p>
                			
             </section>
@@ -263,11 +267,11 @@
                				
                <h3>Example 1: Dismissable Tooltip</h3>
                				
-               <figure>
+               <figure id="figure-mouse-tooltip-below">
                   				<img src="img/button-pointer-tooltip.png" alt="Screenshot of a button with a mouse pointer over it, and a tooltip displayed  below the button" />
                   				<img src="img/button-pointer.png" alt="Screenshot of a button with a mouse pointer over it, and no tooltip" />
                   				
-                  <figcaption>A tooltip is displayed below a LVTF button on hover so as not to obscure the button
+                  <figcaption>Figure 1A tooltip is displayed below a LVTF button on hover so as not to obscure the button
                      itself. It does however obscure content below the button (the next red button, called
                      ~comment-zoom-content). To meet the Dismissible requirement, a user can press the
                      Escape key to clear the tooltip without moving the mouse, as demonstrated in the second
@@ -276,10 +280,10 @@
                   				
                </figure>
                				
-               <figure>
+               <figure id="figure-focused-button-no-tooltip">
                   				<img src="img/button-focus-indicator.png" alt="Screenshot of a button with a focus indicator on it, and no tooltip" />
                   				
-                  <figcaption>The button's tooltip also appears on focus and can be removed with the Escape key.
+                  <figcaption>Figure 2The button's tooltip also appears on focus and can be removed with the Escape key.
                      The screen shot shows the same LVTF button with focus, but the tooltip has been dismissed
                      and is no longer visible.
                   </figcaption>
@@ -291,11 +295,11 @@
                				
                <h3>Example 2: Hoverable Tooltip</h3>
                				
-               <figure>
+               <figure id="figure-large-pointer-tooltip">
                   				<img src="img/button-pointer-on-tooltip.png" alt="Screenshot of a button with a large mouse pointer over it, and a tooltip displayed  below the button which is obscured by the large pointer" />
                   				<img src="img/button-pointer-below-tooltip.png" alt="Screenshot of a button with a tooltip below it, and a large mouse pointer at the bottom of the tooltip" />
                   				
-                  <figcaption>A button's tooltip is displayed directly below it on mouse hover which can easily
+                  <figcaption>Figure 3A button's tooltip is displayed directly below it on mouse hover which can easily
                      be obscured by a large pointer.  The tooltip itself is able to be hovered so the mouse
                      pointer can be moved down to its bottom edge in order to view the tooltip text.
                   </figcaption>
@@ -324,6 +328,8 @@
                <h3>Sufficient Techniques</h3>
                <ul>
                   						
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR39">SCR39: Making content on focus or hover hoverable, dismissible, and persistent</a></li>
+                  						
                   <li>@@ ARIA: Using role="tooltip"</li>
                   						
                   <li>@@ CSS: Using hover and focus pseudo classes</li>
@@ -337,7 +343,7 @@
                </p>
                <ul>
                   					
-                  <li><a href="https://w3c.github.io/wcag/techniques/failures/F95">F95: Failure of Success Criterion 1.4.13 due to content shown on hover not being hoverable</a></li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F95">F95: Failure of Success Criterion 1.4.13 due to content shown on hover not being hoverable</a></li>
                   					
                   <li>@@ Failure to make content dismissable without moving pointer hover or keyboard focus</li>
                   					
@@ -368,7 +374,7 @@
                         <ol>
                            
                            
-                           <li>Information that is required by the <a href="https://w3c.github.io/wcag/guidelines/#dfn-web-page" target="terms">Web page</a> but omitted by the user
+                           <li>Information that is required by the <a href="#dfn-web-page">Web page</a> but omitted by the user
                               
                            </li>
                            
@@ -392,14 +398,14 @@
                   
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">
-                     <a href="https://w3c.github.io/wcag/guidelines/#dfn-process" target="terms">process</a> or technique for achieving a result
+                     <a href="#dfn-process">process</a> or technique for achieving a result
                      
                   </p>
                   
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
-                     <p>The mechanism may be explicitly provided in the content, or may be <a href="https://w3c.github.io/wcag/guidelines/#dfn-relied-upon" target="terms">relied upon</a> to be provided by either the platform or by <a href="https://w3c.github.io/wcag/guidelines/#dfn-user-agent" target="terms">user agents</a>, including <a href="https://w3c.github.io/wcag/guidelines/#dfn-assistive-technology" target="terms">assistive technologies</a>.
+                     <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
                         
                      </p>
                   </div>

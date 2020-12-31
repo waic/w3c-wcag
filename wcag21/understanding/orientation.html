@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 1.3.4: Orientation</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -29,12 +30,12 @@
       </nav>
       <h1>Understanding Success Criterion 1.3.4: Orientation</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#orientation" style="font-weight: bold;">1.3.4 Orientation</a> (Level AA): Content does not restrict its view and operation to a single display orientation,
-            such as portrait or landscape, unless a specific display orientation is <a href="https://w3c.github.io/wcag/guidelines/#dfn-essential" target="terms">essential</a>.
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#orientation" style="font-weight: bold;">1.3.4 Orientation</a> (Level AA): Content does not restrict its view and operation to a single display orientation,
+            such as portrait or landscape, unless a specific display orientation is <a href="#dfn-essential">essential</a>.
          </p>
          <p class="note">Examples where a particular display orientation may be essential are a bank check,
             a piano application, slides for a projector or television, or virtual reality content
-            where binary display orientation is not applicable.
+            where content is not necessarily restricted to landscape or portrait display orientation.
          </p>
       </blockquote>
       <main>
@@ -48,7 +49,7 @@
                			in a fixed orientation (e.g. on the arm of a power wheelchair). Therefore, websites
                and applications need to support both orientations
                			by not restricting the orientation. Changes in content or functionality due to
-               the size of display are not covered by this criteria which is focused on restrictions
+               the size of display are not covered by this criterion which is focused on restrictions
                of orientation.
             </p>
             <p>Historically, devices tended to have a fixed-orientation display, and all content
@@ -73,6 +74,13 @@
                where a device-level orientation lock is not in place, the user agent should display
                the page according to the orientation of the device (either its default, or the current
                orientation determined by any device sensors).
+            </p>
+            <p>The exception for things considered essential is aimed at situations where the content
+               would only be understood in a particular orientation, or where the technology restricts
+               the possible orientations. If content is aimed at a specific environment which is
+               only available in one orientation (such as a television) then the content can restrict
+               the orientation. Technologies such as virtual reality use screens within goggles that
+               cannot change orientation relative to the user's eyes.
             </p>
          </section>
          <section id="benefits">
@@ -155,10 +163,9 @@
             <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ul>
-                  					
-                  <li>Using CSS to set the orientation to allow both landscape and portrait.</li>
-                  					
-                  <li>Use of show/hide controls to allow access to content in different orientations.</li>
+                  			
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G214">G214: Using a control to allow access to content in different orientations which is otherwise
+                        restricted</a></li>
                   				
                </ul>
             </section>
@@ -169,7 +176,9 @@
                </p>
                <ul>
                   					
-                  <li>Locking the orientation.</li>
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F97">F97: Failure due to locking the orientation to landscape or portrait view</a></li>
+                  					
+                  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F100">F100: Failure of Success Criterion 1.3.4 due to showing a message asking to reorient device</a></li>
                   				
                </ul>
             </section>

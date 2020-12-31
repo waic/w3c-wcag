@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 4.1.3: Status Messages</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -22,14 +23,13 @@
             <li><a href="#intent">Intent</a></li>
             <li><a href="#benefits">Benefits</a></li>
             <li><a href="#examples">Examples</a></li>
-            <li><a href="#resources">Related Resources</a></li>
             <li><a href="#techniques">Techniques</a></li>
             <li><a href="#key-terms">Key Terms</a></li>
          </ul>
       </nav>
       <h1>Understanding Success Criterion 4.1.3: Status Messages</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#status-messages" style="font-weight: bold;">4.1.3 Status Messages</a> (Level AA): In content implemented using markup languages, <a href="https://w3c.github.io/wcag/guidelines/#dfn-status-message" target="terms">status messages</a> can be <a href="https://w3c.github.io/wcag/guidelines/#dfn-programmatically-determined" target="terms">programmatically determined</a> through <a href="https://w3c.github.io/wcag/guidelines/#dfn-role" target="terms">role</a> or properties such that they can be presented to the user by <a href="https://w3c.github.io/wcag/guidelines/#dfn-assistive-technology" target="terms">assistive technologies</a> without receiving focus.
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#status-messages" style="font-weight: bold;">4.1.3 Status Messages</a> (Level AA): In content implemented using markup languages, <a href="#dfn-status-message">status messages</a> can be <a href="#dfn-programmatically-determined">programmatically determined</a> through <a href="#dfn-role">role</a> or properties such that they can be presented to the user by <a href="#dfn-assistive-technology">assistive technologies</a> without receiving focus.
          </p>
       </blockquote>
       <main>
@@ -45,7 +45,7 @@
                (or even delaying or supressing) status messages, as preferred by the user.
             </p>
             <p>The scope of this Success Criterion is specific to changes in content that involve
-               status messages. A <a href="https://www.w3.org/TR/WCAG21/#dfn-status-messages">status message</a> is a defined term in WCAG. There are two main criteria that determine whether something
+               status messages. A <a href="#dfn-status-message">status message</a> is a defined term in WCAG. There are two main criteria that determine whether something
                meets the definition of a status message:
             </p>
             <ol>
@@ -59,12 +59,12 @@
             <p>Information can be added to pages which does not meet the definition of a status message.
                For example, the list of results obtained from a search are not considered a status
                update and thus are not covered by this Success Criterion. However, brief text messages
-               displayed about the completion or status of the search, such as "Searching...", "18
-               results returned" or "No results returned" would be status updates if they do not
-               take focus. Examples of status messages are given in the section titled <a href="#status-examples">Status Message Examples</a> below.
+               displayed <em>about</em> the completion or status of the search, such as "Searching...", "18 results returned"
+               or "No results returned" would be status updates if they do not take focus. Examples
+               of status messages are given in the section titled <a href="#status-examples">Status Message Examples</a> below.
             </p>
             <p>This Success Criterion specifically addresses scenarios where new content is added
-               to the page without changing the user's context. <a href="https://www.w3.org/TR/WCAG21/#dfn-change-of-context">Changes of context</a>, by their nature, interrupt the user by taking focus. They are already surfaced by
+               to the page without changing the user's context. <a href="#dfn-changes-of-context">Changes of context</a>, by their nature, interrupt the user by taking focus. They are already surfaced by
                assistive technologies, and so have already met the goal to alert the user to new
                content. As such, messages that involve changes of context do not need to be considered
                and are not within the scope of this Success Criterion. Examples of scenarios that
@@ -99,7 +99,7 @@
          </section>
          <section id="examples">
             <h2>Examples</h2>
-            <section class="example" id="status-message-examples">
+            <section class="example" id="status-examples">
                				
                <h3>Status Message Examples</h3>
                			
@@ -241,7 +241,7 @@
                </section>
                			
             </section>
-            <section class="example" id="examples-of-changes-that-are-not-status-messages">
+            <section class="example" id="excepted-examples">
                				
                <h3>Examples of Changes That Are Not Status Messages</h3>
                
@@ -285,8 +285,8 @@
                   			
                   <li>
                      				
-                     <p>After a user completes an input that indicates they are unhappy, a series of new inputs
-                        are added to the page about customer satisfaction.
+                     <p>After a user completes a survey question which indicates they are unhappy, a series
+                        of new questions are added to the page about customer satisfaction.
                      </p>
                      				
                      <p>The new inputs do not meet the definition of status message. They do not "provide
@@ -297,8 +297,8 @@
                      				
                      <div class="note">
                         <div role="heading" class="note-title marker" aria-level="4">Note</div>
-                        <p>Creating a status message about these inputs being added, or notifying the user in
-                           advance that content changes may take place based on the user's response, are best
+                        <p>Creating a status message about these questions being added, or notifying the user
+                           in advance that content changes may take place based on the user's response, are best
                            practices but are not requirements in this scenario.
                         </p>
                      </div>
@@ -309,28 +309,26 @@
                </ul>
                			
             </section>
-            <section class="example" id="other-uses-of-live-regions">
+            <section class="example" id="other-uses-of-live-regions-or-alerts">
                		
-               <h3>Other uses of live regions</h3>
+               <h3>Other uses of live regions or alerts</h3>
                
                
-               <p>There are a number of considerations for content changes which are relevant to this
-                  Success Criterion, but which fall outside its scope. There are a number of situations
-                  where a short off screen message may be appropriate for screen reader users. For example:
+               <p>Live regions and alerts can be usefully applied in many situations where a change
+                  of content takes place which does not constitute a status message, as defined in this
+                  Success Criterion. However, there is a risk of making an application too "chatty"
+                  for a screen reader user. User testing should be carried out to ensure the appropriate
+                  level of feedback is achieved. The Advisory Techniques provide examples of how alerts
+                  or live regions can enhance the user experience.
                </p>
                
-               <ul>
-                  <li>A form field asks “How many children do you have?” and when the user responds with
-                     the number 5, five 'child name' fields are added to the form. Offscreen text may announce
-                     “5 form fields added”
-                  </li>
-                  
-                  <li>	A list of 15 products are on a page with a “See More” button at the bottom. When
-                     the user clicks the button, offscreen text announces, “15 products added to the page”
-                  </li>
-               </ul>
-               
-               <p>Several Advisory Techniques are incorporated into this Understanding document.</p>
+               <div class="note">
+                  <div role="heading" class="note-title marker" aria-level="4">Note</div>
+                  <p>The purpose of this success criterion is not to force authors to generate new status
+                     messages. Its intent is to ensure that when status messages <em>are</em> displayed, they are programmatically identified in a way that allows assistive technologies
+                     to present them to the user.
+                  </p>
+               </div>
                
                		
             </section>
@@ -357,11 +355,11 @@
                   					
                   <ul>
                      						
-                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA22">ARIA22: Using role=status to present status messages</a> in combination with any of the following:
+                     <li><a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22">ARIA22: Using role=status to present status messages</a> in combination with any of the following:
                         							
                         <ul>
                            								
-                           <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G199">G199: Providing success feedback when data is submitted successfully</a></li>
+                           <li><a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G199">G199: Providing success feedback when data is submitted successfully</a></li>
                            							
                         </ul>
                         							
@@ -380,22 +378,22 @@
                   					
                   <ul>
                      						
-                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA19">ARIA19: Using ARIA role=alert or Live Regions to Identify Errors</a> in combination with any of the following:
+                     <li><a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA19">ARIA19: Using ARIA role=alert or Live Regions to Identify Errors</a> in combination with any of the following:
                         							
                         <ul>
                            								
                            								
-                           <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G83">G83: Providing text descriptions to identify required fields that were not completed</a></li>
+                           <li><a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G83">G83: Providing text descriptions to identify required fields that were not completed</a></li>
                            								
-                           <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G84">G84: Providing a text description when the user provides information that is not in the
+                           <li><a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G84">G84: Providing a text description when the user provides information that is not in the
                                  list of allowed values</a></li>
                            								
-                           <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G85">G85: Providing a text description when user input falls outside the required format or
+                           <li><a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G85">G85: Providing a text description when user input falls outside the required format or
                                  values</a></li>
                            								
-                           <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G177">G177: Providing suggested correction text</a></li>
+                           <li><a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G177">G177: Providing suggested correction text</a></li>
                            								
-                           <li><a class="general" href="https://w3c.github.io/wcag/techniques/general/G194">G194: Providing spell checking and suggestions for text input</a></li>
+                           <li><a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G194">G194: Providing spell checking and suggestions for text input</a></li>
                            								
                            							
                         </ul>
@@ -423,12 +421,12 @@
                   <ul>
                      					
                      						
-                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA23">ARIA23: Using role=log to identify sequential information updates</a></li>
+                     <li><a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23">ARIA23: Using role=log to identify sequential information updates</a></li>
                      						
                      <li>Using <code>role="progressbar"</code> (future link)
                      </li>
                      						
-                     <li><a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA22">ARIA22: Using role=status to present status messages</a> in combination with <a class="general" href="https://w3c.github.io/wcag/techniques/general/G193">G193: Providing help by an assistant in the Web page</a></li>
+                     <li><a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA22">ARIA22: Using role=status to present status messages</a> in combination with <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G193">G193: Providing help by an assistant in the Web page</a></li>
                      					
                   </ul>
                   				
@@ -453,10 +451,9 @@
                   <li>Using <code>role="timer"</code> (future link)
                   </li>
                   					
-                  <li>Moving focus to new content, including by using <code>alertdialog</code> and <code>dialog</code>; <a class="aria" href="https://w3c.github.io/wcag/techniques/aria/ARIA18">ARIA18: Using aria-alertdialog to Identify Errors</a></li>
+                  <li>Where appropriate, moving focus to new content with <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18">ARIA18: Using aria-alertdialog to Identify Errors</a></li>
                   					
-                  <li>Support personalization by providing an option for users to set a preference on live
-                     content; <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR14">SCR14: Using scripts to make nonessential alerts optional</a></li>	
+                  <li>Supporting personalization with <a class="script" href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR14">SCR14: Using scripts to make nonessential alerts optional</a></li>	
                   	
                </ul>
             </section>
@@ -466,12 +463,11 @@
                   by the WCAG Working Group.
                </p>
                <ul>
+                  						
+                  <li><a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F103">F103: Failure of Success Criterion 4.1.3 due to providing status messages that cannot be
+                        programmatically determined through role or properties</a></li>
                   				
                   <li>Using <code>role="alert"</code> or <code>aria-live="assertive"</code> on content which is not important and time-sensitive (future link)
-                  </li>
-                  				
-                  <li>Using a <code>visibilitychange</code> event to hide or display a document without switching the document's live regions
-                     between active and inactive (future link)
                   </li>
                   			
                </ul>
@@ -484,7 +480,7 @@
                <definition xmlns="">
                   
                   
-                  <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="https://w3c.github.io/wcag/guidelines/#dfn-user-agent" target="terms">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
+                  <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
                      of users with disabilities that go beyond those offered by mainstream user agents
                      
                   </p>
@@ -576,13 +572,73 @@
                   
                </definition>
             </dd>
+            <dt id="dfn-changes-of-context">changes of context</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">major changes in the content of the <a href="#dfn-web-page">Web page</a> that, if made without user awareness, can disorient users who are not able to view
+                     the entire page simultaneously
+                     
+                  </p>
+                  
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">Changes in context include changes of:</p>
+                  
+                  
+                  <ol xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     
+                     <li>
+                        <a href="#dfn-user-agent">user agent</a>;
+                        
+                     </li>
+                     
+                     
+                     <li>
+                        <a href="#dfn-viewport">viewport</a>;
+                        
+                     </li>
+                     
+                     
+                     <li>focus;</li>
+                     
+                     
+                     <li>
+                        <a href="#dfn-content">content</a> that changes the meaning of the <a href="#dfn-web-page">Web page</a>
+                        
+                     </li>
+                     
+                     
+                  </ol>
+                  
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>A change of content is not always a change of context. Changes in content, such as
+                        an expanding outline, dynamic menu, or a tab control do not necessarily change the
+                        context, unless they also change one of the above (e.g., focus).
+                        
+                     </p>
+                  </div>
+                  
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Opening a new window, moving focus to a different component, going to a new page (including
+                     anything that would look to a user as if they had moved to a new page) or significantly
+                     re-arranging the content of a page are examples of changes of context.
+                     
+                  </p>
+                  
+                  
+               </definition>
+            </dd>
             <dt id="dfn-programmatically-determined">programmatically determined</dt>
             <dd>
                <definition xmlns="">
                   
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
-                     <a href="https://w3c.github.io/wcag/guidelines/#dfn-user-agent" target="terms">user agents</a>, including <a href="https://w3c.github.io/wcag/guidelines/#dfn-assistive-technology" target="terms">assistive technologies</a>, can extract and present this information to users in different modalities
+                     <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
                      
                   </p>
                   
@@ -632,10 +688,7 @@
                <definition xmlns="">
                   					
                   
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
-                  					
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml">change in content that is not a <a href="https://w3c.github.io/wcag/guidelines/#dfn-changes-of-context" target="terms">change of context</a>, and that provides information to the user on the success or results of an action,
+                  <p xmlns="http://www.w3.org/1999/xhtml">change in content that is not a <a href="#dfn-changes-of-context">change of context</a>, and that provides information to the user on the success or results of an action,
                      on the waiting state of an application, on the progress of a process, or on the existence
                      of errors
                   </p>

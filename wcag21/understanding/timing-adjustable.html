@@ -4,6 +4,7 @@
       <meta charset="UTF-8" />
       <title>Understanding Success Criterion 2.2.1: Timing Adjustable</title>
       <link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/TR/2016/base" />
+      <link rel="stylesheet" type="text/css" href="base.css" />
       <link rel="stylesheet" type="text/css" href="understanding.css" />
       <link rel="stylesheet" type="text/css" href="slicenav.css" />
    </head>
@@ -12,7 +13,7 @@
          <ul id="navigation">
             <li><a href="." title="Table of Contents">Contents</a></li>
             <li><a href="enough-time"><abbr title="Guideline">GL</abbr>: Enough Time</a></li>
-            <li><a href="keyboard">Previous <abbr title="Success Criterion">SC</abbr>: Non-text Content</a></li>
+            <li><a href="character-key-shortcuts">Previous <abbr title="Success Criterion">SC</abbr>: Character Key Shortcuts</a></li>
             <li><a href="pause-stop-hide">Next <abbr title="Success Criterion">SC</abbr>: Pause, Stop, Hide</a></li>
          </ul>
       </nav>
@@ -22,14 +23,13 @@
             <li><a href="#intent">Intent</a></li>
             <li><a href="#benefits">Benefits</a></li>
             <li><a href="#examples">Examples</a></li>
-            <li><a href="#resources">Related Resources</a></li>
             <li><a href="#techniques">Techniques</a></li>
             <li><a href="#key-terms">Key Terms</a></li>
          </ul>
       </nav>
       <h1>Understanding Success Criterion 2.2.1: Timing Adjustable</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://w3c.github.io/wcag/guidelines/#timing-adjustable" style="font-weight: bold;">2.2.1 Timing Adjustable</a> (Level A): For each time limit that is set by the content, at least one of the following is true:
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#timing-adjustable" style="font-weight: bold;">2.2.1 Timing Adjustable</a> (Level A): For each time limit that is set by the content, at least one of the following is true:
          </p>
          <dl>
             
@@ -98,7 +98,7 @@
             <dd>
                
                
-               <p>The time limit is <a href="https://w3c.github.io/wcag/guidelines/#dfn-essential" target="terms">essential</a> and extending it would invalidate the activity; or
+               <p>The time limit is <a href="#dfn-essential">essential</a> and extending it would invalidate the activity; or
                   
                </p>
                
@@ -121,7 +121,7 @@
          </dl>
          <p class="note">This success criterion helps ensure that users can complete tasks without unexpected
             changes in content or context that are a result of a time limit. This success criterion
-            should be considered in conjunction with <a href="https://w3c.github.io/wcag/guidelines/#on-focus">Success Criterion 3.2.1</a>, which puts limits on changes of content or context as a result of user action.
+            should be considered in conjunction with <a href="https://www.w3.org/TR/WCAG21/#on-focus">Success Criterion 3.2.1</a>, which puts limits on changes of content or context as a result of user action.
             
          </p>
       </blockquote>
@@ -151,7 +151,7 @@
             </p>
             <p>	It also includes content that is advancing or updating at a rate beyond the user's
                ability to read and/or understand it. In other words, animated, moving or scrolling
-               content introduces a time limit on a users ability to read content.
+               content introduces a time limit on a user's ability to read content.
                
             </p>
             <p>In some cases, however, it is not possible to change the time limit (for example,
@@ -235,7 +235,7 @@
                
             </p>
             <p>See also 
-               <a href="no-timing">2.2.1: No Timing</a>.
+               <a href="no-timing">2.2.3: No Timing</a>.
                
             </p>
          </section>
@@ -332,10 +332,6 @@
                
             </ul>
          </section>
-         <section id="resources">
-            <h2>Related Resources</h2>
-            <p>Resources are for information purposes only, no endorsement implied.</p>
-         </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
@@ -360,7 +356,7 @@
                      
                      <li>
                         										           
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G133">G133: Providing a checkbox on the first page of a multipart form that allows users to ask
+                        <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G133">G133: Providing a checkbox on the first page of a multipart form that allows users to ask
                            for longer session time limit or no session time limit</a>
                         									         
                         
@@ -369,7 +365,7 @@
                      
                      <li>
                         										           
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G198">G198: Providing a way for the user to turn the time limit off</a>
+                        <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G198">G198: Providing a way for the user to turn the time limit off</a>
                         									         
                         
                      </li>
@@ -390,7 +386,7 @@
                      
                      <li>
                         										           
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G198">G198: Providing a way for the user to turn the time limit off</a>
+                        <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G198">G198: Providing a way for the user to turn the time limit off</a>
                         									         
                         
                      </li>
@@ -398,7 +394,7 @@
                      
                      <li>
                         										           
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G180">G180: Providing the user with a means to set the time limit to 10 times the default time
+                        <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G180">G180: Providing the user with a means to set the time limit to 10 times the default time
                            limit</a>
                         									         
                         
@@ -407,28 +403,11 @@
                      
                      <li>
                         										           
-                        <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR16">SCR16: Providing a script that warns the user a time limit is about to expire</a>
+                        <a class="script" href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR16">SCR16: Providing a script that warns the user a time limit is about to expire</a>
                         										           
                         <strong>AND</strong>
                         										           
-                        <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR1">SCR1: Allowing the user to extend the default time limit </a>
-                        									         
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        										           
-                        <a class="flash" href="https://w3c.github.io/wcag/techniques/flash/FLASH19">FLASH19: Providing a script that warns the user a time limit is about to expire and provides
-                           a way to extend it</a>
-                        									         
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        										           
-                        <a class="flash" href="https://w3c.github.io/wcag/techniques/flash/FLASH24">FLASH24: Allowing the user to extend the default time limit</a>
+                        <a class="script" href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR1">SCR1: Allowing the user to extend the default time limit </a>
                         									         
                         
                      </li>
@@ -436,7 +415,7 @@
                      
                      <li>
                         
-                        <a class="silverlight" href="https://w3c.github.io/wcag/techniques/silverlight/SL21">SL21: Replacing A Silverlight Timed Animation With a Nonanimated Element</a>
+                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL21">SL21: Replacing A Silverlight Timed Animation With a Nonanimated Element</a>
                         
                         
                      </li>
@@ -457,7 +436,7 @@
                      
                      <li>
                         										           
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G4">G4: Allowing the content to be paused and restarted from where it was paused</a>
+                        <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G4">G4: Allowing the content to be paused and restarted from where it was paused</a>
                         									         
                         
                      </li>
@@ -465,7 +444,7 @@
                      
                      <li>
                         										           
-                        <a class="general" href="https://w3c.github.io/wcag/techniques/general/G198">G198: Providing a way for the user to turn the time limit off</a>
+                        <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G198">G198: Providing a way for the user to turn the time limit off</a>
                         									         
                         
                      </li>
@@ -473,7 +452,7 @@
                      
                      <li>
                         										           
-                        <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR33">SCR33: Using script to scroll content, and providing a mechanism to pause it</a>
+                        <a class="script" href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR33">SCR33: Using script to scroll content, and providing a mechanism to pause it</a>
                         									         
                         
                      </li>
@@ -481,7 +460,7 @@
                      
                      <li>
                         										           
-                        <a class="script" href="https://w3c.github.io/wcag/techniques/client-side-script/SCR36">SCR36: Providing a mechanism to allow users to display moving, scrolling, or auto-updating
+                        <a class="script" href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR36">SCR36: Providing a mechanism to allow users to display moving, scrolling, or auto-updating
                            text in a static window or area</a>
                         									         
                         
@@ -493,13 +472,6 @@
                   
                </section>
             </section>
-            <section id="advisory">
-               <h3>Advisory Techniques</h3>
-               <p>Although not required for conformance, the following additional techniques should
-                  be considered in order to make content more accessible. Not all techniques can be
-                  used or would be effective in all situations.
-               </p>
-            </section>
             <section id="failure">
                <h3>Failures</h3>
                <p>The following are common mistakes that are considered failures of this Success Criterion
@@ -510,8 +482,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F40">F40: Failure of Success Criterion 2.2.1 and 2.2.4 due to using meta redirect with a time
-                        limit </a>
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F40">F40: Failure due to using meta redirect with a time limit </a>
                      								       
                      
                   </li>
@@ -519,7 +490,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F41">F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to using meta refresh to
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F41">F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to using meta refresh to
                         reload the page</a>
                      								       
                      
@@ -528,7 +499,7 @@
                   
                   <li>
                      									         
-                     <a class="failure" href="https://w3c.github.io/wcag/techniques/failures/F58">F58: Failure of Success Criterion 2.2.1 due to using server-side techniques to automatically
+                     <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F58">F58: Failure of Success Criterion 2.2.1 due to using server-side techniques to automatically
                         redirect pages after a time-out</a>
                      								       
                      
