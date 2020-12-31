@@ -1,8 +1,9 @@
 
 # WCAG 2.xの原文ファイル
 
-[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、WCAG 2.x とその関連文について、W3Cのソースファイルを保管しているレポジトリです。
+[ウェブアクセシビリティ基盤委員会 (WAIC) 翻訳ワーキンググループ (WG4)](http://waic.jp/committee/wg4/) が管理する、WCAG 2.x とその関連文書について、W3Cのソースファイルを保管しているレポジトリです。
 
+WCAG 2.1に関連する翻訳文書のレポジトリは、[waic/wcag21](https://github.com/waic/wcag21)になります。
 
 ## Understanding（解説書）のコミット
 
@@ -19,4 +20,4 @@
 
 比較コミットはありません。
 
-なお、[868b7ca](https://github.com/waic/w3c-wcag/commit/868b7ca38146ba7ae004f9307d2ec50cc52545ad)のコミットは、[w3c/wcag](https://github.com/w3c)のコミット[dfad86](https://github.com/w3c/wcag/tree/0a32c3b5411db477945ce4fcb0632af294bef3f9/techniques)と同一のファイルです。
+なお、[868b7ca](https://github.com/waic/w3c-wcag/commit/868b7ca38146ba7ae004f9307d2ec50cc52545ad)のコミットは、[w3c/wcag](https://github.com/w3c)のコミット[0a32c3](https://github.com/w3c/wcag/tree/0a32c3b5411db477945ce4fcb0632af294bef3f9/techniques)と同一のファイルです。
