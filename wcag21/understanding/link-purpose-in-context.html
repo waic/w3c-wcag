@@ -25,6 +25,7 @@
             <li><a href="#examples">Examples</a></li>
             <li><a href="#resources">Related Resources</a></li>
             <li><a href="#techniques">Techniques</a></li>
+            <li><a href="#test-rules">Test Rules</a></li>
             <li><a href="#key-terms">Key Terms</a></li>
          </ul>
       </nav>
@@ -32,8 +33,7 @@
       <blockquote class="scquote">
          <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context" style="font-weight: bold;">2.4.4 Link Purpose (In Context)</a> (Level A): The <a href="#dfn-link-purpose">purpose of each link</a> can be determined from the link text alone or from the link text together with its
             <a href="#dfn-programmatically-determined-link-context">programmatically determined link context</a>, except where the purpose of the link would be <a href="#dfn-ambiguous-to-users-in-general">ambiguous to users in general</a>.
-            
-         </p>
+            </p>
       </blockquote>
       <main>
          <section id="intent">
@@ -46,16 +46,14 @@
                to choose from this list of links. Meaningful link text also helps those who wish
                to tab from link to link. Meaningful links help users choose which links to follow
                without requiring complicated strategies to understand the page.
-               
-            </p>
+               </p>
             <p>The text of, or associated with, the link is intended to describe the purpose of the
                link. In cases where the link takes one to a document or a web application, the name
                of the document or web application would be sufficient to describe the purpose of
                the link (which is to take you to the document or web application). Note that it is
                not required to use the name of the document or web application; other things may
                also describe the purpose of the link. 
-               
-            </p>
+               </p>
             <p>
                
                <a href="page-titled" class="understanding">Success Criterion 2.4.2</a> deals with the titles of pages. Here also, the name of a document or web application
@@ -63,8 +61,7 @@
                Having the link and the title agree, or be very similar, is good practice and provides
                continuity between the link 'clicked on' and the web page that the user lands on.
                
-               
-            </p>
+               </p>
             <p>In some situations, authors may want to provide part of the description of the link
                in logically related text that provides the context for the link. In this case the
                user should be able to identify the purpose of the link without moving focus from
@@ -75,27 +72,23 @@
                the link itself. Alternatively, authors may choose to use an ARIA technique to associate
                additional
                text on the page with the link.
-               
-            </p>
+               </p>
             <p>This context will be most usable if it precedes the link. (For instance, if you must
                use ambiguous link text, it is better to put it at the end of the sentence that describes
                its destination, rather than putting the ambiguous phrase at the beginning of the
                sentence.) If the description follows the link, there can be confusion and difficulty
                for screen reader users who are reading through the page in order (top to bottom).
                
-               
-            </p>
+               </p>
             <p>It is a best practice for links with the same destination to have consistent text
                (and this is a requirement per 
                <a href="consistent-identification" class="guideline">Success Criterion 3.2.4</a> for pages in a set). It is also a best practice for links with different purposes
                and destinations to have different link text.
-               
-            </p>
+               </p>
             <p>A best practice for links to <a href="#dfn-conforming-alternate-version">conforming alternate versions</a> is to ensure that the link text to the conforming alternate version indicates in
                link text that the page it leads to represents the more accessible version. This information
                may also be provided in text - the goal is to ensure that the end user knows what
-               the purpose of the link is. 
-            </p>
+               the purpose of the link is. </p>
             <p>The Success Criterion includes an exception for links for which the purpose of the
                link cannot be determined from the information on the Web page. In this situation,
                the person with the disability is not at a disadvantage; there is no additional context
@@ -103,8 +96,7 @@
                on the Web page that can be used to interpret the purpose of the link must be made
                available in the link text or programmatically associated with the link to satisfy
                the Success Criterion.
-               
-            </p>
+               </p>
             <div class="note">
                <div role="heading" class="note-title marker" aria-level="3">Note</div>
                <div>
@@ -114,16 +106,13 @@
                      or obscured. For instance, a game may have links identified only as door #1, door
                      #2, and door #3. This link text would be sufficient because the purpose of the links
                      is to create suspense for all users.
-                     
-                  </p>
+                     </p>
                   
-                  
-               </div>
+                  </div>
             </div>
             <p>See also 
                <a href="link-purpose-link-only">2.4.9: Link Purpose (Link Only)</a>.
-               
-            </p>
+               </p>
          </section>
          <section id="benefits">
             <h2>Benefits</h2>
@@ -133,14 +122,12 @@
                <li>This Success Criterion helps people with motion impairment by letting them skip links
                   that they are not interested in, avoiding the keystrokes needed to visit the referenced
                   content and then returning to the current content.
-                  
-               </li>
+                  </li>
                
                
                <li>People with cognitive limitations will not become disoriented by multiple means of
                   navigation to and from content they are not interested in.
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -148,11 +135,9 @@
                   exploring the link's context. 
                   
                   
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="examples">
             <h2>Examples</h2>
@@ -166,19 +151,16 @@
                      								       
                      <strong>A link contains text that gives a description of the information at that URI</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>
                      A page contains the sentence "There was much bloodshed during the Medieval period
                      of history." Where "Medieval period of history" is a link.
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -188,19 +170,16 @@
                      								       
                      <strong>A link is preceded by a text description of the information at that URI</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>
                      A page contains the sentence "Learn more about the Government of Ireland's Commission
                      on Electronic Voting at Go Vote!" where "Go Vote!" is a link.
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -210,8 +189,7 @@
                      								       
                      <strong>Both an icon and text are included in the same link</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>
@@ -219,11 +197,9 @@
                      Voting" are combined to make a single link. The alt text for the icon is null, since
                      the purpose of the link is already described by the text of the link next to the icon.
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -233,8 +209,7 @@
                      								       
                      <strong>A list of book titles</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>
@@ -243,11 +218,9 @@
                      for each format), the first link for each book is the title of the book, the second
                      link says "PDF" and the third says, "mp3."
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -257,8 +230,7 @@
                      								       
                      <strong>News article summaries</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>
@@ -268,14 +240,11 @@
                      link.
                      
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="resources">
             <h2>Related Resources</h2>
@@ -287,35 +256,30 @@
                   								       
                   <a href="https://www.nngroup.com/articles/using-link-titles-to-help-users-predict-where-they-are-going/">Using Link Titles to Help Users Predict Where They Are Going</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
                   <a href="http://webaim.org/techniques/hypertext/">WebAIM Techniques for Hypertext Links</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   	
                   <a href="http://www.rnib.org.uk/blogs/expert-series?Name=Hidden%20barriers">Hidden barriers - out of sight</a>
                   							     
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
                that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                it is not necessary to use these particular techniques. For information on using other
-               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
-            </p>
+               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
             <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ol>
@@ -325,24 +289,21 @@
                      									         
                      <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G91">G91: Providing link text that describes the purpose of a link</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
                      									         
                      <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H30">H30: Providing link text that describes the purpose of a link for anchor elements</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
                      									         
                      <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H24">H24:  Providing text alternatives for the area elements of image maps </a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   
@@ -359,30 +320,25 @@
                            											             
                            <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G189">G189: Providing a control near the beginning of the Web page that changes the link text</a>
                            										           
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
                            											             
                            <a class="script" href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR30">SCR30: Using scripts to change the link text</a>
                            										           
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
                            											             
                            <a class="flash" href="https://www.w3.org/WAI/WCAG21/Techniques//FLASH7">FLASH7: </a>
                            										           
-                           
-                        </li>
+                           </li>
                         
-                        
-                     </ul>
+                        </ul>
                      
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -390,8 +346,7 @@
                      <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G53">G53: Identifying the purpose of a link using link text combined with the text of the enclosing
                         sentence</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -399,8 +354,7 @@
                      
                      <p>Providing a supplemental description of the purpose of a link using one of the following
                         techniques:
-                        
-                     </p>
+                        </p>
                      
                      
                      <ul>
@@ -410,22 +364,18 @@
                            											             
                            <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H33">H33: Supplementing link text with the title attribute</a>
                            										           
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
                            											             
                            <a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C7">C7: Using CSS to hide a portion of the link text</a>
                            										           
-                           
-                        </li>
+                           </li>
                         
-                        
-                     </ul>
+                        </ul>
                      
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -435,8 +385,7 @@
                         Identifying the purpose of a link using link text combined with programmatically determined
                         link context using one of the following techniques:
                         
-                        
-                     </p>
+                        </p>
                      
                      
                      <ul>
@@ -446,16 +395,14 @@
                            
                            <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA7">ARIA7: Using aria-labelledby for link purpose</a>
                            
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
                            
                            <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8">ARIA8: Using aria-label for link purpose</a>
                            
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
@@ -463,16 +410,14 @@
                            <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H77">H77: Identifying the purpose of a link using link text combined with its enclosing list
                               item</a>
                            										           
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
                            											             
                            <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H78">H78: Identifying the purpose of a link using link text combined with its enclosing paragraph</a>
                            										           
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
@@ -480,8 +425,7 @@
                            <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H79">H79: Identifying the purpose of a link in a data table using the link text combined with
                               its enclosing table cell and associated table header cells</a>
                            										           
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
@@ -489,14 +433,11 @@
                            <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H81">H81: Identifying the purpose of a link in a nested list using link text combined with the
                               parent list item under which the list is nested</a>
                            										           
-                           
-                        </li>
+                           </li>
                         
-                        
-                     </ul>
+                        </ul>
                      
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -507,8 +448,7 @@
                         <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G91">G91: Providing link text that describes the purpose of a link</a> 
                         
                         <strong>AND</strong> Semantically indicating links using one of the following techniques:
-                        
-                     </p>
+                        </p>
                      
                      
                      <ul>
@@ -519,40 +459,26 @@
                            <a class="pdf" href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/PDF11">PDF11: Providing links and link text using the Link annotation and the /Link structure element
                               in PDF documents</a>
                            
-                           
-                        </li>
+                           </li>
                         
                         
                         <li>
                            
                            <a class="pdf" href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/PDF13">PDF13: Providing replacement text using the /Alt entry for links in PDF documents</a>
                            
-                           
-                        </li>
+                           </li>
                         
-                        
-                        <li>
-                           
-                           <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL18">SL18: Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</a>
-                           
-                           
-                        </li>
-                        
-                        
-                     </ul>
+                        </ul>
                      
-                     
-                  </li>
+                     </li>
                   
-                  
-               </ol>
+                  </ol>
             </section>
             <section id="advisory">
                <h3>Advisory Techniques</h3>
                <p>Although not required for conformance, the following additional techniques should
                   be considered in order to make content more accessible. Not all techniques can be
-                  used or would be effective in all situations.
-               </p>
+                  used or would be effective in all situations.</p>
                <ul>
                   
                   
@@ -560,16 +486,14 @@
                      									         
                      <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
                      									         
                      <a class="flash" href="https://www.w3.org/WAI/WCAG21/Techniques//FLASH5">FLASH5: </a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -577,17 +501,14 @@
                      <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H80">H80: Identifying the purpose of a link using link text combined with the preceding heading
                         element</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
-                  
-               </ul>
+                  </ul>
             </section>
             <section id="failure">
                <h3>Failures</h3>
                <p>The following are common mistakes that are considered failures of this Success Criterion
-                  by the WCAG Working Group.
-               </p>
+                  by the WCAG Working Group.</p>
                <ul>
                   
                   
@@ -596,8 +517,7 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F63">F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that
                         is not related to the link</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -605,201 +525,600 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F89">F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not providing an accessible
                         name for an image which is the only content in a link</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
-                  
-               </ul>
+                  </ul>
             </section>
+         </section>
+         <section id="test-rules">
+            <h2>Test Rules</h2>
+            <p>The following are Test Rules for certain aspects of this Success Criterion. It is
+               not necessary to use these particular Test Rules to check for conformance with WCAG,
+               but they are defined and approved test methods. For information on using Test Rules,
+               see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.</p>
+            <ul>
+               <li><a href="/WAI/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/">Link has non-empty accessible name</a></li>
+            </ul>
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
+            <dt id="dfn-accessibility-supported">accessibility supported</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">supported by users' <a href="#dfn-assistive-technology">assistive technologies</a> as well as the accessibility features in browsers and other <a href="#dfn-user-agent">user agents</a>
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">To qualify as an accessibility-supported use of a Web content technology (or feature
+                     of a technology), both 1 and 2 must be satisfied for a Web content technology (or
+                     feature):
+                     </p>
+                  
+                  <ol xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     <li>
+                        
+                        <p>
+                           <strong>The way that the <a href="#dfn-technology">Web content technology</a> is used must be supported by users' assistive technology (AT). </strong> This means that the way that the technology is used has been tested for interoperability
+                           with users' assistive technology in the <a href="#dfn-human-language">human language(s)</a> of the content,
+                           </p>
+                        
+                        <p>
+                           <strong>AND</strong>
+                           </p>
+                        </li>
+                     
+                     <li>
+                        
+                        <p>
+                           <strong>The Web content technology must have accessibility-supported user agents that are
+                              available to users. </strong> This means that at least one of the following four statements is true:
+                           </p>
+                        
+                        <ol>
+                           
+                           <li>
+                              
+                              <p>The technology is supported natively in widely-distributed user agents that are also
+                                 accessibility supported (such as HTML and CSS);
+                                 </p>
+                              
+                              <p>
+                                 <strong>OR</strong>
+                                 </p>
+                              </li>
+                           
+                           <li>
+                              
+                              <p>The technology is supported in a widely-distributed plug-in that is also accessibility
+                                 supported;
+                                 </p>
+                              
+                              <p>
+                                 <strong>OR</strong>
+                                 </p>
+                              </li>
+                           
+                           <li>
+                              
+                              <p>The content is available in a closed environment, such as a university or corporate
+                                 network, where the user agent required by the technology and used by the organization
+                                 is also accessibility supported;
+                                 </p>
+                              
+                              <p>
+                                 <strong>OR</strong>
+                                 </p>
+                              </li>
+                           
+                           <li>
+                              
+                              <p>The user agent(s) that support the technology are accessibility supported and are
+                                 available for download or purchase in a way that:
+                                 </p>
+                              
+                              <ul>
+                                 
+                                 <li>does not cost a person with a disability any more than a person without a disability
+                                    <strong>and</strong>
+                                    </li>
+                                 
+                                 <li>is as easy to find and obtain for a person with a disability as it is for a person
+                                    without disabilities.
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ol>
+                        </li>
+                     </ol>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The Accessibility Guidelines Working Group and the W3C do not specify which or how
+                        much support by assistive
+                        technologies there must be for a particular use of a Web technology in order for it
+                        to be classified as accessibility supported. (See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#support-level">Level of Assistive Technology Support Needed for "Accessibility Support"</a>.)
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Web technologies can be used in ways that are not accessibility supported as long
+                        as they are not <a href="#dfn-relied-upon">relied upon</a> and the page as a whole meets the conformance requirements, including <a href="#cc4">Conformance Requirement 4</a> and <a href="#cc5">Conformance Requirement 5</a>.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>When a <a href="#dfn-technology">Web Technology</a> is used in a way that is "accessibility supported," it does not imply that the entire
+                        technology or all uses of the technology are supported. Most technologies, including
+                        HTML, lack support for at least one feature or use. Pages conform to WCAG only if
+                        the uses of the technology that are accessibility supported can be relied upon to
+                        meet WCAG requirements.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>When citing Web content technologies that have multiple versions, the version(s) supported
+                        should be specified.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>One way for authors to locate uses of a technology that are accessibility supported
+                        would be to consult compilations of uses that are documented to be accessibility supported.
+                        (See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#documented-lists">Understanding Accessibility-Supported Web Technology Uses</a>.) Authors, companies, technology vendors, or others may document accessibility-supported
+                        ways of using Web content technologies. However, all ways of using technologies in
+                        the documentation would need to meet the definition of accessibility-supported Web
+                        content technologies above.
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
             <dt id="dfn-ambiguous-to-users-in-general">ambiguous to users in general</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">the purpose cannot be determined from the link and all information of the Web page
                      presented to the user simultaneously with the link (i.e., readers without disabilities
                      would not know what a link would do until they activated it)
-                     
-                  </p>
-                  
+                     </p>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">The word guava in the following sentence "One of the notable exports is guava" is
                      a link. The link could lead to a definition of guava, a chart listing the quantity
                      of guava exported or a photograph of people harvesting guava. Until the link is activated,
                      all readers are unsure and the person with a disability is not at any disadvantage.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-assistive-technology">assistive technology</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
+                     of users with disabilities that go beyond those offered by mainstream user agents
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>functionality provided by assistive technology includes alternative presentations
+                        (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
+                        voice), additional navigation or orientation mechanisms, and content transformations
+                        (e.g., to make tables more accessible).
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Assistive technologies often communicate data and messages with mainstream user agents
+                        by using and monitoring APIs.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The distinction between mainstream user agents and assistive technologies is not absolute.
+                        Many mainstream user agents provide some features to assist individuals with disabilities.
+                        The basic difference is that mainstream user agents target broad and diverse audiences
+                        that usually include people with and without disabilities. Assistive technologies
+                        target narrowly defined populations of users with specific disabilities. The assistance
+                        provided by an assistive technology is more specific and appropriate to the needs
+                        of its target users. The mainstream user agent may provide important functionality
+                        to assistive technologies like retrieving Web content from program objects or parsing
+                        markup into identifiable bundles.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Assistive technologies that are important in the context of this document include
+                     the following:
+                     </p>
+                  
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
                      
-                  </p>
+                     <li>screen magnifiers, and other visual reading assistants, which are used by people with
+                        visual, perceptual and physical print disabilities to change text font, size, spacing,
+                        color, synchronization with speech, etc. in order to improve the visual readability
+                        of rendered text and images;
+                        </li>
+                     
+                     <li>screen readers, which are used by people who are blind to read textual information
+                        through synthesized speech or braille;
+                        </li>
+                     
+                     <li>text-to-speech software, which is used by some people with cognitive, language, and
+                        learning disabilities to convert text into synthetic speech;
+                        </li>
+                     
+                     <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                     
+                     <li>alternative keyboards, which are used by people with certain physical disabilities
+                        to simulate the keyboard (including alternate keyboards that use head pointers, single
+                        switches, sip/puff and other special input devices.);
+                        </li>
+                     
+                     <li>alternative pointing devices, which are used by people with certain physical disabilities
+                        to simulate mouse pointing and button activations.
+                        </li>
+                     </ul>
+                  </definition>
+            </dd>
+            <dt id="dfn-conformance">conformance</dt>
+            <dd>
+               <definition xmlns="">
                   
-                  
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                  </definition>
             </dd>
             <dt id="dfn-conforming-alternate-version">conforming alternate version</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">version that</p>
-                  
                   
                   <ol xmlns="http://www.w3.org/1999/xhtml">
                      
-                     
                      <li>conforms at the designated level, and</li>
                      
-                     
                      <li>provides all of the same information and <a href="#dfn-functionality">functionality</a> in the same <a href="#dfn-human-language">human language</a>, and
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>is as up to date as the non-conforming content, and</li>
-                     
                      
                      <li>
                         
                         <p>for which at least one of the following is true:</p>
                         
-                        
                         <ol>
-                           
                            
                            <li>the conforming version can be reached from the non-conforming page via an <a href="#dfn-accessibility-supported">accessibility-supported</a>
                               <a href="#dfn-mechanism">mechanism</a>, or
-                              
-                           </li>
-                           
+                              </li>
                            
                            <li>the non-conforming version can only be reached from the conforming version, or</li>
                            
-                           
                            <li>the non-conforming version can only be reached from a conforming page that also provides
                               a mechanism to reach the conforming version
-                              
-                           </li>
-                           
-                           
-                        </ol>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ol>
-                  
+                              </li>
+                           </ol>
+                        </li>
+                     </ol>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>In this definition, "can only be reached" means that there is some mechanism, such
                         as a conditional redirect, that prevents a user from "reaching" (loading) the non-conforming
                         page unless the user had just come from the conforming version.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>The alternate version does not need to be matched page for page with the original
                         (e.g., the conforming alternate version may consist of multiple pages).
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>If multiple language versions are available, then conforming alternate versions are
                         required for each language offered.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Alternate versions may be provided to accommodate different technology environments
                         or user groups. Each version should be as conformant as possible. One version would
                         need to be fully conformant in order to meet <a href="#cc1">conformance requirement 1</a>.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>The conforming alternative version does not need to reside within the scope of conformance,
                         or even on the same Web site, as long as it is as freely available as the non-conforming
                         version.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Alternate versions should not be confused with <a href="#dfn-supplemental-content">supplementary content</a>, which support the original page and enhance comprehension.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Setting user preferences within the content to produce a conforming version is an
                         acceptable mechanism for reaching another version as long as the method used to set
                         the preferences is accessibility supported.
-                        
-                     </p>
+                        </p>
                   </div>
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#conforming-alt-versions">Understanding Conforming Alternate Versions</a>
-                     
-                  </p>
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-content">content</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-functionality">functionality</dt>
+            <dd>
+               <definition xmlns="">
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+                     <a href="#dfn-process">processes</a> and outcomes achievable through user action
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-human-language">human language</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
+                     with humans
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>See also <a href="#dfn-sign-language">sign language</a>.
+                        </p>
+                  </div>
+                  </definition>
             </dd>
             <dt id="dfn-link-purpose">link purpose</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">nature of the result obtained by activating a hyperlink</p>
+                  </definition>
+            </dd>
+            <dt id="dfn-mechanism">mechanism</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+                     <a href="#dfn-process">process</a> or technique for achieving a result
+                     </p>
                   
-               </definition>
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
+                  </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-presentation">presentation</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-process">process</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Successful use of a series of Web pages on a shopping site requires users to view
+                     alternative products, prices and offers, select products, submit an order, provide
+                     shipping information and provide payment information.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
+                     the registration form can be accessed.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-programmatically-determined">programmatically determined</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
+                     <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Determined in a markup language from elements and attributes that are accessed directly
+                     by commonly available assistive technology.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Determined from technology-specific data structures in a non-markup language and exposed
+                     to assistive technology via an accessibility API that is supported by commonly available
+                     assistive technology.
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-programmatically-determined-link-context">programmatically determined link context</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">additional information that can be <a href="#dfn-programmatically-determined">programmatically determined</a> from <a href="#dfn-relationships">relationships</a> with a link, combined with the link text, and presented to users in different modalities
-                     
-                  </p>
-                  
+                     </p>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">In HTML, information that is programmatically determinable from a link in English
                      includes text that is in the same paragraph, list, or table cell as the link or in
                      a table header cell that is associated with the table cell that contains the link.
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Since screen readers interpret punctuation, they can also provide the context from
                         the current sentence, when the focus is on a link in that sentence.
-                        
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-relationships">relationships</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">meaningful associations between distinct pieces of content</p>
+                  </definition>
+            </dd>
+            <dt id="dfn-relied-upon">relied upon</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
                      </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-sign-language">sign language</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
+                     or body positions to convey meaning
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-structure">structure</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <ol xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                        </li>
+                     
+                     <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                        </li>
+                     </ol>
+                  </definition>
+            </dd>
+            <dt id="dfn-supplemental-content">supplemental content</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">additional <a href="#dfn-content">content</a> that illustrates or clarifies the primary content
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An audio version of a <a href="#dfn-web-page">Web page</a>.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An illustration of a complex <a href="#dfn-process">process</a>.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A paragraph summarizing the major outcomes and recommendations made in a research
+                     study.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-technology">technology</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+                     <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>As used in these guidelines "Web Technology" and the word "technology" (when used
+                        alone) both refer to Web Content Technologies.
+                        </p>
                   </div>
                   
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Web content technologies may include markup languages, data formats, or programming
+                        languages that authors may use alone or in combination to create end-user experiences
+                        that range from static Web pages to synchronized media presentations to dynamic Web
+                        applications.
+                        </p>
+                  </div>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
+                     Flash, and JavaScript.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-user-agent">user agent</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-web-page">web page</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
+                     that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Although any "other resources" would be rendered together with the primary resource,
+                        they would not necessarily be rendered simultaneously with each other.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
+                        within the scope of conformance to be considered a Web page.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web resource including all embedded images and media.</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
+                     lives entirely at http://example.com/mail, but includes an inbox, a contacts area
+                     and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
+                     to display, but do not change the URI of the page as a whole.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A customizable portal site, where users can choose content to display from a set of
+                     different content modules.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
+                     interactive shopping environment where you visually move around in a store dragging
+                     products off of the shelves around you and into a visual shopping cart in front of
+                     you. Clicking on a product causes it to be demonstrated with a specification sheet
+                     floating alongside. This might be a single-page Web site or just one page within a
+                     Web site.
+                     </p>
+                  </definition>
             </dd>
          </section>
       </main>

@@ -30,8 +30,7 @@
       <h1>Understanding Success Criterion 3.2.1: On Focus</h1>
       <blockquote class="scquote">
          <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#on-focus" style="font-weight: bold;">3.2.1 On Focus</a> (Level A): When any <a href="#dfn-user-interface-component">user interface component</a> receives focus, it does not initiate a <a href="#dfn-changes-of-context">change of context</a>.
-            
-         </p>
+            </p>
       </blockquote>
       <main>
          <section id="intent">
@@ -41,8 +40,7 @@
                an event when it receives focus must not change the context.          Examples of
                changing context when a component receives focus include, but are not limited to:
                
-               
-            </p>
+               </p>
             <ul>
                
                
@@ -54,8 +52,7 @@
                
                <li>focus is changed to another component when that component receives focus;</li>
                
-               
-            </ul>
+               </ul>
             <p>Focus may be moved to a control either via the keyboard (e.g. tabbing to a control)
                or the mouse (e.g. clicking on a text field). Moving the mouse over a control does
                not move the focus
@@ -63,20 +60,17 @@
                on a control may also activate the control (e.g. button), which may, in turn, initiate
                a change in context.
                					
-               
-            </p>
+               </p>
             <div class="note">
                <div role="heading" class="note-title marker" aria-level="3">Note</div>
                <div>
                   
                   
                   <p>What is meant by "component" here is also sometimes called "user interface element"
-                     or "user interface component''.
-                     
-                  </p>
+                     or "user interface component".
+                     </p>
                   
-                  
-               </div>
+                  </div>
             </div>
          </section>
          <section id="benefits">
@@ -86,11 +80,9 @@
                
                <li>This Success Criterion helps people with visual disabilities, cognitive limitations,
                   and motor impairments by reducing the chance that a change of context will occur unexpectedly.
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="examples">
             <h2>Examples</h2>
@@ -104,8 +96,7 @@
                      								       
                      <strong>Example 1:  A dropdown menu</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>A dropdown menu on a page allows users to choose between jump destinations. If the
@@ -113,11 +104,9 @@
                      or enter key) it will jump to a new page.  However, if the person moves down to a
                      choice and either hits the escape or the tab key to move out of the pulldown menu
                      – it does not jump to a new screen as the focus shifts out of the dropdown menu. 
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -130,8 +119,7 @@
                         
                         </strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>
@@ -140,22 +128,18 @@
                      the keyboard focus away from the control every time the user attempts to tab past
                      the field.
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
                that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                it is not necessary to use these particular techniques. For information on using other
-               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
-            </p>
+               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
             <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ol>
@@ -165,11 +149,9 @@
                      									         
                      <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G107">G107: Using "activate" rather than "focus" as a trigger for changes of context</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
-                  
-               </ol>
+                  </ol>
                <div class="note">
                   <div role="heading" class="note-title marker" aria-level="4">Note</div>
                   <div>
@@ -178,19 +160,16 @@
                      <p>A change of content is not always a 
                         <a href="#dfn-changes-of-context">change of context</a>. This success criterion is automatically met if changes in content are not also changes
                         of context.
-                        
-                     </p>
+                        </p>
                      
-                     
-                  </div>
+                     </div>
                </div>
             </section>
             <section id="advisory">
                <h3>Advisory Techniques</h3>
                <p>Although not required for conformance, the following additional techniques should
                   be considered in order to make content more accessible. Not all techniques can be
-                  used or would be effective in all situations.
-               </p>
+                  used or would be effective in all situations.</p>
                <ul>
                   
                   
@@ -198,25 +177,21 @@
                      									         
                      <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G200">G200: Opening new windows and tabs from a link only when necessary</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
                      									         
                      <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G201">G201: Giving users advanced warning when opening a new window</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
-                  
-               </ul>
+                  </ul>
             </section>
             <section id="failure">
                <h3>Failures</h3>
                <p>The following are common mistakes that are considered failures of this Success Criterion
-                  by the WCAG Working Group.
-               </p>
+                  by the WCAG Working Group.</p>
                <ul>
                   
                   
@@ -225,122 +200,266 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F55">F55:  Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove
                         focus when focus is received</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
-                  
-               </ul>
+                  </ul>
             </section>
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
+            <dt id="dfn-assistive-technology">assistive technology</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
+                     of users with disabilities that go beyond those offered by mainstream user agents
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>functionality provided by assistive technology includes alternative presentations
+                        (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
+                        voice), additional navigation or orientation mechanisms, and content transformations
+                        (e.g., to make tables more accessible).
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Assistive technologies often communicate data and messages with mainstream user agents
+                        by using and monitoring APIs.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The distinction between mainstream user agents and assistive technologies is not absolute.
+                        Many mainstream user agents provide some features to assist individuals with disabilities.
+                        The basic difference is that mainstream user agents target broad and diverse audiences
+                        that usually include people with and without disabilities. Assistive technologies
+                        target narrowly defined populations of users with specific disabilities. The assistance
+                        provided by an assistive technology is more specific and appropriate to the needs
+                        of its target users. The mainstream user agent may provide important functionality
+                        to assistive technologies like retrieving Web content from program objects or parsing
+                        markup into identifiable bundles.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Assistive technologies that are important in the context of this document include
+                     the following:
+                     </p>
+                  
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     <li>screen magnifiers, and other visual reading assistants, which are used by people with
+                        visual, perceptual and physical print disabilities to change text font, size, spacing,
+                        color, synchronization with speech, etc. in order to improve the visual readability
+                        of rendered text and images;
+                        </li>
+                     
+                     <li>screen readers, which are used by people who are blind to read textual information
+                        through synthesized speech or braille;
+                        </li>
+                     
+                     <li>text-to-speech software, which is used by some people with cognitive, language, and
+                        learning disabilities to convert text into synthetic speech;
+                        </li>
+                     
+                     <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                     
+                     <li>alternative keyboards, which are used by people with certain physical disabilities
+                        to simulate the keyboard (including alternate keyboards that use head pointers, single
+                        switches, sip/puff and other special input devices.);
+                        </li>
+                     
+                     <li>alternative pointing devices, which are used by people with certain physical disabilities
+                        to simulate mouse pointing and button activations.
+                        </li>
+                     </ul>
+                  </definition>
+            </dd>
             <dt id="dfn-changes-of-context">changes of context</dt>
             <dd>
                <definition xmlns="">
                   
-                  
-                  <p xmlns="http://www.w3.org/1999/xhtml">major changes in the content of the <a href="#dfn-web-page">Web page</a> that, if made without user awareness, can disorient users who are not able to view
+                  <p xmlns="http://www.w3.org/1999/xhtml">major changes that, if made without user awareness, can disorient users who are not
+                     able to view
                      the entire page simultaneously
-                     
-                  </p>
-                  
+                     </p>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">Changes in context include changes of:</p>
                   
-                  
                   <ol xmlns="http://www.w3.org/1999/xhtml">
-                     
                      
                      <li>
                         <a href="#dfn-user-agent">user agent</a>;
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>
                         <a href="#dfn-viewport">viewport</a>;
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>focus;</li>
                      
-                     
                      <li>
                         <a href="#dfn-content">content</a> that changes the meaning of the <a href="#dfn-web-page">Web page</a>
-                        
-                     </li>
-                     
-                     
-                  </ol>
-                  
+                        </li>
+                     </ol>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>A change of content is not always a change of context. Changes in content, such as
                         an expanding outline, dynamic menu, or a tab control do not necessarily change the
                         context, unless they also change one of the above (e.g., focus).
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">Opening a new window, moving focus to a different component, going to a new page (including
                      anything that would look to a user as if they had moved to a new page) or significantly
                      re-arranging the content of a page are examples of changes of context.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-content">content</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-presentation">presentation</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-structure">structure</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <ol xmlns="http://www.w3.org/1999/xhtml">
                      
-                  </p>
+                     <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                        </li>
+                     
+                     <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                        </li>
+                     </ol>
+                  </definition>
+            </dd>
+            <dt id="dfn-user-agent">user agent</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-user-interface-component">user interface component</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
                      function
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Multiple user interface components may be implemented as a single programmatic element.
-                        Components here is not tied to programming techniques, but rather to what the user
+                        "Components" here is not tied to programming techniques, but rather to what the user
                         perceives as separate controls.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>User interface components include form elements and links as well as components generated
                         by scripts.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>What is meant by "component" or "user interface component" here is also sometimes
                         called "user interface element".
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">An applet has a "control" that can be used to move through content by line or page
                      or random access. Since each of these would need to have a name and be settable independently,
                      they would each be a "user interface component."
-                     
-                  </p>
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-viewport">viewport</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">object in which the user agent presents content</p>
                   
-               </definition>
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The <a href="#dfn-user-agent">user agent</a> presents content through one or more viewports. Viewports include windows, frames,
+                        loudspeakers, and virtual magnifying glasses. A viewport may contain another viewport
+                        (e.g., nested frames). Interface components created by the user agent such as prompts,
+                        menus, and alerts are not viewports.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>This definition is based on <a href="https://www.w3.org/TR/WAI-USERAGENT/glossary.html">User Agent Accessibility Guidelines 1.0 Glossary</a> [[UAAG10]].
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-web-page">web page</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
+                     that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Although any "other resources" would be rendered together with the primary resource,
+                        they would not necessarily be rendered simultaneously with each other.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
+                        within the scope of conformance to be considered a Web page.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web resource including all embedded images and media.</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
+                     lives entirely at http://example.com/mail, but includes an inbox, a contacts area
+                     and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
+                     to display, but do not change the URI of the page as a whole.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A customizable portal site, where users can choose content to display from a set of
+                     different content modules.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
+                     interactive shopping environment where you visually move around in a store dragging
+                     products off of the shelves around you and into a visual shopping cart in front of
+                     you. Clicking on a product causes it to be demonstrated with a specification sheet
+                     floating alongside. This might be a single-page Web site or just one page within a
+                     Web site.
+                     </p>
+                  </definition>
             </dd>
          </section>
       </main>

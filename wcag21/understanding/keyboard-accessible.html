@@ -27,8 +27,7 @@
       </nav>
       <h1>Understanding Guideline 2.1: Keyboard Accessible</h1>
       <blockquote class="scquote">
-         <p>Guideline <a href="https://www.w3.org/TR/WCAG21/#keyboard-accessible" style="font-weight: bold;">2.1 Keyboard Accessible</a>: Make all functionality available from a keyboard.
-         </p>
+         <p>Guideline <a href="https://www.w3.org/TR/WCAG21/#keyboard-accessible" style="font-weight: bold;">2.1 Keyboard Accessible</a>: Make all functionality available from a keyboard.</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -40,21 +39,18 @@
                their output. No other input form has this flexibility or is universally supported
                and operable by people with different disabilities, as long as the keyboard input
                is not time-dependent.
-               
-            </p>
+               </p>
             <p>Note that providing universal keyboard input does not mean that other types of input
                should not be supported. Optimized speech input, optimized mouse/pointer input, etc.,
                are also good. The key is to provide keyboard input and control as well.
-               
-            </p>
+               </p>
             <p>Some devices do not have native keyboards—for example, a PDA or cell phone. If these
                devices have a Web browsing capability, however, they will have some means of generating
                text or "keystrokes". This guideline uses the term "
                <a href="#dfn-keyboard-interface">keyboard interface</a>" to acknowledge that Web content should be controlled from keystrokes that may come
                from a keyboard, keyboard emulator, or other hardware or software that generates keyboard
                or text input.
-               
-            </p>
+               </p>
          </section>
          <section id="success-criteria">
             <h2>Success Criteria for this Guideline</h2>
@@ -71,42 +67,31 @@
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">
                      <a href="#dfn-process">processes</a> and outcomes achievable through user action
-                     
-                  </p>
-                  
-                  
-               </definition>
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-keyboard-interface">keyboard interface</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">interface used by software to obtain keystroke input</p>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <div>
                         
                         <p>A keyboard interface allows users to provide keystroke input to programs even if the
-                           native technology does not contain a keyboard.
-                        </p>
-                        
+                           native technology does not contain a keyboard.</p>
                         
                         <p class="example">A touchscreen PDA has a keyboard interface built into its operating system as well
                            as a connector for external keyboards. Applications on the PDA can use the interface
                            to obtain keyboard input either from an external keyboard or from other applications
                            that provide simulated keyboard output, such as handwriting interpreters or speech-to-text
-                           applications with "keyboard emulation" functionality.
-                        </p>
-                        
-                     </div>
+                           applications with "keyboard emulation" functionality.</p>
+                        </div>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
@@ -114,12 +99,25 @@
                         mouse emulator, such as MouseKeys, does not qualify as operation through a keyboard
                         interface because operation of the program is through its pointing device interface,
                         not through its keyboard interface.
-                        
-                     </p>
+                        </p>
                   </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-process">process</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Successful use of a series of Web pages on a shopping site requires users to view
+                     alternative products, prices and offers, select products, submit an order, provide
+                     shipping information and provide payment information.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
+                     the registration form can be accessed.
+                     </p>
+                  </definition>
             </dd>
          </section>
       </main>

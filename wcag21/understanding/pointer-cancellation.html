@@ -29,41 +29,30 @@
       </nav>
       <h1>Understanding Success Criterion 2.5.2: Pointer Cancellation</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#pointer-cancellation" style="font-weight: bold;">2.5.2 Pointer Cancellation</a> (Level A): For <a href="#dfn-functionality">functionality</a> that can be operated using a <a href="#dfn-single-pointer">single pointer</a>, at least one of the following is true:
-         </p>
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#pointer-cancellation" style="font-weight: bold;">2.5.2 Pointer Cancellation</a> (Level A): For <a href="#dfn-functionality">functionality</a> that can be operated using a <a href="#dfn-single-pointer">single pointer</a>, at least one of the following is true:</p>
          <dl>
-            
             
             <dt>No Down-Event</dt>
             
-            <dd>The <a href="#dfn-down-event">down-event</a> of the pointer is not used to execute any part of the function;
-            </dd>
-            						
+            <dd>The <a href="#dfn-down-event">down-event</a> of the pointer is not used to execute any part of the function;</dd>
             
             <dt>Abort or Undo</dt>
             
             <dd>Completion of the function is on the <a href="#dfn-up-event">up-event</a>, and a <a href="#dfn-mechanism">mechanism</a> is available to abort the function before completion or to undo the function after
-               completion;
-            </dd>
-            						
+               completion;</dd>
             
             <dt>Up Reversal</dt>
             
             <dd>The up-event reverses any outcome of the preceding down-event;</dd>
-            						
             
             <dt>Essential</dt>
             
-            <dd>Completing the function on the down-event is <a href="#dfn-essential">essential</a>.
-            </dd>
-            						
-            
-         </dl>
+            <dd>Completing the function on the down-event is <a href="#dfn-essential">essential</a>.</dd>
+            </dl>
          <p class="note">Functions that emulate a keyboard or numeric keypad key press are considered essential.</p>
          <p class="note">This requirement applies to web content that interprets pointer actions (i.e. this
             does not apply to actions that are required to operate the user agent or assistive
-            technology).
-         </p>
+            technology).</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -72,15 +61,13 @@
                or erroneous pointer input. People with various disabilities can inadvertently initiate
                touch or mouse events with unwanted results. Each of the following subsections roughly
                aligns with the bullets of this Success Criterion, and outlines a means of allowing
-               users to cancel pointer operations.
-            </p>
+               users to cancel pointer operations.</p>
             <section id="up-event-activation-or-completion">
                			
                <h3>Up-Event activation or completion</h3>
                			
                <p>The most accessible way to incorporate pointer cancellation is to make activation
-                  occur on the up-event.
-               </p>
+                  occur on the up-event.</p>
                
                
                <p>Up-event activation refers to the activation of a target when the pointer is released.
@@ -88,20 +75,16 @@
                   only occurs when the finger is lifted while still being within the target boundary.
                   Similarly in mouse interaction, the up-event occurs when the mouse button is released
                   while the cursor is still within the boundary of the initial target set when the mouse
-                  button was pressed.
-               </p>
+                  button was pressed.</p>
                
                <p>Authors can reduce the problem of users inadvertently triggering an action by using
                   generic platform activation/click events that activate functionality on the up-event.
                   For example, the <code>click</code> event in JavaScript triggers on release of the primary mouse button, and is an example
-                  of an implicit up-event. Despite its name, the <code>click</code> event is device-independent and also works for touch and keyboard interaction.
-               </p>
+                  of an implicit up-event. Despite its name, the <code>click</code> event is device-independent and also works for touch and keyboard interaction.</p>
                
                <p>The preference for up-events is implicit in the Success Criterion wording of the first
-                  bullet: <q>The down-event of the pointer is not used to execute any part of the function.</q> Authors meet the first bullet by using only the up-event.
-               </p> 
-               			
-            </section>
+                  bullet: <q>The down-event of the pointer is not used to execute any part of the function.</q> Authors meet the first bullet by using only the up-event.</p> 
+               			</section>
             <section id="up-event-abort-or-undo">
                
                <h3>Up-Event Abort or Undo</h3>
@@ -114,14 +97,12 @@
                   activation. Users who have difficulty accurately using a mouse or touchscreen benefit
                   greatly from this basic behaviour. They normally receive visual feedback when an item
                   is pressed. If they discover they have selected the wrong item, they can cancel the
-                  action by moving their pointer or finger away from the target before releasing.
-               </p>
+                  action by moving their pointer or finger away from the target before releasing.</p>
                			
                
                <p>For more complex interactions, such as drag and drop, the down- and up-events may
                   initiate and end a series of actions to complete a process. For example, with drag
-                  and drop, the item may be:
-               </p>
+                  and drop, the item may be:</p>
                
                <ol>
                   
@@ -130,8 +111,7 @@
                   <li>moved to a new location, while still being depressed, and</li>
                   
                   <li>released (up-event) to conclude the drop action.</li>
-                  
-               </ol>
+                  </ol>
                
                <p>In such a complex action, the need for an Abort or Undo function increases. Designers
                   may elect to confirm the move through something like a confirmation dialog or an undo
@@ -139,10 +119,8 @@
                   the ability to Abort the action can be acheived if, before completing step 3, the
                   user returns the selected item to its original location and concludes the process
                   there. If other parts of the screen disallow a move, the user can conclude the drag
-                  and drop there, effectively nullifying the operation.
-               </p> 
-               			
-            </section>
+                  and drop there, effectively nullifying the operation.</p> 
+               			</section>
             <section id="up-reversal">
                
                <h3>Up Reversal</h3>
@@ -152,49 +130,39 @@
                   as where a transient popup appears (or a video plays) when the user presses on an
                   object (down-event), but the popup (or video) disappears as soon as the user releases
                   the pointer (up-event). Since the up-event reverses the preceding down event, the
-                  user is returned to their prior point, and has effectively cancelled the operation.
-               </p>
-               			
-            </section>
+                  user is returned to their prior point, and has effectively cancelled the operation.</p>
+               			</section>
             <section id="down-event">
                
                <h3>Down-Event</h3>
                
                <p>Completing the function on the down-event is only permitted when it is essential that
-                  the up-event not be used.
-               </p>
+                  the up-event not be used.</p>
                
                <p>The most prevalent essential down-event activation occurs in keyboard emulation. On
                   a physical keyboard, keys by default activate on the down-event -- a letter appears
                   when the key is pressed. If a software keyboard emulator tried to override this expected
                   behaviour by making letters appear when the key is released, the behaviour would be
-                  unexpected and would adversely affect expected interaction.
-               </p>
+                  unexpected and would adversely affect expected interaction.</p>
                
                <p>Note that a keyboard has a built-in Backspace or Delete button, which effectively
                   provides an Undo option. Undo is not a requirement of the down-event Essential exception;
                   however, providing an easy way for users to undo any action is a recommended practice
                   (and may be a functional necessity), even where it is not a requirement of this Success
-                  Criterion.
-               </p>
+                  Criterion.</p>
                			
                <p>Other examples where the timing of an activation is essential and requires the down-event
-                  would be:
-               </p>
+                  would be:</p>
                			
                <ul>
                   				
                   <li>An activity that emulates a physical on-press trigger, such as when playing an on-screen
-                     piano keyboard. Activation on the up-event would significantly alter the desired behaviour.
-                  </li>
+                     piano keyboard. Activation on the up-event would significantly alter the desired behaviour.</li>
                   				
                   <li>A program for shooting skeets where waiting for the "up" event would invalidate the
-                     precise timing necessary for the activation.
-                  </li>
-                  			
-               </ul>
-               			
-            </section>
+                     precise timing necessary for the activation.</li>
+                  			</ul>
+               			</section>
          </section>
          <section id="benefits">
             <h2>Benefits</h2>
@@ -205,40 +173,33 @@
                <li>Helps people with visual disabilities, cognitive limitations, and motor impairments
                   by reducing the chance that a control will be accidentally activated or an action
                   will occur unexpectedly, and also ensures that where complex controls are activated,
-                  a means of Undoing or Aborting the action is available.
-               </li>
+                  a means of Undoing or Aborting the action is available.</li>
                					
                <li>Individuals who are unable to detect changes of context are less likely to become
-                  disoriented while navigating a site.
-               </li>
-               				
-            </ul>
+                  disoriented while navigating a site.</li>
+               				</ul>
          </section>
          <section id="examples">
             <h2>Examples</h2>
             <ul>
                				
                <li>For interface elements that have a single tap or long press as input, the corresponding
-                  event is triggered when the finger is lifted inside that element.
-               </li>
+                  event is triggered when the finger is lifted inside that element.</li>
                				
                
                <li>A drag-and-drop interface allows users to sort vertically stacked cards by picking
                   up one card with the pointer (down-event), move it to a new position, and insert it
                   at the new location when the pointer is released (up-event). Releasing the pointer
                   outside the drop target area reverts the action, i.e., it moves the card back to the
-                  old position before the interaction started.
-               </li>
-               			
-            </ul>
+                  old position before the interaction started.</li>
+               			</ul>
          </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
                that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                it is not necessary to use these particular techniques. For information on using other
-               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
-            </p>
+               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
             <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ul>
@@ -247,112 +208,228 @@
                   						
                   <li><a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G212">G212: Using native controls to ensure functionality is triggered on the up-event.</a></li>
                   						
-                  <li>@@ Touch events are only triggered when touch is removed from a control.</li>		
-                  					
-               </ul>
+                  <li>Touch events are only triggered when touch is removed from a control (Potential future
+                     technique)</li>		
+                  					</ul>
             </section>
             <section id="failure">
                <h3>Failures</h3>
                <p>The following are common mistakes that are considered failures of this Success Criterion
-                  by the WCAG Working Group.
-               </p>
+                  by the WCAG Working Group.</p>
                <ul>
                   					
                   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F101">F101: Failure of Success Criterion 2.5.2 due to activating a control on the down-event</a></li>
-                  				
-               </ul>
+                  				</ul>
             </section>
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
+            <dt id="dfn-assistive-technology">assistive technology</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
+                     of users with disabilities that go beyond those offered by mainstream user agents
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>functionality provided by assistive technology includes alternative presentations
+                        (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
+                        voice), additional navigation or orientation mechanisms, and content transformations
+                        (e.g., to make tables more accessible).
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Assistive technologies often communicate data and messages with mainstream user agents
+                        by using and monitoring APIs.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The distinction between mainstream user agents and assistive technologies is not absolute.
+                        Many mainstream user agents provide some features to assist individuals with disabilities.
+                        The basic difference is that mainstream user agents target broad and diverse audiences
+                        that usually include people with and without disabilities. Assistive technologies
+                        target narrowly defined populations of users with specific disabilities. The assistance
+                        provided by an assistive technology is more specific and appropriate to the needs
+                        of its target users. The mainstream user agent may provide important functionality
+                        to assistive technologies like retrieving Web content from program objects or parsing
+                        markup into identifiable bundles.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Assistive technologies that are important in the context of this document include
+                     the following:
+                     </p>
+                  
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     <li>screen magnifiers, and other visual reading assistants, which are used by people with
+                        visual, perceptual and physical print disabilities to change text font, size, spacing,
+                        color, synchronization with speech, etc. in order to improve the visual readability
+                        of rendered text and images;
+                        </li>
+                     
+                     <li>screen readers, which are used by people who are blind to read textual information
+                        through synthesized speech or braille;
+                        </li>
+                     
+                     <li>text-to-speech software, which is used by some people with cognitive, language, and
+                        learning disabilities to convert text into synthetic speech;
+                        </li>
+                     
+                     <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                     
+                     <li>alternative keyboards, which are used by people with certain physical disabilities
+                        to simulate the keyboard (including alternate keyboards that use head pointers, single
+                        switches, sip/puff and other special input devices.);
+                        </li>
+                     
+                     <li>alternative pointing devices, which are used by people with certain physical disabilities
+                        to simulate mouse pointing and button activations.
+                        </li>
+                     </ul>
+                  </definition>
+            </dd>
+            <dt id="dfn-conformance">conformance</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                  </definition>
+            </dd>
             <dt id="dfn-down-event">down-event</dt>
             <dd>
                <definition xmlns="">
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">platform event that occurs  when the trigger stimulus of a pointer is depressed</p>
-                  	        
-                  <p xmlns="http://www.w3.org/1999/xhtml">The down-event may have different names on different platforms, such as "touchstart"
-                     or "mousedown".
-                  </p>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml">The down-event may have different names on different platforms, such as "touchstart"
+                     or "mousedown".</p>
+                  </definition>
             </dd>
             <dt id="dfn-essential">essential</dt>
             <dd>
                <definition xmlns="">
-                  					
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
                      <strong>and</strong> information and functionality cannot be achieved in another way that would conform
-                     
-                  </p>
-                  				
-                  
-               </definition>
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-functionality">functionality</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">
                      <a href="#dfn-process">processes</a> and outcomes achievable through user action
-                     
-                  </p>
-                  
-                  
-               </definition>
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-mechanism">mechanism</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">
                      <a href="#dfn-process">process</a> or technique for achieving a result
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
                   </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-process">process</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Successful use of a series of Web pages on a shopping site requires users to view
+                     alternative products, prices and offers, select products, submit an order, provide
+                     shipping information and provide payment information.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
+                     the registration form can be accessed.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-relied-upon">relied upon</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-single-pointer">single pointer</dt>
             <dd>
                <definition xmlns="">
-                  	
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">pointer input that operates with one point of contact with the screen, including single
-                     taps and clicks, double-taps and clicks, long presses, and path-based gestures
-                  </p>
-                  				
+                     taps and clicks, double-taps and clicks, long presses, and path-based gestures</p>
+                  </definition>
+            </dd>
+            <dt id="dfn-technology">technology</dt>
+            <dd>
+               <definition xmlns="">
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+                     <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>As used in these guidelines "Web Technology" and the word "technology" (when used
+                        alone) both refer to Web Content Technologies.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Web content technologies may include markup languages, data formats, or programming
+                        languages that authors may use alone or in combination to create end-user experiences
+                        that range from static Web pages to synchronized media presentations to dynamic Web
+                        applications.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
+                     Flash, and JavaScript.
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-up-event">up-event</dt>
             <dd>
                <definition xmlns="">
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">platform event that occurs  when the trigger stimulus of a pointer is released</p>
-                  	        
-                  <p xmlns="http://www.w3.org/1999/xhtml">The up-event may have different names on different platforms, such as "touchend" or
-                     "mouseup".
-                  </p>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml">The up-event may have different names on different platforms, such as "touchend" or
+                     "mouseup".</p>
+                  </definition>
+            </dd>
+            <dt id="dfn-user-agent">user agent</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                     </p>
+                  </definition>
             </dd>
          </section>
       </main>

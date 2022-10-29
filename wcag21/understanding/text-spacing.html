@@ -30,10 +30,9 @@
       </nav>
       <h1>Understanding Success Criterion 1.4.12: Text Spacing</h1>
       <blockquote class="scquote">
-         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#text-spacing" style="font-weight: bold;">1.4.12 Text Spacing</a> (Level AA): In content implemented using markup languages that support the following <a href="#dfn-text">text</a> 
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#text-spacing" style="font-weight: bold;">1.4.12 Text Spacing</a> (Level AA): In content implemented using markup languages that support the following <a href="#dfn-text">text</a>
             <a href="#dfn-style-property">style properties</a>, no loss of content or functionality occurs by setting all of the following and by
-            changing no other style property:
-         </p>
+            changing no other style property:</p>
          <ul>
             
             <li>Line height (line spacing) to at least 1.5 times the font size;</li>
@@ -43,31 +42,26 @@
             <li>Letter spacing (tracking) to at least 0.12 times the font size;</li>
             
             <li>Word spacing to at least 0.16 times the font size.</li>
-            
-         </ul>
+            </ul>
          <p>Exception: Human languages and scripts that do not make use of one or more of these
             text style properties in written text can conform using only the properties that exist
-            for that combination of language and script.
-         </p>
+            for that combination of language and script.</p>
       </blockquote>
       <main>
          <section id="intent">
             <h2>Intent</h2>
-            <p>The intent of this Success Criterion (SC) is to ensure that people can override author
-               specified text spacing to improve their reading experience. Each of the requirements
-               stipulated in the SC's four bullets helps ensure text styling can be adapted by the
-               user to suit their needs.
-            </p>
+            <p>The intent of this Success Criterion (SC) is to ensure that when people override author
+               specified text spacing to improve their reading experience, content is still readable
+               and operable. Each of the requirements stipulated in the SC's four bullets helps ensure
+               text styling can be adapted by the user to suit their needs.</p>
             <p>The specified metrics set a minimum baseline. The values in between the author's metrics
-               and the metrics specified in this SC should not have loss of content or functionality.
-            </p>
-            <p>This SC focuses on the ability to increase spacing between lines, words, letters,
-               and paragraphs. Any combination of these may assist a user with effectively reading
-               text. As well, ensuring users can override author settings for spacing also significantly
-               increases the likelihood other style preferences can be set by the user. For example,
-               a user may need to change to a wider font family than the author has set in order
-               to effectively read text. 
-            </p>
+               and the metrics specified in this SC should not have loss of content or functionality.</p>
+            <p>This SC focuses on the adaptability of content to an increase in spacing between lines,
+               words, letters, and paragraphs. Any combination of these may assist a user with effectively
+               reading text. As well, ensuring that content correctly adapts when users override
+               author settings for spacing also significantly increases the likelihood other style
+               preferences can be set by the user. For example, a user may need to change to a wider
+               font family than the author has set in order to effectively read text. </p>
             <section id="author-responsibility-">
                
                <h3>Author Responsibility </h3>
@@ -80,8 +74,15 @@
                   1 through 3 in Effects of Not Allowing for Spacing Override. The values in the SC
                   are a baseline. Authors are encouraged to surpass the values specified, not see them
                   as a ceiling to build to. If the user chooses to go beyond the metrics specified any
-                  resulting loss of content or functionality is the user's responsibility.
-               </p>
+                  resulting loss of content or functionality is the user's responsibility.</p>
+               
+               <p>Further, this SC is not concerned with <em>how</em> users change the line height and spacing metrics. It does not require that content
+                  implement its own mechanisms to allow users to do this. It is not a failure of the
+                  content if a user agent or platform does not provide a way for users to do this. Content
+                  does not fail this SC if the method chosen by the user - for instance, the use of
+                  an extension or bookmarklet - fails to correctly set the line height and spacing text
+                  properties on the content (provided that the content is not actively and purposely
+                  preventing the properties from being added).</p>
                
                <section id="applicability">
                   
@@ -92,28 +93,21 @@
                      Sheet/HTML technologies are quite able to allow for the specified spacing metrics.
                      Plugin technologies would need to have a built-in ability to modify styles to the
                      specified metrics. Currently, this SC does not apply to PDF as it is not implemented
-                     using markup.
-                  </p>
+                     using markup.</p>
                   
-                  <p>Examples of text that are typically not affected by <a href="#dfn-style-property">style properties</a> and not expected to adapt are:
-                  </p>
+                  <p>Examples of text that are typically not affected by <a href="#dfn-style-property">style properties</a> and not expected to adapt are:</p>
                   
                   <ul>
                      
                      <li>Video captions embedded directly into the video frames and not provided as an associated
-                        caption file
-                     </li>
+                        caption file</li>
                      
                      <li><a href="#dfn-image-of-text">Images of text</a></li>
-                     
-                  </ul>
+                     </ul>
                   
-                  <p>For this SC, <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element">canvas</a> implementations of text are considered to be <a href="#dfn-image-of-text">images of text</a>.
-                  </p>
-                  	
-               </section>
-               	
-            </section>
+                  <p>For this SC, <a href="https://www.w3.org/TR/html5/scripting-1.html#the-canvas-element">canvas</a> implementations of text are considered to be <a href="#dfn-image-of-text">images of text</a>.</p>
+                  	</section>
+               	</section>
             <section id="user-responsibility">
                
                <h3>User Responsibility</h3>
@@ -124,17 +118,14 @@
                   the author’s original spacing or spacing within the bounds of the SC. Regardless,
                   the user needs the flexibility to adjust spacing within the bounds set in the SC without
                   loss of content or functionality. Such changes may be achieved via user stylesheet,
-                  bookmarklet, extension, or application.
-               </p>
-               	
-            </section>
+                  bookmarklet, extension, or application.</p>
+               	</section>
             <section id="effects-of-not-allowing-for-spacing-override">
                
                <h3>Effects of Not Allowing for Spacing Override</h3>
                
                <p>The following images show some types of  failures when authors do not take into consideration
-                  that users may override spacing to the metrics specified in this Success Criterion.
-               </p>
+                  that users may override spacing to the metrics specified in this Success Criterion.</p>
                		
                <section id="text-cut-off">
                   
@@ -142,31 +133,26 @@
                   
                   <p>The bottom portion of the words "Your Needs" is cut off in a heading making that text
                      unreadable in Figure 1. It should read  "We Provide a Mobile Application Service to
-                     Meet Your Needs."
-                  </p>
+                     Meet Your Needs."</p>
                   
                   <figure id="figure-text-cut">
                      
-                     <figcaption>Figure 1Vertical text cut off  is a failure.</figcaption>
-                     <img src="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/images/b/ba/Spacing_cutoff_fail_vertical.png" alt="Heading text truncated vertically." width="420" height="190" />         
-                     
-                  </figure>
+                     <figcaption>Figure 1 Vertical text cut off is a failure.</figcaption>
+                     <img src="img/spacing_cutoff_fail_vertical.png" alt="Heading text truncated vertically." width="420" height="190" />         
+                     </figure>
                   
                   <p>In Figure 2 the last portion of text is cut off in 3 side-by-side  headings. The 1st
                      heading should read "A cog in the wheel." But it reads "A cog in the whe". Only half
                      of the second "e" is visible and the letter "l" is completely missing. The  2nd heading
                      should read "A penny for your thoughts". But it reads "A penny for your". The 3rd
-                     should read "Back to the drawing board." But it reads "Back to the drawi". 
-                  </p>
+                     should read "Back to the drawing board." But it reads "Back to the drawi". </p>
                   
                   <figure id="figure-horiz-text-cut">
                      
-                     <figcaption>Figure 2Horizontal text cut off is a  failure.</figcaption>
-                     <img src="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/images/c/c2/Spacing_cutoff_fail_horizontal.png" alt="3 side-by-side headings with truncated text." width="509" height="184" />         
-                     
-                  </figure>
-                  		
-               </section>
+                     <figcaption>Figure 2 Horizontal text cut off is a failure.</figcaption>
+                     <img src="img/spacing_cutoff_fail_horizontal.png" alt="3 side-by-side headings with truncated text." width="509" height="184" />         
+                     </figure>
+                  		</section>
                		
                <section id="text-overlap">
                   
@@ -176,37 +162,29 @@
                      Input from Groups and Programs" overlap the following sentence. That sentence should
                      read, "You are invited to share  ideas and areas of interest related to the  integration
                      of technology from a group or program perspective." But the words "You are invited
-                     to share  ideas" are obscured and unreadable.
-                  </p>
+                     to share  ideas" are obscured and unreadable.</p>
                   
                   <figure id="figure-overlapping-text">
                      
-                     <figcaption>Figure 3Overlapping text is a failure.</figcaption>
-                     <img src="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/images/1/11/Spacing_overlap_fail.png" alt="Heading text overlaps part of paragraph text." width="510" height="170" />            
-                     
-                  </figure>
-                  		
-               </section>
-               	
-            </section>
+                     <figcaption>Figure 3 Overlapping text is a failure.</figcaption>
+                     <img src="img/spacing_overlap_fail.png" alt="Heading text overlaps part of paragraph text." width="510" height="170" />            
+                     </figure>
+                  		</section>
+               	</section>
          </section>
          <section id="benefits">
             <h2>Benefits</h2>
             <ul>
                
                <li>People with low vision who require increased space between lines, words, and letters
-                  are able to read text.
-               </li>
+                  are able to read text.</li>
                
                <li>People with dyslexia may increase space between lines, words, and letters to increase
-                  reading speed.
-               </li>
+                  reading speed.</li>
                
                <li>Although not required by this SC, white space between blocks of text can help people
-                  with cognitive disabilities discern sections and call out boxes.
-               </li>
-               
-            </ul>
+                  with cognitive disabilities discern sections and call out boxes.</li>
+               </ul>
          </section>
          <section id="examples">
             <h2>Examples</h2>
@@ -216,8 +194,7 @@
                <li>Text fits within the bounds of its containing box without being cut off.</li>
                
                <li>Text fits within the bounds of its containing box without overlapping other boxes.</li>
-               
-            </ol>
+               </ol>
          </section>
          <section id="resources">
             <h2>Related Resources</h2>
@@ -229,15 +206,13 @@
                <p>The  grounds for this SC are <a href="#resources">based on research</a>. The metrics chosen as measures are based on the <a href="http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995">McLeish</a> study. She ran from .04 to .25 em tests. McLeish found an increasing curve in reading
                   speed of actual materials up to .25, but it  started to flatten at .20. Previous studies
                   that reported no improvement started at .5em. Right at the flat point.  <a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2017Jun/0047.html">Wayne E. Dick, Ph.D. analyzed the McLeish study</a> and translated from points. Dr. Dick recommended the metrics that the Working Group
-                  adopted.
-               </p>
+                  adopted.</p>
                		
                <section id="languages-and-scripts">
                   
                   <h4>Languages and Scripts</h4>
                   
-                  <p>Roughly 480 different languages and scripts <a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2018Feb/0001.html">have been tested</a>.  Maximum spacing adjustments allowed by the SC were set on the following 3 pages:
-                  </p>
+                  <p>Roughly 480 different languages and scripts <a href="https://lists.w3.org/Archives/Public/public-low-vision-a11y-tf/2018Feb/0001.html">have been tested</a>.  Maximum spacing adjustments allowed by the SC were set on the following 3 pages:</p>
                   
                   <ol>
                      
@@ -246,10 +221,8 @@
                      <li><a href="https://www.omniglot.com/language/names.htm">Online Encyclopedia of writing systems and languages – language names</a></li>
                      
                      <li><a href="https://www.omniglot.com/language/phrases/index.htm">Universal Declaration of Human Rights (Article 1)</a></li>
-                     
-                  </ol>
-                  		
-               </section>
+                     </ol>
+                  		</section>
                			
                <section id="results">
                   
@@ -262,98 +235,76 @@
                      <dt>Character Spacing </dt>
                      
                      <dd>Individual characters in words remained intact though they were spaced a bit further
-                        apart.
-                     </dd>
+                        apart.</dd>
                      
                      <dt>Word Spacing </dt>
                      
                      <dd>Words were spaced farther apart. In languages that do not have words (e.g. Japanese)
-                        applying word spacing had no effect. This is expected.
-                     </dd>
+                        applying word spacing had no effect. This is expected.</dd>
                      
                      <dt>Line Height</dt>
                      
                      <dd>Changing line height did not separate diacritics from characters, nor did it adversely
-                        impact ascenders or descenders.
-                     </dd>
-                     
-                  </dl>
+                        impact ascenders or descenders.</dd>
+                     </dl>
                   
-                  <p>As previously discussed, the ability to read text with adjusted spacing is a <a href="#userresp">user responsibility</a>. This is true no matter the language.        
-                  </p>
+                  <p>As previously discussed, the ability to read text with adjusted spacing is a user
+                     responsibility. This is true no matter the language.        </p>
                   
                   <p>The SC's exception addresses cases where a text style property is not used in a language
                      or script. In such cases, authors are only required  to ensure  relevant  properties
-                     do not break the layout.
-                  </p>
-                  			
-               </section>
-               		
-            </section>
+                     do not break the layout.</p>
+                  			</section>
+               		</section>
             <section id="other-references">
                		
                <h3>Other references</h3>
                
                <ul>
                   
-                  <li>Allan, Kirkpatrick, Lawton Henry, Editors. (2017). <a href="https://www.w3.org/TR/low-vision-needs/#spacing">Accessibility Requirements for People with Low Vision (3.4 Spacing for Reading)</a>.  World Wide Web Consortium.
-                  </li>
+                  <li>Allan, Kirkpatrick, Lawton Henry, Editors. (2017). <a href="https://www.w3.org/TR/low-vision-needs/#spacing">Accessibility Requirements for People with Low Vision (3.4 Spacing for Reading)</a>.  World Wide Web Consortium.</li>
                   
-                  <li><a href="https://github.com/openstyles/stylus/graphs/contributors">Stylus Team</a> (2012). <a href="https://github.com/openstyles/stylus/blob/master/README.md">Stylus browser extension</a> (Firefox, Chrome, and Opera) (compatible with Userstyles.org material).
-                  </li>
+                  <li><a href="https://github.com/openstyles/stylus/graphs/contributors">Stylus Team</a> (2012). <a href="https://github.com/openstyles/stylus/blob/master/README.md">Stylus browser extension</a> (Firefox, Chrome, and Opera) (compatible with Userstyles.org material).</li>
                   
-                  <li>Campbell, Alastair.  (2017). <a href="https://github.com/alastc/adaptation-scripts/blob/master/scripts/text-adaptation.js">Text Adaptation Bookmarklet</a>. GitHub.
-                  </li>
+                  <li>Campbell, Alastair.  (2017). <a href="https://github.com/alastc/adaptation-scripts/blob/master/scripts/text-adaptation.js">Text Adaptation Bookmarklet</a>. GitHub.</li>
                   
-                  <li>Chung, Susana T. L. (2012). <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3429790/">Dependence of Reading Speed on Letter Spacing in Central Vision Loss</a>. Optom Vis Sci.
-                  </li>
+                  <li>Chung, Susana T. L. (2012). <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3429790/">Dependence of Reading Speed on Letter Spacing in Central Vision Loss</a>. Optom Vis Sci.</li>
                   
-                  <li>Chung, Susana T. L. (2002). <a href="http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995">The Effect of Letter Spacing on Reading Speed in Central and Peripheral Vision (PDF)</a>. IOVS ARVO Journals.
-                  </li>
+                  <li>Chung, Susana T. L. (2002). <a href="http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995">The Effect of Letter Spacing on Reading Speed in Central and Peripheral Vision (PDF)</a>. IOVS ARVO Journals.</li>
                   
                   <li>Mcleish, Eve. (2007).  <a href="http://journals.sagepub.com/doi/pdf/10.1177/0264619607075995">A study of the effect of letter spacing on the reading speed of young readers with
-                        low vision (PDF)</a>. The British Journal of Visual Impairment 25.2: 133-43.
-                  </li>
+                        low vision (PDF)</a>. The British Journal of Visual Impairment 25.2: 133-43.</li>
                   
-                  <li>Rello, L., &amp; Baeza-Yates, R. A. (2017). <a href="https://link.springer.com/article/10.1007/s10209-015-0438-8"> How to present more readable text for people with dyslexia</a>. Universal Access in the Information Society, 16(1), 29-49.
-                  </li>
+                  <li>Rello, L., &amp; Baeza-Yates, R. A. (2017). <a href="https://link.springer.com/article/10.1007/s10209-015-0438-8"> How to present more readable text for people with dyslexia</a>. Universal Access in the Information Society, 16(1), 29-49.</li>
                   
                   <li> Sjoblom, A.M., Eaton, E. and Stagg, S.D., (2016). <a href="http://onlinelibrary.wiley.com/doi/10.1111/bjep.12127/full">The effects of letter spacing and coloured overlays on reading speed and accuracy
-                        in adult dyslexia</a>. British Journal of Educational Psychology, 86(4), pp. 630-639). 
-                  </li>
+                        in adult dyslexia</a>. British Journal of Educational Psychology, 86(4), pp. 630-639). </li>
                   
-                  <li>Zorzi,  Marco et, al. (2012). <a href="http://www.pnas.org/content/109/28/11455.full">Extra-large letter spacing improves reading in dyslexia</a>. Proceedings of the National Academy of Sciences.
-                  </li>
-                  
-               </ul>
-               	
-            </section>
+                  <li>Zorzi,  Marco et, al. (2012). <a href="http://www.pnas.org/content/109/28/11455.full">Extra-large letter spacing improves reading in dyslexia</a>. Proceedings of the National Academy of Sciences.</li>
+                  </ul>
+               	</section>
          </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
                that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                it is not necessary to use these particular techniques. For information on using other
-               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
-            </p>
+               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
             <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ul>
                   
                   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/css/C36">C36: Allowing for text spacing override</a>
-                     
-                  </li>
+                     </li>
                   	
                   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/css/C35">C35: Allowing for text spacing without wrapping</a></li>
-                  
-               </ul>
+                  </ul>
             </section>
             <section id="advisory">
                <h3>Advisory Techniques</h3>
                <p>Although not required for conformance, the following additional techniques should
                   be considered in order to make content more accessible. Not all techniques can be
-                  used or would be effective in all situations.
-               </p>
+                  used or would be effective in all situations.</p>
                <ul>
                   	
                   <li><a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C8">C8: Using CSS letter-spacing to control spacing within a word</a></li>
@@ -361,47 +312,150 @@
                   <li><a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C21">C21: Specifying line spacing in CSS</a></li>
                   	
                   <li><a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C28">C28: Specifying the size of text containers using em units</a></li>
-                  
-               </ul>
+                  </ul>
             </section>
             <section id="failure">
                <h3>Failures</h3>
                <p>The following are common mistakes that are considered failures of this Success Criterion
-                  by the WCAG Working Group.
-               </p>
+                  by the WCAG Working Group.</p>
                <ul>
                   		
                   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F104">F104: Failure of Success Criterion 1.4.12 due to clipped or overlapped content when text
                         spacing is adjusted</a></li>
-                  	
-               </ul>
+                  	</ul>
             </section>
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
+            <dt id="dfn-assistive-technology">assistive technology</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
+                     of users with disabilities that go beyond those offered by mainstream user agents
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>functionality provided by assistive technology includes alternative presentations
+                        (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
+                        voice), additional navigation or orientation mechanisms, and content transformations
+                        (e.g., to make tables more accessible).
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Assistive technologies often communicate data and messages with mainstream user agents
+                        by using and monitoring APIs.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The distinction between mainstream user agents and assistive technologies is not absolute.
+                        Many mainstream user agents provide some features to assist individuals with disabilities.
+                        The basic difference is that mainstream user agents target broad and diverse audiences
+                        that usually include people with and without disabilities. Assistive technologies
+                        target narrowly defined populations of users with specific disabilities. The assistance
+                        provided by an assistive technology is more specific and appropriate to the needs
+                        of its target users. The mainstream user agent may provide important functionality
+                        to assistive technologies like retrieving Web content from program objects or parsing
+                        markup into identifiable bundles.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Assistive technologies that are important in the context of this document include
+                     the following:
+                     </p>
+                  
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     <li>screen magnifiers, and other visual reading assistants, which are used by people with
+                        visual, perceptual and physical print disabilities to change text font, size, spacing,
+                        color, synchronization with speech, etc. in order to improve the visual readability
+                        of rendered text and images;
+                        </li>
+                     
+                     <li>screen readers, which are used by people who are blind to read textual information
+                        through synthesized speech or braille;
+                        </li>
+                     
+                     <li>text-to-speech software, which is used by some people with cognitive, language, and
+                        learning disabilities to convert text into synthetic speech;
+                        </li>
+                     
+                     <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                     
+                     <li>alternative keyboards, which are used by people with certain physical disabilities
+                        to simulate the keyboard (including alternate keyboards that use head pointers, single
+                        switches, sip/puff and other special input devices.);
+                        </li>
+                     
+                     <li>alternative pointing devices, which are used by people with certain physical disabilities
+                        to simulate mouse pointing and button activations.
+                        </li>
+                     </ul>
+                  </definition>
+            </dd>
+            <dt id="dfn-human-language">human language</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
+                     with humans
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>See also <a href="#dfn-sign-language">sign language</a>.
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
             <dt id="dfn-image-of-text">image of text</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">text that has been rendered in a non-text form (e.g., an image) in order to achieve
                      a particular visual effect
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>This does not include <a href="#dfn-text">text</a> that is part of a picture that contains significant other visual content.
-                        
-                     </p>
+                        </p>
                   </div>
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">A person's name on a nametag in a photograph.</p>
+                  </definition>
+            </dd>
+            <dt id="dfn-programmatically-determined">programmatically determined</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
+                     <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                     </p>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Determined in a markup language from elements and attributes that are accessed directly
+                     by commonly available assistive technology.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Determined from technology-specific data structures in a non-markup language and exposed
+                     to assistive technology via an accessibility API that is supported by commonly available
+                     assistive technology.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-sign-language">sign language</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
+                     or body positions to convey meaning
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-style-property">style property</dt>
             <dd>
@@ -410,42 +464,42 @@
                   <p xmlns="http://www.w3.org/1999/xhtml">property whose value determines the presentation (e.g. font, color, size, location,
                      padding, volume, synthesized speech prosody) of
                      content elements as they are rendered (e.g. onscreen, via loudspeaker, via braille
-                     display) by user agents
-                  </p>
-                  	       
+                     display) by user agents</p>
+                  
                   <p xmlns="http://www.w3.org/1999/xhtml">Style properties can have several origins:</p>
                   
                   <ul xmlns="http://www.w3.org/1999/xhtml">
                      
                      <li>User agent default styles: The default style property values applied in the absence
                         of any author or user styles. Some web content technologies specify a default rendering,
-                        others do not;
-                     </li>
+                        others do not;</li>
                      
                      <li>Author styles: Style property values that are set by the author as part of the content
                         (e.g. in-line styles, author style
-                        sheets);
-                     </li>
+                        sheets);</li>
                      
                      <li>User styles: Style property values that are set by the user (e.g. via user agent interface
-                        settings, user style sheets)
-                     </li>
-                     
-                  </ul>
-                  
-               </definition>
+                        settings, user style sheets)</li>
+                     </ul>
+                  </definition>
             </dd>
             <dt id="dfn-text">text</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language">human language</a>
-                     
-                  </p>
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-user-agent">user agent</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                     </p>
+                  </definition>
             </dd>
          </section>
       </main>

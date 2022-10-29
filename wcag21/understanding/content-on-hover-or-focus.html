@@ -31,50 +31,37 @@
       <h1>Understanding Success Criterion 1.4.13: Content on Hover or Focus</h1>
       <blockquote class="scquote">
          <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus" style="font-weight: bold;">1.4.13 Content on Hover or Focus</a> (Level AA): Where receiving and then removing pointer hover or keyboard focus triggers additional
-            content to become visible and then hidden, the following are true:
-         </p>
+            content to become visible and then hidden, the following are true:</p>
          <dl>
-            
             
             <dt>Dismissible</dt>
             
             <dd>A <a href="#dfn-mechanism">mechanism</a> is available to dismiss the additional content without moving pointer hover or keyboard
-               focus, unless the additional content communicates an <a href="#dfn-input-error">input error</a> or does not obscure or replace other content;
-            </dd>
-            
+               focus, unless the additional content communicates an <a href="#dfn-input-error">input error</a> or does not obscure or replace other content;</dd>
             
             <dt>Hoverable</dt>
             
             <dd>If pointer hover can trigger the additional content, then the pointer can be moved
-               over the additional content without the additional content disappearing;
-            </dd>
-            
+               over the additional content without the additional content disappearing;</dd>
             
             <dt>Persistent</dt>
             
             <dd>The additional content remains visible until the hover or focus trigger is removed,
-               the user dismisses it, or its information is no longer valid.
-            </dd>
-            
-            
-         </dl>
+               the user dismisses it, or its information is no longer valid.</dd>
+            </dl>
          <p>Exception: The visual presentation of the additional content is controlled by the
-            user agent and is not modified by the author.
-         </p>
+            user agent and is not modified by the author.</p>
          <p class="note">Examples of additional content controlled by the user agent include browser tooltips
             created through use of the HTML <a href="https://www.w3.org/TR/html/dom.html#the-title-attribute">
-               <code>title</code> attribute</a>.
-         </p>
+               <code>title</code> attribute</a>.</p>
          <p class="note">Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus
-            are examples of additional content covered by this criterion.
-         </p>
+            are examples of additional content covered by this criterion.</p>
       </blockquote>
       <main>
          <section id="intent">
             <h2>Intent</h2>
             <p>Additional content that appears and disappears in coordination with keyboard focus
-               or pointer hover often leads to accessibility issues. Reasons for such issues include:
-            </p>
+               or pointer hover often leads to accessibility issues. Reasons for such issues include:</p>
             <ol>
                			
                <li>the user may not have intended to trigger the interaction</li>
@@ -82,25 +69,21 @@
                <li>the user may not know new content has appeared</li>
                			
                <li>the new content may intefere with a user's ability to do a task</li>
-               		
-            </ol>
+               		</ol>
             <p>Examples of such interactions can include custom tooltips, sub-menus and other nonmodal
                popups which display on hover and focus. The intent of this success criterion is to
                ensure that authors who cause additional content to appear and disappear in this manner
-               must design the interaction in such a way that users can:
-            </p>
+               must design the interaction in such a way that users can:</p>
             <ul>
                					
                <li>perceive the additional content AND</li>
                					
                <li>dismiss it without disrupting their page experience.</li>
-               				
-            </ul>
+               				</ul>
             <p>There are usually more predictable and accessible means of adding content to the page,
                which authors are recommended to employ. If an author <em>does</em> choose to make additional content appear and disappear in coordination with hover
                and keyboard focus, this success criterion specifies three conditions that must be
-               met:
-            </p>
+               met:</p>
             <ul>
                					
                <li>dismissable</li>
@@ -108,16 +91,14 @@
                <li>hoverable</li>
                					
                <li>persistent</li>
-               				
-            </ul>
+               				</ul>
             <p>Each of these is discussed in a separate section.</p>
             <div class="note">
                <div role="heading" class="note-title marker" aria-level="3">Note</div>
                <p>This SC covers content that appears in addition to the triggering component itself.
                   Therefore, a non-visible component, like a Skip to Main link, that is made visible
                   on keyboard focus (with no <em>additional</em> content beyond the trigger becoming visible) is not covered by the SC.
-                  			
-               </p>
+                  			</p>
             </div>
             <section id="dismissable">
                			
@@ -130,13 +111,11 @@
                   screen. However, almost the entire portion of the page visible in this restricted
                   viewport may trigger the additional content, making it difficult for a user to pan
                   without re-triggering the content. A keyboard means of dismissing the additional content
-                  provides a workaround.
-               </p>
+                  provides a workaround.</p>
                			
                <p>Alternatively, low vision users who can only navigate via the keyboard do not want
                   the small area of their magnified viewport cluttered with hover text. They need a
-                  keyboard method of dismissing something that is obscuring the current focal area.
-               </p>
+                  keyboard method of dismissing something that is obscuring the current focal area.</p>
                		
                <p>Two methods may be used to satisfy this condition and prevent such interference:</p>
                			
@@ -144,26 +123,20 @@
                   			
                   <li>Position the additional content so that it does not obscure any other content including
                      the trigger, with the exception of white space and purely decorative content, such
-                     as a background graphic which provides no information.
-                  </li>
+                     as a background graphic which provides no information.</li>
                   			
                   <li>Provide a mechanism to easily dismiss the additional content, such as by pressing
-                     Escape.
-                  </li>
-                  			
-               </ol>
+                     Escape.</li>
+                  			</ol>
                			
                <p>For most triggers of relatively small size, it is desirable for both methods to be
                   implemented.  If the trigger is large, noticing the additional content may be of concern
                   if it appears away from the trigger.  In those cases, only the second method may be
-                  appropriate.
-               </p>
+                  appropriate.</p>
                			
-               <p>The success criteria allows for input error messages to persist as there are cases
-                  that require attention, explicit confirmation or remedial action.
-               </p>
-               			
-            </section>
+               <p>The success criterion allows for input error messages to persist as there are cases
+                  that require attention, explicit confirmation or remedial action.</p>
+               			</section>
             <section id="hoverable">
                			
                <h3>Hoverable</h3>
@@ -174,8 +147,7 @@
                   over the trigger. When the added content is large, magnified views may mean that the
                   user needs to scroll or pan to completely view it, which is impossible unless the
                   user is able to move their pointer off the trigger without the additional content
-                  disappearing.
-               </p>
+                  disappearing.</p>
                			
                <p>Another common situation is when large pointers have been selected via platform settings
                   or assistive technology. Here, the pointer can obscure a significant area of the additional
@@ -183,10 +155,8 @@
                   pointer directly from the trigger onto the new content.  This capability also offers
                   significant advantages for users who utilize screen reader feedback on mouse interactions.
                   This condition generally implies that the additional content overlaps or is positioned
-                  adjacent to the target.
-               </p>
-               			
-            </section>
+                  adjacent to the target.</p>
+               			</section>
             <section id="persistent">
                			
                <h3>Persistent</h3>
@@ -195,26 +165,20 @@
                   additional content after it becomes visible.  Users with disabilities may require
                   more time for many reasons, such as to change magnification, move the pointer, or
                   simply to bring the new content into their visual field.  Once it appears, the content
-                  should remain visible until:
-               </p>
+                  should remain visible until:</p>
                			
                <ul>
                   			
                   <li>The user removes hover or focus from the trigger and the additional content, consistent
-                     with the typical user experience;
-                  </li>
+                     with the typical user experience;</li>
                   			
                   <li>The user dismisses the additional content via the mechanism provided to satisfy the
-                     Dismissable condition; or
-                  </li>
+                     Dismissable condition; or</li>
                   			
                   <li>The information conveyed by the additional content becomes invalid, such as a 'busy'
-                     message that is no longer valid.
-                  </li>
-                  			
-               </ul>
-               			
-            </section>
+                     message that is no longer valid.</li>
+                  			</ul>
+               			</section>
             <section id="additional-notes">
                			
                <h3>Additional Notes</h3>
@@ -223,43 +187,33 @@
                   			
                   <li>This criterion does not attempt to solve such issues when the appearance of the additional
                      content is completely controlled by the user agent. A prominent example is the common
-                     behavior of browsers to display the <code>title</code>  attribute in HTML as a small tooltip.
-                  </li>
+                     behavior of browsers to display the <code>title</code>  attribute in HTML as a small tooltip.</li>
                   			
                   <li>Modal dialogs are out of scope for this criterion because they must take keyboard
-                     focus  and thus should not appear on hover or focus.  Refer to <a href="https://www.w3.org/TR/WCAG21/#on-focus">Success Criterion 3.2.1, On Focus</a>.
-                  </li>
+                     focus  and thus should not appear on hover or focus.  Refer to <a href="https://www.w3.org/TR/WCAG21/#on-focus">Success Criterion 3.2.1, On Focus</a>.</li>
                   			
                   <li>Content which can be triggered via pointer hover should also be able to be triggered
-                     by keyboard focus.  Refer to <a href="https://www.w3.org/TR/WCAG21/#keyboard">Success Criterion 2.1.1, Keyboard</a>.
-                  </li>
-                  			
-               </ul>
-               			
-            </section>
+                     by keyboard focus.  Refer to <a href="https://www.w3.org/TR/WCAG21/#keyboard">Success Criterion 2.1.1, Keyboard</a>.</li>
+                  			</ul>
+               			</section>
          </section>
          <section id="benefits">
             <h2>Benefits</h2>
             <ul>
                			
                <li>Users with low vision who view content under magnification will be better able to
-                  view content on hover or focus without reducing their desired magnification.
-               </li>
+                  view content on hover or focus without reducing their desired magnification.</li>
                			
                <li>Users who increase the size of mouse cursors via platform settings or assistive technology
-                  will be able to employ a technique to view obscured content on hover.
-               </li>
+                  will be able to employ a technique to view obscured content on hover.</li>
                			
                <li>Users with low vision or cognitive disabilities will have adequate time to perceive
                   additional content appearing on hover or focus and to view the trigger content with
-                  less distraction.
-               </li>
+                  less distraction.</li>
                			
                <li>users with low pointer accuracy will be able to more easily dismiss unintentionally-triggered
-                  additional content
-               </li>
-               			
-            </ul>
+                  additional content</li>
+               			</ul>
          </section>
          <section id="examples">
             <h2>Examples</h2>
@@ -271,26 +225,21 @@
                   				<img src="img/button-pointer-tooltip.png" alt="Screenshot of a button with a mouse pointer over it, and a tooltip displayed  below the button" />
                   				<img src="img/button-pointer.png" alt="Screenshot of a button with a mouse pointer over it, and no tooltip" />
                   				
-                  <figcaption>Figure 1A tooltip is displayed below a LVTF button on hover so as not to obscure the button
+                  <figcaption>Figure 1 A tooltip is displayed below a LVTF button on hover so as not to obscure the button
                      itself. It does however obscure content below the button (the next red button, called
                      ~comment-zoom-content). To meet the Dismissible requirement, a user can press the
                      Escape key to clear the tooltip without moving the mouse, as demonstrated in the second
-                     image.
-                  </figcaption>
-                  				
-               </figure>
+                     image.</figcaption>
+                  				</figure>
                				
                <figure id="figure-focused-button-no-tooltip">
                   				<img src="img/button-focus-indicator.png" alt="Screenshot of a button with a focus indicator on it, and no tooltip" />
                   				
-                  <figcaption>Figure 2The button's tooltip also appears on focus and can be removed with the Escape key.
+                  <figcaption>Figure 2 The button's tooltip also appears on focus and can be removed with the Escape key.
                      The screen shot shows the same LVTF button with focus, but the tooltip has been dismissed
-                     and is no longer visible.
-                  </figcaption>
-                  				
-               </figure>
-               			
-            </section>
+                     and is no longer visible.</figcaption>
+                  				</figure>
+               			</section>
             <section class="example" id="example-2-hoverable-tooltip">
                				
                <h3>Example 2: Hoverable Tooltip</h3>
@@ -299,70 +248,138 @@
                   				<img src="img/button-pointer-on-tooltip.png" alt="Screenshot of a button with a large mouse pointer over it, and a tooltip displayed  below the button which is obscured by the large pointer" />
                   				<img src="img/button-pointer-below-tooltip.png" alt="Screenshot of a button with a tooltip below it, and a large mouse pointer at the bottom of the tooltip" />
                   				
-                  <figcaption>Figure 3A button's tooltip is displayed directly below it on mouse hover which can easily
+                  <figcaption>Figure 3 A button's tooltip is displayed directly below it on mouse hover which can easily
                      be obscured by a large pointer.  The tooltip itself is able to be hovered so the mouse
-                     pointer can be moved down to its bottom edge in order to view the tooltip text.
-                  </figcaption>
-                  				
-               </figure>
-               			
-            </section>
+                     pointer can be moved down to its bottom edge in order to view the tooltip text.</figcaption>
+                  				</figure>
+               			</section>
          </section>
          <section id="resources">
             <h2>Related Resources</h2>
             <p>Resources are for information purposes only, no endorsement implied.</p>
             <ul>
                				
-               <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/#tooltip">Tooltip design described in WAI-ARIA Authoring Practices</a></li>
-               			
-            </ul>
+               <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/">Tooltip design described in WAI-ARIA Authoring Practices</a></li>
+               			</ul>
          </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
                that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                it is not necessary to use these particular techniques. For information on using other
-               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
-            </p>
+               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
             <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ul>
                   						
                   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR39">SCR39: Making content on focus or hover hoverable, dismissible, and persistent</a></li>
                   						
-                  <li>@@ ARIA: Using role="tooltip"</li>
+                  <li>ARIA: Using role="tooltip" (Potential future technique)</li>
                   						
-                  <li>@@ CSS: Using hover and focus pseudo classes</li>
-                  					
-               </ul>
+                  <li>CSS: Using hover and focus pseudo classes (Potential future technique)</li>
+                  					</ul>
             </section>
             <section id="failure">
                <h3>Failures</h3>
                <p>The following are common mistakes that are considered failures of this Success Criterion
-                  by the WCAG Working Group.
-               </p>
+                  by the WCAG Working Group.</p>
                <ul>
                   					
                   <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F95">F95: Failure of Success Criterion 1.4.13 due to content shown on hover not being hoverable</a></li>
                   					
-                  <li>@@ Failure to make content dismissable without moving pointer hover or keyboard focus</li>
+                  <li>Failure to make content dismissable without moving pointer hover or keyboard focus
+                     (Potential future technique)</li>
                   					
-                  <li>@@ Failure to meet by content on hover or focus not remaining visible until dismissed
-                     or invalid
-                  </li>
-                  				
-               </ul>
+                  <li>Failure to meet by content on hover or focus not remaining visible until dismissed
+                     or invalid (Potential future technique)</li>
+                  				</ul>
             </section>
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
+            <dt id="dfn-assistive-technology">assistive technology</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
+                     of users with disabilities that go beyond those offered by mainstream user agents
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>functionality provided by assistive technology includes alternative presentations
+                        (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
+                        voice), additional navigation or orientation mechanisms, and content transformations
+                        (e.g., to make tables more accessible).
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Assistive technologies often communicate data and messages with mainstream user agents
+                        by using and monitoring APIs.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The distinction between mainstream user agents and assistive technologies is not absolute.
+                        Many mainstream user agents provide some features to assist individuals with disabilities.
+                        The basic difference is that mainstream user agents target broad and diverse audiences
+                        that usually include people with and without disabilities. Assistive technologies
+                        target narrowly defined populations of users with specific disabilities. The assistance
+                        provided by an assistive technology is more specific and appropriate to the needs
+                        of its target users. The mainstream user agent may provide important functionality
+                        to assistive technologies like retrieving Web content from program objects or parsing
+                        markup into identifiable bundles.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Assistive technologies that are important in the context of this document include
+                     the following:
+                     </p>
+                  
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     <li>screen magnifiers, and other visual reading assistants, which are used by people with
+                        visual, perceptual and physical print disabilities to change text font, size, spacing,
+                        color, synchronization with speech, etc. in order to improve the visual readability
+                        of rendered text and images;
+                        </li>
+                     
+                     <li>screen readers, which are used by people who are blind to read textual information
+                        through synthesized speech or braille;
+                        </li>
+                     
+                     <li>text-to-speech software, which is used by some people with cognitive, language, and
+                        learning disabilities to convert text into synthetic speech;
+                        </li>
+                     
+                     <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                     
+                     <li>alternative keyboards, which are used by people with certain physical disabilities
+                        to simulate the keyboard (including alternate keyboards that use head pointers, single
+                        switches, sip/puff and other special input devices.);
+                        </li>
+                     
+                     <li>alternative pointing devices, which are used by people with certain physical disabilities
+                        to simulate mouse pointing and button activations.
+                        </li>
+                     </ul>
+                  </definition>
+            </dd>
+            <dt id="dfn-conformance">conformance</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">satisfying all the requirements of a given standard, guideline or specification</p>
+                  </definition>
+            </dd>
             <dt id="dfn-input-error">input error</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">information provided by the user that is not accepted</p>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
@@ -370,54 +387,144 @@
                         
                         <p>This includes:</p>
                         
-                        
                         <ol>
                            
-                           
                            <li>Information that is required by the <a href="#dfn-web-page">Web page</a> but omitted by the user
-                              
-                           </li>
-                           
+                              </li>
                            
                            <li>Information that is provided by the user but that falls outside the required data
                               format or values
-                              
-                           </li>
-                           
-                           
-                        </ol>
-                        
-                     </div>
+                              </li>
+                           </ol>
+                        </div>
                   </div>
-                  
-               </definition>
+                  </definition>
             </dd>
             <dt id="dfn-mechanism">mechanism</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">
                      <a href="#dfn-process">process</a> or technique for achieving a result
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
                   </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-process">process</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">series of user actions where each action is required in order to complete an activity</p>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Successful use of a series of Web pages on a shopping site requires users to view
+                     alternative products, prices and offers, select products, submit an order, provide
+                     shipping information and provide payment information.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An account registration page requires successful completion of a <a href="https://www.w3.org/TR/turingtest/">Turing test</a> before
+                     the registration form can be accessed.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-relied-upon">relied upon</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">the content would not <a href="#dfn-conformance">conform</a> if that <a href="#dfn-technology">technology</a> is turned off or is not supported
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-technology">technology</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+                     <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>As used in these guidelines "Web Technology" and the word "technology" (when used
+                        alone) both refer to Web Content Technologies.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Web content technologies may include markup languages, data formats, or programming
+                        languages that authors may use alone or in combination to create end-user experiences
+                        that range from static Web pages to synchronized media presentations to dynamic Web
+                        applications.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
+                     Flash, and JavaScript.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-user-agent">user agent</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-web-page">web page</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
+                     that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Although any "other resources" would be rendered together with the primary resource,
+                        they would not necessarily be rendered simultaneously with each other.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
+                        within the scope of conformance to be considered a Web page.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web resource including all embedded images and media.</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
+                     lives entirely at http://example.com/mail, but includes an inbox, a contacts area
+                     and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
+                     to display, but do not change the URI of the page as a whole.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A customizable portal site, where users can choose content to display from a set of
+                     different content modules.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
+                     interactive shopping environment where you visually move around in a store dragging
+                     products off of the shelves around you and into a visual shopping cart in front of
+                     you. Clicking on a product causes it to be demonstrated with a specification sheet
+                     floating alongside. This might be a single-page Web site or just one page within a
+                     Web site.
+                     </p>
+                  </definition>
             </dd>
          </section>
       </main>

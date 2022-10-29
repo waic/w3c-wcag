@@ -13,7 +13,7 @@
          <ul id="navigation">
             <li><a href="." title="Table of Contents">Contents</a></li>
             <li><a href="text-alternatives"><abbr title="Guideline">GL</abbr>: Text Alternatives</a></li>
-            <li><a href="understanding-act-rules">Previous: Understanding ACT Rules</a></li>
+            <li><a href="understanding-act-rules">Previous: Understanding Test Rules for WCAG Success Criteria</a></li>
             <li><a href="audio-only-and-video-only-prerecorded">Next <abbr title="Success Criterion">SC</abbr>: Audio-only and Video-only (Prerecorded)</a></li>
          </ul>
       </nav>
@@ -25,114 +25,74 @@
             <li><a href="#examples">Examples</a></li>
             <li><a href="#resources">Related Resources</a></li>
             <li><a href="#techniques">Techniques</a></li>
-            <li><a href="#testing-rules">Testing Rules</a></li>
+            <li><a href="#test-rules">Test Rules</a></li>
             <li><a href="#key-terms">Key Terms</a></li>
          </ul>
       </nav>
       <h1>Understanding Success Criterion 1.1.1: Non-text Content</h1>
       <blockquote class="scquote">
          <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#non-text-content" style="font-weight: bold;">1.1.1 Non-text Content</a> (Level A): All <a href="#dfn-non-text-content">non-text content</a> that is presented to the user has a <a href="#dfn-text-alternative">text alternative</a> that serves the equivalent purpose, except for the situations listed below.
-            
-         </p>
+            </p>
          <dl>
-            
             
             <dt>Controls, Input</dt>
             
-            
             <dd>
                
-               
                <p>If non-text content is a control or accepts user input, then it has a <a href="#dfn-name">name</a> that describes its purpose. (Refer to <a href="https://www.w3.org/TR/WCAG21/#name-role-value">Success Criterion 4.1.2</a> for additional requirements for controls and content that accepts user input.)
-                  
-               </p>
-               
-               
-            </dd>
-            
+                  </p>
+               </dd>
             
             <dt>Time-Based Media</dt>
             
-            
             <dd>
-               
                
                <p>If non-text content is time-based media, then text alternatives at least provide descriptive
                   identification of the non-text content. (Refer to <a href="https://www.w3.org/TR/WCAG21/#time-based-media">Guideline 1.2</a> for additional requirements for media.)
-                  
-               </p>
-               
-               
-            </dd>
-            
+                  </p>
+               </dd>
             
             <dt>Test</dt>
             
-            
             <dd>
-               
                
                <p>If non-text content is a test or exercise that would be invalid if presented in <a href="#dfn-text">text</a>, then text alternatives at least provide descriptive identification of the non-text
                   content.
-                  
-               </p>
-               
-               
-            </dd>
-            
+                  </p>
+               </dd>
             
             <dt>Sensory</dt>
             
-            
             <dd>
-               
                
                <p>If non-text content is primarily intended to create a <a href="#dfn-specific-sensory-experience">specific sensory experience</a>, then text alternatives at least provide descriptive identification of the non-text
                   content.
-                  
-               </p>
-               
-               
-            </dd>
-            
+                  </p>
+               </dd>
             
             <dt>
                <a href="#dfn-captcha">CAPTCHA</a>
-               
-            </dt>
-            
+               </dt>
             
             <dd>
-               
                
                <p>If the purpose of non-text content is to confirm that content is being accessed by
                   a person rather than a computer, then text alternatives that identify and describe
                   the purpose of the non-text content are provided, and alternative forms of CAPTCHA
                   using output modes for different types of sensory perception are provided to accommodate
                   different disabilities.
-                  
-               </p>
-               
-               
-            </dd>
-            
+                  </p>
+               </dd>
             
             <dt>Decoration, Formatting, Invisible</dt>
             
-            
             <dd>
-               
                
                <p>If non-text content is <a href="#dfn-pure-decoration">pure decoration</a>, is used only for visual formatting, or is not presented to users, then it is implemented
                   in a way that it can be ignored by <a href="#dfn-assistive-technology">assistive technology</a>.
-                  
-               </p>
-               
-               
-            </dd>
-            
-            
-         </dl>
+                  </p>
+               </dd>
+            </dl>
       </blockquote>
       <main>
          <section id="intent">
@@ -147,16 +107,14 @@
                hear an audio file can have the text alternative displayed so that he or she can read
                it. In the future, text alternatives will also allow information to be more easily
                translated into sign language or into a simpler form of the same language.
-               
-            </p>
-            <section id="&#xA;------------note-on-captcha&#xA;------------&#xA;---------">
+               </p>
+            <section id="-note-on-captcha-">
                
                
                <h3>
                   Note on CAPTCHA
                   
-                  
-               </h3>
+                  </h3>
                
                
                <p>
@@ -173,8 +131,7 @@
                   with disabilities, yet is also considered adoptable by sites. Requiring two different
                   forms of CAPTCHA on a given site ensures that most people with disabilities will find
                   a form they can use.
-                  
-               </p>
+                  </p>
                
                
                <p>Because some users with disabilities will still not be able to access sites that meet
@@ -182,8 +139,7 @@
                   steps. Organizations motivated to conform to WCAG should be aware of the importance
                   of this topic and should go as far beyond the minimum requirements of the guidelines
                   as possible. Additional recommended steps include:
-                  
-               </p>
+                  </p>
                
                
                <ul>
@@ -197,11 +153,9 @@
                   
                   <li>Not requiring CAPTCHAs for authorized users</li>
                   
-                  
-               </ul>
+                  </ul>
                
-               
-            </section>
+               </section>
             <section id="additional-information">
                
                
@@ -210,8 +164,7 @@
                
                <p>Non-text content can take a number of forms, and this Success Criterion specifies
                   how each is to be handled.
-                  
-               </p>
+                  </p>
                
                
                <p> 
@@ -238,8 +191,7 @@
                   <strong>
                      Live-video-only
                      </strong> files are covered below (see 3rd paragraph following this one).  
-                  
-               </p>
+                  </p>
                
                
                <p> 
@@ -249,8 +201,7 @@
                      </strong>, such as images used as submit buttons, image maps or complex animations, a name
                   is provided to describe the purpose of the non-text content so that the person at
                   least knows what the non-text content is and why it is there.
-                  
-               </p>
+                  </p>
                
                
                <p> 
@@ -263,8 +214,7 @@
                   page so they can decide what action if any they want to take with it.  A text alternative
                   that describes the time-based media and/or gives its title is therefore provided.
                   
-                  
-               </p>
+                  </p>
                
                
                <p> 
@@ -275,8 +225,7 @@
                   information as live audio-only and live video-only content. For these types of non-text
                   content, text alternatives provide a descriptive label.  
                   
-                  
-               </p>
+                  </p>
                
                
                <p> 
@@ -291,8 +240,7 @@
                   alternatives would not be very effective.  For these cases, text alternatives should
                   be provided to describe the purpose of the non-text content; of course, the text alternatives
                   would not provide the same information needed to pass the test. 
-                  
-               </p>
+                  </p>
                
                
                <p> 
@@ -304,8 +252,7 @@
                   content with a descriptive label and where possible, additional descriptive text.
                   If the reason for including the content in the page is known and can be described
                   it is helpful to include that information. 
-                  
-               </p>
+                  </p>
                
                
                <p> 
@@ -317,8 +264,7 @@
                   text alternative would describe the purpose of the CAPTCHA, and alternate forms using
                   different modalities would be provided to address the needs of people with different
                   disabilities.
-                  
-               </p>
+                  </p>
                
                
                <p> 
@@ -335,11 +281,9 @@
                   though they have not missed anything in reality). This type of non-text content, therefore,
                   is marked or implemented in a way that assistive technologies (AT) will ignore it
                   and not present anything to the user.
-                  
-               </p>
+                  </p>
                
-               
-            </section>
+               </section>
          </section>
          <section id="benefits">
             <h2>Benefits</h2>
@@ -348,16 +292,14 @@
                
                <li>This Success Criterion helps people who have difficulty perceiving visual content.
                   Assistive technology can read text aloud, present it visually, or convert it to braille.
-                  
-               </li>
+                  </li>
                
                
                <li>Text alternatives may help some people who have difficulty understanding the meaning
                   of photographs, drawings, and other images  (e.g., line drawings, graphic designs,
                   paintings, three-dimensional representations), graphs, charts, animations, etc.
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -365,26 +307,22 @@
                   audio information for any reason can read the text presentation. Research is ongoing
                   regarding automatic translation of text into sign language. 
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
                   People who are deaf-blind can read the text in braille.
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
                   Additionally, text alternatives support the ability to search for non-text content
                   and to repurpose content in a variety of ways.
                   
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="examples">
             <h2>Examples</h2>
@@ -398,8 +336,7 @@
                      								       
                      <strong>A data chart</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>A bar chart compares how many widgets were sold in June, July, and August. The short
@@ -409,11 +346,9 @@
                      the actual data is provided in a table. 
                      
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -423,18 +358,15 @@
                      								       
                      <strong>An audio recording of a speech</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>The link to an audio clip says, "Chairman's speech to the assembly." A link to a text
                      transcript is provided immediately after the link to the audio clip.
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -444,8 +376,7 @@
                      								       
                      <strong>An animation that illustrates how a car engine works</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>An animation shows how a car engine works. There is no audio and the animation is
@@ -455,11 +386,9 @@
                      the tutorial text for more information. 
                      
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -469,8 +398,7 @@
                      								       
                      <strong>A traffic Web camera</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>A Web site allows users to select from a variety of Web cameras positioned throughout
@@ -479,11 +407,9 @@
                      provides a table of travel times for each of the routes covered by the Web cameras.
                      The table is also updated every two minutes.
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -493,19 +419,16 @@
                      								       
                      <strong>A photograph of an historic event in a news story</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>A photograph of two world leaders shaking hands accompanies a news story about an
                      international summit meeting. The text alternative says, "President X of Country X
                      shakes hands with Prime Minister Y of country Y."
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -515,8 +438,7 @@
                      								       
                      <strong>A photograph of a historic event in content discussing diplomatic relationships</strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p> The same image is used in a different context intended to explain nuances in diplomatic
@@ -529,11 +451,9 @@
                      page as the photograph or in a separate file associated with the image through a link
                      or other standard programmatic mechanism.
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -543,8 +463,7 @@
                      								       
                      <strong>An audio recording of a press conference </strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>A Web page includes a link to an audio recording of a press conference. The link text
@@ -554,11 +473,9 @@
                      part of the recording, such as applause, laughter, questions from the audience, and
                      so on.
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -571,8 +488,7 @@
                         
                         </strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>
@@ -583,11 +499,9 @@
                      or incorrect. 
                      
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -600,18 +514,15 @@
                         
                         </strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>A thumbnail image of the front page of a newspaper links to the home page of the "Smallville
                      Times". The text alternative says "Smallville Times".
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -624,8 +535,7 @@
                         
                         </strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>Different alternatives for an image of the world: An image of the world that is used
@@ -633,11 +543,9 @@
                      "International Travel". The same image is used as a link on a university Web site
                      with the text alternative "International Campuses".
                      
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
                
                <li>
@@ -650,22 +558,18 @@
                         
                         </strong>
                      							     
-                     
-                  </p>
+                     </p>
                   
                   
                   <p>An image of a building floor plan is interactive, allowing the user to select a
                      particular room and navigate to a page containing information about that room.
                      The short text alternative describes the image and its interactive purpose:
                      "Building floor plan. Select a room for more information."
-                     
-                  </p>
+                     </p>
                   
-                  
-               </li>
+                  </li>
                
-               
-            </ol>
+               </ol>
          </section>
          <section id="resources">
             <h2>Related Resources</h2>
@@ -677,72 +581,62 @@
                   								       
                   <a href="https://www.w3.org/2000/08/nba-manual/Overview.html">Excerpts from the NBA Tape Recording Manual, Third Edition</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
                   <a href="https://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
                   <a href="https://stuffandnonsense.co.uk/archives/accessible_alternatives.html">All That Malarkey: Accessible Alternatives</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
                   <a href="http://www.456bereastreet.com/archive/200412/the_alt_and_title_attributes/">456 Berea Street: The Alt and Title Attributes</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
                   <a href="http://green-beast.com/blog/?p=81">The Alt and Accessibility</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
                   <a href="http://www.accessibilitynews.ca/cwdo/resources/resources.php?resources=187">Better Connected, Better Results: Alt Text</a>
                   							     
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
                that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                it is not necessary to use these particular techniques. For information on using other
-               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
-            </p>
+               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
             <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <p>Select the situation below that matches your content. Each situation includes techniques
                   or combinations of techniques that are known and documented to be sufficient for that
-                  situation. 
-               </p>
+                  situation. </p>
                <section class="situation" id="non-text-content-situation-0">
                   
                   
                   <h4>Situation A: If a short description can serve the same purpose and present the same
                      information as the non-text content:
-                     
-                  </h4>
+                     </h4>
                   
                   
                   <ol>
@@ -757,18 +651,15 @@
                            <a href="#text-equiv-all-situation-a-shorttext">Short text alternative techniques for Situation A</a>
                            
                            </strong>:
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ol>
+                     </ol>
                   
                   
                   <p id="text-equiv-all-situation-a-shorttext">
                      
                      <strong>Short text alternative techniques for Situation A</strong>:
-                     
-                  </p>
+                     </p>
                   
                   
                   <ul id="text-equiv-all-situation-a-shorttext-techs">
@@ -778,16 +669,14 @@
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
@@ -795,78 +684,60 @@
                         <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items
                            in the group</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H35">H35:  Providing text alternatives on applet elements </a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H37">H37: Using alt attributes on img elements</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H53">H53: Using the body of the object element</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H86">H86: Providing text alternatives for ASCII art, emoticons, and leetspeak</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="pdf" href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
                         
-                        
-                     </li>
+                        </li>
                      
-                     
-                     <li>
-                        
-                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL5">SL5: Defining a Focusable Image Class for Silverlight</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                     </ul>
                   
-                  
-               </section>
+                  </section>
                <section class="situation" id="non-text-content-situation-1">
                   
                   
                   <h4>Situation B: If a short description can 
                      <strong>not</strong> serve the same purpose and present the same information as the non-text content (e.g.,
                      a chart or diagram):
-                     
-                  </h4>
+                     </h4>
                   
                   
                   <ol>
@@ -888,18 +759,15 @@
                            <a href="#text-equiv-all-situation-b-longtext">Long text alternative techniques for Situation B</a>
                            
                            </strong>:
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ol>
+                     </ol>
                   
                   
                   <p id="text-equiv-all-situation-b-shorttext">
                      
                      <strong>Short text alternative techniques for Situation B</strong>:
-                     
-                  </p>
+                     </p>
                   
                   
                   <ul id="text-equiv-all-situation-a-shorttext-techs2">
@@ -909,16 +777,14 @@
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
@@ -926,74 +792,57 @@
                         <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items
                            in the group</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H35">H35:  Providing text alternatives on applet elements </a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H37">H37: Using alt attributes on img elements</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H53">H53: Using the body of the object element</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H86">H86: Providing text alternatives for ASCII art, emoticons, and leetspeak</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="pdf" href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
                         
-                        
-                     </li>
+                        </li>
                      
-                     
-                     <li>
-                        
-                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL5">SL5: Defining a Focusable Image Class for Silverlight</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                     </ul>
                   
                   
                   <p id="text-equiv-all-situation-b-longtext">
                      
                      <strong>Long text alternative techniques for Situation B</strong>:
-                     
-                  </p>
+                     </p>
                   
                   
                   <ul id="text-equiv-all-situation-b-longtext-techs">
@@ -1003,8 +852,7 @@
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA15">ARIA15: Using aria-describedby to provide descriptions of images</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
@@ -1012,8 +860,7 @@
                         <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G73">G73: Providing a long description in another location with a link to it that is immediately
                            adjacent to the non-text content</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
@@ -1021,8 +868,7 @@
                         <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G74">G74: Providing a long description in text near the non-text content, with a reference to
                            the location of the long description in the short description</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
@@ -1030,38 +876,25 @@
                         <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G92">G92: Providing long description for non-text content that serves the same purpose and presents
                            the same information</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H45">H45: Using longdesc</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H53">H53: Using the body of the object element</a>
                         
-                        
-                     </li>
+                        </li>
                      
-                     
-                     <li>
-                        
-                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL8">SL8: Displaying HelpText in Silverlight User Interfaces</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                     </ul>
                   
-                  
-               </section>
+                  </section>
                <section class="situation" id="non-text-content-situation-2">
                   
                   
@@ -1079,18 +912,15 @@
                            <a href="#text-equiv-all-situation-c-controls">Text alternative techniques for controls and input for Situation C</a>
                            
                            </strong>:
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ol>
+                     </ol>
                   
                   
                   <p id="text-equiv-all-situation-c-controls">
                      
                      <strong>Text alternative techniques for controls and input for Situation C</strong>:
-                     
-                  </p>
+                     </p>
                   
                   
                   <ul id="text-equiv-all-situation-c-controls-techs">
@@ -1100,48 +930,42 @@
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA9">ARIA9: Using aria-labelledby to concatenate a label from several text nodes</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H24">H24:  Providing text alternatives for the area elements of image maps </a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H30">H30: Providing link text that describes the purpose of a link for anchor elements</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H36">H36: Using alt attributes on images used as submit buttons</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H44">H44: Using label elements to associate text labels with form controls</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
@@ -1149,46 +973,18 @@
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H65">H65: Using the title attribute to identify form controls when the label element cannot
                            be used</a>
                         
-                        
-                     </li>
+                        </li>
                      
-                     
-                     <li>
-                        
-                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL18">SL18: Providing Text Equivalent for Nontext Silverlight Controls With AutomationProperties.Name</a>
-                        
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        
-                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL26">SL26: Using LabeledBy to Associate Labels and Targets in Silverlight</a>
-                        
-                        
-                     </li>
-                     
-                     
-                     <li>
-                        
-                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL30">SL30: Using Silverlight Control Compositing and AutomationProperties.Name</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                     </ul>
                   
-                  
-               </section>
+                  </section>
                <section class="situation" id="non-text-content-situation-3">
                   
                   
                   <h4>Situation D: If non-text content is time-based media (including live video-only and
                      live audio-only); a test or exercise that would be invalid if presented in text; or
                      primarily intended to create a specific sensory experience:
-                     
-                  </h4>
+                     </h4>
                   
                   
                   <ol>
@@ -1200,8 +996,7 @@
                            <a href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</a>
                            
                            </strong>:
-                        
-                     </li>
+                        </li>
                      
                      
                      <li> 
@@ -1213,8 +1008,7 @@
                            <a href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</a>
                            
                            </strong>:
-                        
-                     </li>
+                        </li>
                      
                      
                      <li> 
@@ -1226,18 +1020,15 @@
                            <a href="#text-equiv-all-situation-d-shorttext">Short text alternative techniques for Situation D</a>
                            
                            </strong>:
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ol>
+                     </ol>
                   
                   
                   <p id="text-equiv-all-situation-d-shorttext">
                      
                      <strong>Short text alternative techniques for Situation D</strong>:
-                     
-                  </p>
+                     </p>
                   
                   
                   <ul id="text-equiv-all-situation-a-shorttext-techs3">
@@ -1247,16 +1038,14 @@
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA6">ARIA6: Using aria-label to provide labels for objects</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="aria" href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
@@ -1264,70 +1053,53 @@
                         <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G196">G196: Using a text alternative on one item within a group of images that describes all items
                            in the group</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H2">H2: Combining adjacent image and text links for the same resource</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H35">H35:  Providing text alternatives on applet elements </a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H37">H37: Using alt attributes on img elements</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H53">H53: Using the body of the object element</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H86">H86: Providing text alternatives for ASCII art, emoticons, and leetspeak</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="pdf" href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/PDF1">PDF1: Applying text alternatives to images with the Alt entry in PDF documents</a>
                         
-                        
-                     </li>
+                        </li>
                      
-                     
-                     <li>
-                        
-                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL5">SL5: Defining a Focusable Image Class for Silverlight</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
+                     </ul>
                   
-                  
-               </section>
+                  </section>
                <section class="situation" id="non-text-content-situation-4">
                   
                   
@@ -1346,14 +1118,11 @@
                         <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G144">G144: Ensuring that the Web Page contains another CAPTCHA serving the same purpose using
                            a different modality</a>
                         									         
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ol>
+                     </ol>
                   
-                  
-               </section>
+                  </section>
                <section class="situation" id="non-text-content-situation-5">
                   
                   
@@ -1370,18 +1139,15 @@
                            <a href="#text-equiv-all-situation-f-notrequired">Techniques to indicate that text alternatives are not required for Situation F</a>
                            
                            </strong>:
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ol>
+                     </ol>
                   
                   
                   <p id="text-equiv-all-situation-f-notrequired">
                      
                      <strong>Techniques to indicate that text alternatives are not required for Situation F</strong>:
-                     
-                  </p>
+                     </p>
                   
                   
                   <ul id="text-equiv-all-situation-f-notrequired-techs">
@@ -1391,8 +1157,7 @@
                         
                         <a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C9">C9: Using CSS to include decorative images</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
@@ -1400,29 +1165,24 @@
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H67">H67: Using null alt text and no title attribute on img elements for images that AT should
                            ignore</a>
                         
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>
                         
                         <a class="pdf" href="https://www.w3.org/WAI/WCAG21/Techniques/pdf/PDF4">PDF4: Hiding decorative images with the Artifact tag in PDF documents</a>
                         
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ul>
+                     </ul>
                   
-                  
-               </section>
+                  </section>
             </section>
             <section id="advisory">
                <h3>Advisory Techniques</h3>
                <p>Although not required for conformance, the following additional techniques should
                   be considered in order to make content more accessible. Not all techniques can be
-                  used or would be effective in all situations.
-               </p>
+                  used or would be effective in all situations.</p>
                <section id="html-techniques-advisory">
                   
                   
@@ -1436,14 +1196,11 @@
                         										           
                         <a class="html" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H46">H46: Using noembed with embed </a>
                         									         
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ul>
+                     </ul>
                   
-                  
-               </section>
+                  </section>
                <section id="css-techniques-advisory">
                   
                   
@@ -1457,41 +1214,16 @@
                         										           
                         <a class="css" href="https://www.w3.org/WAI/WCAG21/Techniques/css/C18">C18: Using CSS margin and padding rules instead of spacer images for layout design</a>
                         									         
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ul>
+                     </ul>
                   
-                  
-               </section>
-               <section id="silverlight-techniques-advisory">
-                  
-                  
-                  <h4>Silverlight Techniques (Advisory)</h4>
-                  
-                  
-                  <ul>
-                     
-                     
-                     <li>
-                        
-                        <a class="silverlight" href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL19">SL19: Providing User Instructions With AutomationProperties.HelpText in Silverlight</a>
-                        
-                        
-                     </li>
-                     
-                     
-                  </ul>
-                  
-                  
-               </section>
+                  </section>
             </section>
             <section id="failure">
                <h3>Failures</h3>
                <p>The following are common mistakes that are considered failures of this Success Criterion
-                  by the WCAG Working Group.
-               </p>
+                  by the WCAG Working Group.</p>
                <ul>
                   
                   
@@ -1500,8 +1232,7 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F3">F3: Failure of Success Criterion 1.1.1 due to using CSS to include images that convey
                         important information</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1509,8 +1240,7 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F13">F13: Failure of Success Criterion 1.1.1 and 1.4.1 due to having a text alternative that
                         does not include information that is conveyed by color differences in the image</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1518,8 +1248,7 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F20">F20: Failure of Success Criterion 1.1.1 and 4.1.2 due to not updating text alternatives
                         when changes to non-text content occur</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1527,8 +1256,7 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F30">F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are
                         not alternatives (e.g., filenames or placeholder text)</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1536,8 +1264,7 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F38">F38: Failure of Success Criterion 1.1.1 due to not marking up decorative images in HTML
                         in a way that allows assistive technology to ignore them</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1546,8 +1273,7 @@
                         null (e.g., alt="spacer" or alt="image") for images that should be ignored by assistive
                         technology</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1555,8 +1281,7 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F65">F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative
                         on img elements, area elements, and input elements of type "image"</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1565,8 +1290,7 @@
                         non-text content that does not serve the same purpose or does not present the same
                         information</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1574,8 +1298,7 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F71">F71: Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text
                         without providing a text alternative</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -1583,36 +1306,41 @@
                      <a class="failure" href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F72">F72: Failure of Success Criterion 1.1.1 due to using ASCII art without providing a text
                         alternative</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
-                  
-               </ul>
+                  </ul>
             </section>
          </section>
-         <section id="testing-rules">
-            <h2>Testing Rules</h2>
-            <p>The following are testing rules for certain aspects of this Success Criterion. It
-               is not necessary to use these particular rules to check for conformance with WCAG,
-               but they are defined and approved test methods. For information on using Accessibility
-               Conformance Testing (ACT) Rules, see <a href="understanding-act-rules.html">Understanding ACT Rules for WCAG Success Criteria</a>.
-            </p>
+         <section id="test-rules">
+            <h2>Test Rules</h2>
+            <p>The following are Test Rules for certain aspects of this Success Criterion. It is
+               not necessary to use these particular Test Rules to check for conformance with WCAG,
+               but they are defined and approved test methods. For information on using Test Rules,
+               see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.</p>
             <ul>
-               <li><a href="/standards-guidelines/act/rules/image-button-accessible-name-59796f/">Image button has accessible name</a></li>
+               <li><a href="/WAI/standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/">svg element with explicit role has non-empty accessible name</a></li>
+               <li><a href="/WAI/standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/">Image button has non-empty accessible name</a></li>
+               <li><a href="/WAI/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/">Image has non-empty accessible name</a></li>
             </ul>
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
+            <dt id="dfn-ascii-art">ascii art</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">picture created by a spatial arrangement of characters or glyphs (typically from the
+                     95 printable characters defined by ASCII)
+                     </p>
+                  </definition>
+            </dd>
             <dt id="dfn-assistive-technology">assistive technology</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
                      of users with disabilities that go beyond those offered by mainstream user agents
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
@@ -1620,19 +1348,15 @@
                         (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
                         voice), additional navigation or orientation mechanisms, and content transformations
                         (e.g., to make tables more accessible).
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Assistive technologies often communicate data and messages with mainstream user agents
                         by using and monitoring APIs.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
@@ -1645,217 +1369,301 @@
                         of its target users. The mainstream user agent may provide important functionality
                         to assistive technologies like retrieving Web content from program objects or parsing
                         markup into identifiable bundles.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">Assistive technologies that are important in the context of this document include
                      the following:
-                     
-                  </p>
-                  
+                     </p>
                   
                   <ul xmlns="http://www.w3.org/1999/xhtml">
-                     
                      
                      <li>screen magnifiers, and other visual reading assistants, which are used by people with
                         visual, perceptual and physical print disabilities to change text font, size, spacing,
                         color, synchronization with speech, etc. in order to improve the visual readability
                         of rendered text and images;
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>screen readers, which are used by people who are blind to read textual information
                         through synthesized speech or braille;
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>text-to-speech software, which is used by some people with cognitive, language, and
                         learning disabilities to convert text into synthetic speech;
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
-                     
                      
                      <li>alternative keyboards, which are used by people with certain physical disabilities
                         to simulate the keyboard (including alternate keyboards that use head pointers, single
                         switches, sip/puff and other special input devices.);
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>alternative pointing devices, which are used by people with certain physical disabilities
                         to simulate mouse pointing and button activations.
-                        
-                     </li>
-                     
-                     
-                  </ul>
-                  
-                  
-               </definition>
+                        </li>
+                     </ul>
+                  </definition>
             </dd>
             <dt id="dfn-captcha">captcha</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">initialism for "Completely Automated Public Turing test to tell Computers and Humans
                      Apart"
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>CAPTCHA tests often involve asking the user to type in text that is displayed in an
                         obscured image or audio file.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>A Turing test is any system of tests designed to differentiate a human from a computer.
                         It is named after famed computer scientist Alan Turing. The term was coined by researchers
                         at Carnegie Mellon University.
-                        
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-content">content</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and interactions
                      </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-human-language">human language</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual or tactile means) to communicate
+                     with humans
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>See also <a href="#dfn-sign-language">sign language</a>.
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-label">label</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+                     <a href="#dfn-text">text</a> or other component with a <a href="#dfn-text-alternative">text alternative</a> that is presented to a user to identify a component within Web <a href="#dfn-content">content</a>
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>A label is presented to all users whereas the <a href="#dfn-name">name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases
+                        the name and the label are the same.
+                        </p>
                   </div>
                   
-                  
-               </definition>
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The term label is not limited to the label element in HTML.</p>
+                  </div>
+                  </definition>
             </dd>
             <dt id="dfn-name">name</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">text by which software can identify a component within Web content to the user</p>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>The name may be hidden and only exposed by assistive technology, whereas a <a href="#dfn-label">label</a> is presented to all users. In many (but not all) cases, the label and the name are
                         the same.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>This is unrelated to the name attribute in HTML.</p>
                   </div>
-                  
-                  
-               </definition>
+                  </definition>
             </dd>
             <dt id="dfn-non-text-content">non-text content</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">any content that is not a sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a> or where the sequence is not expressing something in <a href="#dfn-human-language">human language</a>
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>This includes <a href="#dfn-ascii-art">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution),
                         and images representing text
-                        
-                     </p>
+                        </p>
                   </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-presentation">presentation</dt>
+            <dd>
+               <definition xmlns="">
                   
+                  <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a form to be perceived by users
+                     </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-programmatically-determined">programmatically determined</dt>
+            <dd>
+               <definition xmlns="">
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
+                     <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>, can extract and present this information to users in different modalities
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Determined in a markup language from elements and attributes that are accessed directly
+                     by commonly available assistive technology.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Determined from technology-specific data structures in a non-markup language and exposed
+                     to assistive technology via an accessibility API that is supported by commonly available
+                     assistive technology.
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-pure-decoration">pure decoration</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">serving only an aesthetic purpose, providing no information, and having no functionality</p>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Text is only purely decorative if the words can be rearranged or substituted without
                         changing their purpose.
-                        
-                     </p>
+                        </p>
                   </div>
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">The cover page of a dictionary has random words in very light text in the background.</p>
+                  </definition>
+            </dd>
+            <dt id="dfn-sign-language">sign language</dt>
+            <dd>
+               <definition xmlns="">
                   
-                  
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and arms, facial expressions,
+                     or body positions to convey meaning
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-specific-sensory-experience">specific sensory experience</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">a sensory experience that is not purely decorative and does not primarily convey important
                      information or perform a function
-                     
-                  </p>
-                  
+                     </p>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">Examples include a performance of a flute solo, works of visual art etc.</p>
+                  </definition>
+            </dd>
+            <dt id="dfn-structure">structure</dt>
+            <dd>
+               <definition xmlns="">
                   
-                  
-               </definition>
+                  <ol xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to each other; and
+                        </li>
+                     
+                     <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
+                        </li>
+                     </ol>
+                  </definition>
             </dd>
             <dt id="dfn-text">text</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="#dfn-programmatically-determined">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language">human language</a>
-                     
-                  </p>
-                  
-                  
-               </definition>
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-text-alternative">text alternative</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">
                      <a href="#dfn-text">Text</a> that is programmatically associated with <a href="#dfn-non-text-content">non-text content</a> or referred to from text that is programmatically associated with non-text content.
                      Programmatically associated text is text whose location can be programmatically determined
                      from the non-text content.
-                     
-                  </p>
-                  
+                     </p>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">An image of a chart is described in text in the paragraph after the chart. The short
                      text alternative for the chart indicates that a description follows.
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
-                     <p>Refer to <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Text Alternatives</a> for more information.
-                        
+                     <p>Refer to <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#text-alternatives">Understanding Text Alternatives</a> for more information.
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-user-agent">user agent</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
                      </p>
+                  </definition>
+            </dd>
+            <dt id="dfn-web-page">web page</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
+                     that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Although any "other resources" would be rendered together with the primary resource,
+                        they would not necessarily be rendered simultaneously with each other.
+                        </p>
                   </div>
                   
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
+                        within the scope of conformance to be considered a Web page.
+                        </p>
+                  </div>
                   
-               </definition>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web resource including all embedded images and media.</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
+                     lives entirely at http://example.com/mail, but includes an inbox, a contacts area
+                     and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
+                     to display, but do not change the URI of the page as a whole.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A customizable portal site, where users can choose content to display from a set of
+                     different content modules.
+                     </p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
+                     interactive shopping environment where you visually move around in a store dragging
+                     products off of the shelves around you and into a visual shopping cart in front of
+                     you. Clicking on a product causes it to be demonstrated with a specification sheet
+                     floating alongside. This might be a single-page Web site or just one page within a
+                     Web site.
+                     </p>
+                  </definition>
             </dd>
          </section>
       </main>

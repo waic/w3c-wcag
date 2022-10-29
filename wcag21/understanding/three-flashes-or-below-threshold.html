@@ -33,29 +33,26 @@
          <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#three-flashes-or-below-threshold" style="font-weight: bold;">2.3.1 Three Flashes or Below Threshold</a> (Level A): 
             <a href="#dfn-web-page">Web pages</a> do not contain anything that flashes more than three times in any one second period,
             or the <a href="#dfn-flash">flash</a> is below the <a href="#dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</a>.
-            
-         </p>
+            </p>
          <p class="note">Since any content that does not meet this success criterion can interfere with a user's
             ability to use the whole page, all content on the Web page (whether it is used to
             meet other success criteria or not) must meet this success criterion. See <a href="https://www.w3.org/TR/WCAG21/#cc5">Conformance Requirement 5: Non-Interference</a>.
-            
-         </p>
+            </p>
       </blockquote>
       <main>
          <section id="intent">
             <h2>Intent</h2>
             <p>The intent of this Success Criterion is to allow users to access the full content
                of a site without inducing seizures due to photosensitivity.
-               
-            </p>
+               </p>
             <p>Individuals who have photosensitive seizure disorders can have a seizure triggered
                by content that flashes at certain frequencies for more than a few flashes. People
                are even more sensitive to red flashing than to other colors, so a special test is
-               provided for saturated red flashing. These guidelines are based on guidelines for
-               the broadcasting industry as adapted for computer screens, where content is viewed
+               provided for saturated red flashing. These guidelines were originally based on guidelines
+               for
+               the broadcasting industry as adapted for desktop monitors, where content is viewed
                from a closer distance (using a larger angle of vision).
-               
-            </p>
+               </p>
             <p>Flashing can be caused by the display, the computer rendering the image or by the
                content being rendered. The author has no control of the first two. They can be addressed
                by the design and speed of the display and computer. The intent of this criterion
@@ -63,24 +60,56 @@
                content itself. For example, the content could contain a video clip or animated image
                of a series of strobe flashes, or close-ups of rapid-fire explosions.
                
-               
-            </p>
+               </p>
             <p>This Success Criterion replaces a much more restrictive criterion in WCAG 1.0 that
                did not allow any flashing (even of a single pixel) within a broad frequency range
                (3 to 50 Hz). This Success Criterion is based on existing specifications in use in
                the UK and by others for television broadcast and has been adapted for computer display
-               viewing. The 1024 x 768 screen is used as the reference screen resolution for the
+               viewing. In WCAG 2.0, a 1024 x 768 screen was used as the reference screen resolution
+               for the
                evaluation. The 341 x 256 pixel block represents a 10 degree viewport at a typical
                viewing distance. (The 10 degree field is taken from the original specifications and
                represents the central vision portion of the eye, where people are most susceptible
                to photo stimuli.)
-               
-            </p>
+               </p>
+            <p>With the proliferation of devices of varying screen sizes (from small hand-helds to
+               large living room displays), as well as the adoption of <a href="https://www.w3.org/TR/WCAG21/#dfn-css-pixels">CSS pixels</a> as a density-independent unit of measurement, the prior assessment criteria may seem
+               outdated. However, an image of a consistent size uses up relatively the same percentage
+               of a user's visual field on any device. On a large screen, the image takes up less
+               size, but the large screen takes up a larger part of the visual field. On a mobile
+               screen, the image may take up most or all of the screen; however, the mobile screen
+               itself takes up a smaller portion of the user's visual field. So the same dimension
+               of the flashing content, represented in CSS pixels can still provide a consistent
+               means of assessment. Substituting CSS pixels for the original pixel block means that
+               the combined area of flashing becomes 341 x 256 CSS pixels, or a flashing area of
+               87,296 CSS pixels.</p>
+            <p>Content should be analyzed at the largest scale at which a user may view the content,
+               and at the standard zoom level of the user agent. For example, with a video that may
+               play in an area of a web page and also at full screen, the video should be analyzed
+               for risks at full screen.</p>
+            <p>Where video content is provided in color spaces other than sRGB, the version provided
+               with the highest dynamic range should be tested. In such cases the industry standard
+               definition of a general flash is a change in luminance of 20 cd/m2 or more where the
+               darker image is below 160 cd/m2. (<a href="https://www.itu.int/rec/R-REC-BT.1702/">ITU-R BT.1702</a>.) This is applicable for standard dynamic range (SDR) and high dynamic range (HDR)
+               content. For HDR content when the darker state is 160 cd/m2 or more, a general flash
+               is one where the Michelson contrast is 1/17 or greater — where the Michelson contrast
+               is calculated as (LHigh - LLow) / (LHigh + LLow), and where LHigh and LLow are the
+               luminance of the high and low luminance states, respectively.</p>
+            <p>For short clips that might be looped (such as GIF animations), the content should
+               be analyzed while looping. </p>
+            <div class="note">
+               <div role="heading" class="note-title marker" aria-level="3">Note</div>
+               <p>The specification cannot account for the actual viewing distance that a person chooses.
+                  Users that are closer to their screens than the idealized viewing distance will be
+                  affected by flashing areas that normatively pass. The same problem applies to users
+                  who rely on zoom or screen magnification. Conversely, users who are further away from
+                  the screen than the idealized distance should be able to tolerate flashing areas that
+                  are larger than the threshold.</p>
+            </div>
             <p>The combined area of flashes occurring concurrently and contiguously means the total
                area that is actually flashing at the same time. It is calculated by adding up the
                contiguous area that is flashing simultaneously within any 10 degree angle of view.
-               
-            </p>
+               </p>
             <div class="note">
                <div role="heading" class="note-title marker" aria-level="3">Note</div>
                <div>
@@ -94,28 +123,23 @@
                      
                      <li>"Blinking" refers to content that causes a distraction problem. Blinking can be allowed
                         for a short time as long as it stops (or can be stopped)
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>"Flashing" refers to content that can trigger a seizure (if it is more than 3 per
                         second and large and bright enough). This cannot be allowed even for a second or it
                         could cause a seizure. And turning the flash off is also not an option since the seizure
                         could occur faster than most users could turn it off.
-                        
-                     </li>
+                        </li>
                      
                      
                      <li>Blinking usually does not occur at speeds of 3 per second or more, but it can. If
                         blinking occurs faster than 3 per second, it would also be considered a flash.
-                        
-                     </li>
+                        </li>
                      
-                     
-                  </ul>
+                     </ul>
                   
-                  
-               </div>
+                  </div>
             </div>
          </section>
          <section id="benefits">
@@ -127,11 +151,9 @@
                   all of the material on a site without having a seizure and without having to miss
                   the full experience of the content by being limited to text alternatives. This includes
                   people with photosensitive epilepsy as well as other photosensitive seizure disorders.
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="examples">
             <h2>Examples</h2>
@@ -143,19 +165,16 @@
                   flashing image to a small portion of the screen below the flash threshold size.
                   
                   
-                  
-               </li>
+                  </li>
                
                
                <li>A movie with a scene involving very bright lightning flashes is edited so that the
                   lightning only flashes three times in any one second period. 
                   
                   
-                  
-               </li>
+                  </li>
                
-               
-            </ul>
+               </ul>
          </section>
          <section id="resources">
             <h2>Related Resources</h2>
@@ -165,61 +184,46 @@
                
                <li>
                   								       
-                  <a href="http://www.hardingfpa.com/">Harding FPA Web Site</a>
+                  <a href="https://www.hardingfpa.com/">Harding FPA Web Site</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
-                  <a href="http://trace.wisc.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</a>
+                  <a href="https://trace.umd.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
-                  <a href="http://trace.wisc.edu/peat/photosensitive.php">Information about Photosensitive Seizure Disorders</a>
+                  <a href="https://trace.umd.edu/information-about-photosensitive-seizure-disorders/">Information about Photosensitive Seizure Disorders</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   								       
                   <a href="https://www.epilepsy.org.uk/">Epilepsy Action</a>
                   							     
-                  
-               </li>
+                  </li>
                
                
                <li>
                   	
-                  <a href="http://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures">Epilepsy Foundation</a>
+                  <a href="http://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures">Epilepsy Foundation - Photosensitivity and Seizures</a>
                   							     
-                  
-               </li>
+                  </li>
                
-               
-               <li>
-                  								       
-                  <a href="http://www.ofcom.org.uk/static/archive/itc/itc_publications/codes_guidance/flashing_images/index.asp.html">ITC Guidance Note for Licensees on Flashing Images and Regular Patterns in Television</a>
-                  							     
-                  
-               </li>
-               
-               
-            </ul>
+               </ul>
          </section>
          <section id="techniques">
             <h2>Techniques</h2>
             <p>Each numbered item in this section represents a technique or combination of techniques
                that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                it is not necessary to use these particular techniques. For information on using other
-               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
-            </p>
+               techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.</p>
             <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ol>
@@ -230,16 +234,14 @@
                      <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G19">G19: Ensuring that no component of the content flashes more than three times in any 1-second
                         period</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
                      									         
                      <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G176">G176: Keeping the flashing area small enough</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
                   
                   <li>
@@ -247,113 +249,169 @@
                      <a class="general" href="https://www.w3.org/WAI/WCAG21/Techniques/general/G15">G15: Using a tool to ensure that content does not violate the general flash threshold or
                         red flash threshold</a>
                      								       
-                     
-                  </li>
+                     </li>
                   
-                  
-               </ol>
+                  </ol>
             </section>
          </section>
          <section id="key-terms">
             <h2>Key Terms</h2>
+            <dt id="dfn-assistive-technology">assistive technology</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
+                     of users with disabilities that go beyond those offered by mainstream user agents
+                     </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>functionality provided by assistive technology includes alternative presentations
+                        (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
+                        voice), additional navigation or orientation mechanisms, and content transformations
+                        (e.g., to make tables more accessible).
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Assistive technologies often communicate data and messages with mainstream user agents
+                        by using and monitoring APIs.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>The distinction between mainstream user agents and assistive technologies is not absolute.
+                        Many mainstream user agents provide some features to assist individuals with disabilities.
+                        The basic difference is that mainstream user agents target broad and diverse audiences
+                        that usually include people with and without disabilities. Assistive technologies
+                        target narrowly defined populations of users with specific disabilities. The assistance
+                        provided by an assistive technology is more specific and appropriate to the needs
+                        of its target users. The mainstream user agent may provide important functionality
+                        to assistive technologies like retrieving Web content from program objects or parsing
+                        markup into identifiable bundles.
+                        </p>
+                  </div>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Assistive technologies that are important in the context of this document include
+                     the following:
+                     </p>
+                  
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
+                     
+                     <li>screen magnifiers, and other visual reading assistants, which are used by people with
+                        visual, perceptual and physical print disabilities to change text font, size, spacing,
+                        color, synchronization with speech, etc. in order to improve the visual readability
+                        of rendered text and images;
+                        </li>
+                     
+                     <li>screen readers, which are used by people who are blind to read textual information
+                        through synthesized speech or braille;
+                        </li>
+                     
+                     <li>text-to-speech software, which is used by some people with cognitive, language, and
+                        learning disabilities to convert text into synthetic speech;
+                        </li>
+                     
+                     <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
+                     
+                     <li>alternative keyboards, which are used by people with certain physical disabilities
+                        to simulate the keyboard (including alternate keyboards that use head pointers, single
+                        switches, sip/puff and other special input devices.);
+                        </li>
+                     
+                     <li>alternative pointing devices, which are used by people with certain physical disabilities
+                        to simulate mouse pointing and button activations.
+                        </li>
+                     </ul>
+                  </definition>
+            </dd>
+            <dt id="dfn-blinking">blinking</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">switch back and forth between two visual states in a way that is meant to draw attention</p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>See also <a href="#dfn-flash">flash</a>. It is possible for something to be large enough and blink brightly enough at the
+                        right frequency to be also classified as a flash.
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
             <dt id="dfn-flash">flash</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">a pair of opposing changes in <a href="#dfn-relative-luminance">relative luminance</a> that can cause seizures in some people if it is large enough and in the right frequency
                      range
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>See <a href="#dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</a> for information about types of flash that are not allowed.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>See also <a href="#dfn-blinking">blinking</a>.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
-                  
-               </definition>
+                  </definition>
             </dd>
             <dt id="dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">a <a href="#dfn-flash">flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
-                     
-                  </p>
-                  
+                     </p>
                   
                   <ol xmlns="http://www.w3.org/1999/xhtml">
                      
-                     
                      <li>there are no more than three <strong>general flashes</strong> and / or no more than three <strong>red flashes</strong> within any one-second period; or
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>the combined area of flashes occurring concurrently occupies no more than a total
                         of .006 steradians within any 10 degree visual field on the screen (25% of any 10
                         degree visual field on the screen) at typical viewing distance
-                        
-                     </li>
-                     
-                     
-                  </ol>
-                  
+                        </li>
+                     </ol>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">where:</p>
                   
-                  
                   <ul xmlns="http://www.w3.org/1999/xhtml">
                      
-                     
-                     <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a href="#dfn-relative-luminance">relative luminance</a> of 10% or more of the maximum relative luminance where the relative luminance of
+                     <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a href="#dfn-relative-luminance">relative luminance</a> of 10% or more of the maximum relative luminance (1.0) where the relative luminance
+                        of
                         the darker image is below 0.80; and where "a pair of opposing changes" is an increase
                         followed by a decrease, or a decrease followed by an increase, and
-                        
-                     </li>
-                     
+                        </li>
                      
                      <li>A <strong>red flash</strong> is defined as any pair of opposing transitions involving a saturated red
-                        
-                     </li>
-                     
-                     
-                  </ul>
-                  
+                        </li>
+                     </ul>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml">
                      <em>Exception:</em> Flashing that is a fine, balanced, pattern such as white noise or an alternating
                      checkerboard pattern with "squares" smaller than 0.1 degree (of visual field at typical
                      viewing distance) on a side does not violate the thresholds.
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>For general software or Web content, using a 341 x 256 pixel rectangle anywhere on
                         the displayed screen area when the content is viewed at 1024 x 768 pixels will provide
                         a good estimate of a 10 degree visual field for standard screen sizes and viewing
-                        distances (e.g., 15-17 inch screen at 22-26 inches). (Higher resolutions displays
-                        showing the same rendering of the content yield smaller and safer images so it is
-                        lower resolutions that are used to define the thresholds.)
-                        
-                     </p>
+                        distances (e.g., 15-17 inch screen at 22-26 inches). This resolution of 75 - 85 ppi
+                        is known to be lower, and thus more conservative than the nominal CSS pixel resolution
+                        of 96 ppi in CSS specifications. Higher resolutions displays showing the same rendering
+                        of the content yield smaller and safer images so it is lower resolutions that are
+                        used to define the thresholds.
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
@@ -361,10 +419,8 @@
                         red flashing) between adjacent peaks and valleys in a plot of relative luminance (or
                         relative luminance/color for red flashing) measurement against time. A flash consists
                         of two opposing transitions.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
@@ -372,68 +428,143 @@
                         0.8, and the change in the value of (R-G-B)x320 is &gt; 20 (negative values of (R-G-B)x320
                         are set to zero) for both transitions. R, G, B values range from 0-1 as specified
                         in “relative luminance” definition. [[HARDING-BINNIE]]
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Tools are available that will carry out analysis from video screen capture. However,
                         no tool is necessary to evaluate for this condition if flashing is less than or equal
                         to 3 flashes in any one second. Content automatically passes (see #1 and #2 above).
-                        
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-relative-luminance">relative luminance</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">the relative brightness of any point in a colorspace, normalized to 0 for darkest
+                     black and 1 for lightest white
                      </p>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <div>
+                        
+                        <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
+                           * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
+                           </p>
+                        
+                        <ul>
+                           
+                           <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
+                              </li>
+                           
+                           <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
+                              </li>
+                           
+                           <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
+                              </li>
+                           </ul>
+                        
+                        <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+                        
+                        <ul>
+                           
+                           <li>RsRGB = R8bit/255</li>
+                           
+                           <li>GsRGB = G8bit/255</li>
+                           
+                           <li>BsRGB = B8bit/255</li>
+                           </ul>
+                        
+                        <p>The "^" character is the exponentiation operator. (Formula taken from 
+                           [[IEC-4WD]].)
+                           </p>
+                        </div>
                   </div>
                   
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Before May 2021 the value of 0.04045 in the definition was different (0.03928). It
+                        was taken from an older version of the specification and has been updated. It has
+                        no practical effect on the calculations in the context of these guidelines.</p>
+                  </div>
                   
-               </definition>
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Almost all systems used today to view Web content assume sRGB encoding. Unless it
+                        is known that another color space will be used to process and display the content,
+                        authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>If dithering occurs after delivery, then the source color value is used. For colors
+                        that are dithered at the source, the average values of the colors that are dithered
+                        should be used (average R, average G, and average B).
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>Tools are available that automatically do the calculations when testing contrast and
+                        flash.
+                        </p>
+                  </div>
+                  
+                  <div xmlns="http://www.w3.org/1999/xhtml" class="note">
+                     <div role="heading" class="note-title marker" aria-level="2">Note</div>
+                     <p>A <a href="relative-luminance.xml">MathML version of the relative luminance definition</a> is available.
+                        </p>
+                  </div>
+                  </definition>
+            </dd>
+            <dt id="dfn-user-agent">user agent</dt>
+            <dd>
+               <definition xmlns="">
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
+                  
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+                     </p>
+                  </definition>
             </dd>
             <dt id="dfn-web-page">web page</dt>
             <dd>
                <definition xmlns="">
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
                      that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
-                     
-                  </p>
-                  
+                     </p>
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>Although any "other resources" would be rendered together with the primary resource,
                         they would not necessarily be rendered simultaneously with each other.
-                        
-                     </p>
+                        </p>
                   </div>
-                  
                   
                   <div xmlns="http://www.w3.org/1999/xhtml" class="note">
                      <div role="heading" class="note-title marker" aria-level="2">Note</div>
                      <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
                         within the scope of conformance to be considered a Web page.
-                        
-                     </p>
+                        </p>
                   </div>
                   
-                  
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web resource including all embedded images and media.</p>
-                  
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
                      lives entirely at http://example.com/mail, but includes an inbox, a contacts area
                      and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
                      to display, but do not change the URI of the page as a whole.
-                     
-                  </p>
-                  
+                     </p>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">A customizable portal site, where users can choose content to display from a set of
                      different content modules.
-                     
-                  </p>
-                  
+                     </p>
                   
                   <p xmlns="http://www.w3.org/1999/xhtml" class="example">When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
                      interactive shopping environment where you visually move around in a store dragging
@@ -441,11 +572,8 @@
                      you. Clicking on a product causes it to be demonstrated with a specification sheet
                      floating alongside. This might be a single-page Web site or just one page within a
                      Web site.
-                     
-                  </p>
-                  
-                  
-               </definition>
+                     </p>
+                  </definition>
             </dd>
          </section>
       </main>
