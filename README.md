@@ -14,6 +14,13 @@ WCAG 2.2に関連する翻訳文書のレポジトリは、[waic/wcag22](https:/
 - 原レポジトリの[8ce579b](https://github.com/w3c/wcag/commit/8ce579b703805fdc7523c733566d31b876a61b3c)
   - Updated 14 February 2024.
 
+### Techniques（テクニック集）のコミット
+
+[gh-pages](https://github.com/w3c/wcag/tree/gh-pages)ブランチより入手
+
+- 原レポジトリの[27cb75a](https://github.com/w3c/wcag/commit/27cb75a9de1938eb243a5659c8ea842c408eb781)
+  - Updated 21 May 2025.
+
 ## WCAG 2.1
 
 WCAG 2.1に関連する翻訳文書のレポジトリは、[waic/wcag21](https://github.com/waic/wcag21)になります。
